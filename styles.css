@@ -1,0 +1,5306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial','Roboto', sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+nav {
+height: 80px;
+background: #ffffff;
+
+    /*trial - height: auto; /* Adapts to content *//*
+    display: flex;
+    justify-content: center; /* Centers the nav container horizontally *//*
+    background-color: #fff; /* Optional: Add background color for visibility */
+}
+
+
+/* Navbar container */
+/*trial
+.nav__container {
+    width: 100%; /* Full width of the viewport *//*
+    max-width: 1280px; /* Constrain to maximum width *//*
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(18vh - 80px); /* Dynamic height 20vh *//*
+    padding: 0 24px; /* Add consistent padding *//*
+    margin: 0 auto; /* Center the navbar horizontally *//*
+} trial ends*/
+
+/* Logo */
+.logo {
+    width: 300px;
+    position: absolute;
+    top: 17px;
+    left: 12%
+
+    /* trail begins width: 275px;  Maintain logo size  *//*
+    height: 64px;
+    max-width: 23.5%; /* Adjust for responsiveness *//*
+    padding: 4px 0;
+    margin-left: 0; /* Remove fixed margin */
+}
+
+/* Navigation links container */
+.nav__links {
+    float: right;
+    margin-right: 25px;
+    /* trial begins display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens *//*
+    justify-content: flex-end; /* Align links to the right *//*
+    gap: 20px; /* Add consistent spacing between links */
+}
+
+/* List items */
+li {
+    list-style-type: none;
+}
+
+/* Links */
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+
+}
+
+.nav__link {
+    position: relative;
+    color: rgb(2, 15,39);
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-size: 1rem;
+    /*font-size: 18px; this throws off the video sizing*/
+
+/* trial begins font-size: 1.1rem; /* Scales with root font size *//*
+    color: rgb(2, 15, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 0 10px; trial ends*/
+
+}
+
+.nav__link:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #ffdd00;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+.nav__link:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel{
+    color: rgb(2, 15,39);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* trial beings .nav__link:hover {
+    text-decoration: underline;
+} trial ends*/
+
+
+/* Banner Video */
+.banner video {
+    position: absolute;
+    top: 0; /* Ensure the video covers the top */
+    /*right: 0;*/
+    /*bottom: 0;*/
+    max-height: 600vh;
+    margin-left: -50%; /* -700px Cover entire width */
+    z-index: -1;
+    width: 100%;
+    height: 100%;/*clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+    object-fit: cover; /* Ensure video covers the entire container */
+    display: inline-block;
+}
+
+.blue-box{
+    background-color: #000000;
+    top:0;
+    color:#000000;
+    width: 100%;
+    height: 100%;
+    max-height:600vh;
+    z-index: -2;
+    margin-left: 50%;/*600px*/
+    object-fit: cover;
+    position: absolute;
+    display: inline-block;
+}
+
+/* Landing Section */
+#landing {
+    background-color: rgb(2, 15,39);
+}
+
+/* Header Section */
+.index-header {
+    height: calc(100vh - 80px); /* Keep proportional height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically and horizontally */
+    position: relative; /* To ensure layering with the video */
+    overflow: hidden; /* Hide any overflowing video content */
+}
+
+/*this moves the main page part of the home page down. if the blue company values bar comes up then this can move it back down or up*/
+.main-homepg{
+    margin-bottom: 0;
+}
+
+/*brings values section into header section or moves it out of the section*/
+.index-header{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/*this controls the width and positioning of the text*/
+.header__container {
+    width: 100%;
+    max-width: 1085px;
+    margin: 0 auto;
+    padding: 22vh 16px; /*was 45vh pushes blue vales section up or down*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /*justify-content: space-around;
+    background-color: rgb(2, 15,39);*/
+}
+
+.header-title {
+    font-size: 2.75rem; /*44px*/
+    color: #ffffff;
+    margin-bottom: 1.75rem; /*28px*/
+}
+
+hr {
+    max-width: 80px; 
+    margin: 1rem auto;/*12px auto*/
+    border: 2px solid #ffdd00/*#4A79D9 or #ffdd00*/;
+    border-radius: 10px;
+}
+
+.subheader {
+    font-size: 1.25rem;/*20px*/
+    margin-top: 1.75rem;/*28px*/
+    margin-bottom: 2rem;/*32px*/
+    color: #ffffff
+ }
+
+ .values__container {
+    margin-top: 0; /*this elimates the white space between the contact container in the footer and the rest of the material on the page*/
+    background-color: #072a71;
+ }
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.values {
+    max-width: 400px;
+    width: 100%;
+    height: auto;/*126px*/
+    aspect-ratio: 400/126;
+    margin: 24px;
+    flex-direction: column;
+    color:#ffffff;
+}
+
+.value__label, .value__label--para {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.value__label {
+    font-size: 20px;
+}
+
+.value__label--para {
+    font-size: 16px;
+}
+
+#verticle-line {
+    width: 1px;
+    height: 100px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+
+}
+
+/*
+HIGHLIGHTS
+*/
+
+.container__highlight {
+    margin: 28px;
+}
+
+.row2{
+    margin: 0 118px;
+}
+
+
+.section {
+   width: 40%;
+}
+
+.section__title {
+    font-size: 3.2rem;/*36px 52px*/
+    padding-bottom: 10px; 
+    font-family: Arial, 'Roboto', sans-serif;
+    text-align: center;
+    color:#072a71;
+    font-weight: 400;
+}
+
+.section__title--para{
+    font-size: 1.4rem; /*18px*/
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #778193;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight__para {
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+}
+
+ .highlight__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: column;
+    align-items: start;*/
+}
+
+.highlight__link {
+    margin-top: 24px;
+    color: #043082;
+    margin-bottom: 24px;
+    margin-right: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.figure__img {
+    width: 50%;
+    padding: 70px 95px;
+    border-radius: 12%;
+    min-height: 550px;
+    max-width: 900px;
+    /*border-radius: 20%;*/
+}
+
+
+button {
+    margin: 24px auto;
+    width: 190px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#072a71;
+    font-size: 16px;
+
+}
+
+/*this is a hover affect a grabbed from the contact page*/
+/*button:hover{
+    /*color: #ffc600;
+    border-color: #163153;
+    background-color: #163153;*/
+    /*color: #072a71;
+    border-color: #ffdd00;
+    background-color: #ffdd00;
+}*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*
+TEAM
+*/
+
+/* Teams Section */
+#teams {
+    background-color: #f0f3f7;
+
+}
+
+.team__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    max-width: 1200px;
+    width: 100%
+}
+
+
+.teams {
+    text-align: center;
+    margin:24px;
+    border: 2px solid white;
+    /*min-height: calc(65vh - 65px);*/
+    background-color: white;
+    padding: 100px 50px;
+    /*width: calc(120lvh/3);
+    max-width: 100%;*/
+    border-radius: 12px;
+
+   /*max-width: 980px;
+    width: 100%;
+    height: 150px;
+    margin: 100px auto 124px auto;
+    flex-direction: column;
+    color:#ffffff;*/
+    max-width: 980px;
+    width: 100%;
+    height: 500px;
+}
+
+.team__link, .team__link--para {
+    margin-bottom: 28px;
+}
+
+.team__link {
+    font-size: 30px;
+    color: #072a71;
+}
+/*.growth {
+    padding-top: 164px;
+    min-height: 65lvh;
+}*/
+
+/*.rapid {
+}*/
+
+.team__link--para {
+    margin-top: 28px;
+    line-height: 1.6;
+    color: #778193;
+    font-size: 1.2rem;
+}
+
+.join-us{
+    width: 100%;
+    padding: 60px;
+}
+
+.join-us-title {
+    padding-bottom: 10px;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color:#072a71
+}
+
+.join-us-para {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #778193;
+    line-height: 1.5;
+}
+
+.join-us-img1,
+.join-us-img2 {
+    height: 400px;
+    width: 400px;
+    background: radial-gradient(#072a71, black 75%);
+    border-radius: 100%;
+    float: left;
+    shape-outside: circle(150px);
+    shape-margin: 50px;
+    margin-right: 50px;
+    filter: drop-shadow(7px 7px 7px #072a71);
+}
+
+/*
+PROTECT
+*/
+
+#protect{
+    background: url(./assets/darkbluebackground.jpeg);
+    padding: 150px; /*150px*/
+    background-size: cover;
+    background-position: center;
+}
+
+/*.container-protect{
+    
+  
+}*/
+
+.row-protect {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 1280px;
+   margin: 0 auto;
+
+}
+
+.protect-content{
+    color: #b6b9be;
+    /*max-width: 33.3%;*/
+    margin: 0 auto;
+    /*padding: 7px;*/
+    line-height: 1;
+    /*height: lvh;*/
+}
+
+.protect-security--para{
+    font-size: 1.125rem; /* Converted 18px */
+    line-height: 1.5;
+    margin-bottom: 24px;
+
+   /* text-align: center;
+    font-size: 1.125rem; 
+    line-height: 28px;
+    margin-bottom: 36px;*/
+}
+
+/*.protect-icon{
+    /*ADD ICONS HERE*/
+/*}*/
+
+.protect-content--para {
+    font-size: 3.25rem; /*52px*/
+    padding-bottom: 32px;
+    color: white;
+}
+
+.protect-list{
+    font-size: 1.5rem;/*24px*/
+    text-align: center;
+    line-height: 1.8;
+    padding: 4px;
+    color: white;
+}
+
+/*this is for the text over the icons so 
+that ea. li can be next to each other.*/
+.protect-content__ul{
+    display: flex;
+    gap: 16px;
+}
+
+.cont{
+    margin-right: 24px; /*52px*/
+}
+
+
+.img1, .img2, .img3, .img4 {
+    margin-top: 32px;
+    max-width: 100%;
+    width: 60px; /*70px*/
+}
+
+/*.protect-img {
+    text-align: center;
+    display: flex;
+    /*justify-content: space-around;*//*
+    margin-top: 52px;
+    
+}*/
+
+.img1{
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.img2{
+    margin-left: 90px;
+    margin-right: 72px;
+}
+
+.img3{
+    margin-left: 90px;
+    margin-right: 72px;
+}
+
+.img4{
+    margin-left: 10px;
+}
+
+.protect-para {
+    font-size: 1.125rem;
+    margin-top: 52px;
+    text-align: center;
+    line-height: 28px;
+}
+
+/*
+ACCREDITATIONS
+*/
+
+#accreditations {
+    /* background-image: url(./assets/darkbluebackground.jpeg);*/
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .accred__wrapper {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center; 
+ 
+ }
+ 
+ .accreds__h1 {
+     margin-top: 32px;
+     margin-bottom: 12px;
+     padding: 12px;
+     width: 100%;
+     color: #072a71;
+ }
+ 
+ .img__accred {
+     width: 100%
+ }
+ 
+ .accred, .accreds, .accredits{
+     padding-right: 36px;
+ }
+ 
+ .accred {
+     border-radius: 100%;
+ }
+ 
+ 
+ .accreds {
+     margin-bottom: 56px;
+ }
+ 
+ .accredit {
+     margin-bottom: 16px;
+ 
+ }
+ 
+ .accredits {
+     margin-bottom: 20px;
+     border-radius: 100%
+ }
+ 
+ 
+ /*
+ contact link
+ */
+ 
+ .more {
+     margin-top: 64px;
+ }
+ 
+ /*
+ FOOTER
+ */
+ 
+ footer {
+     background: rgb(65, 65, 65);
+     padding-top: 50px;
+ }
+ 
+ div.container-footer {
+     max-width: 1280px;
+     width: 100%;
+     margin-left: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+ 
+ .footer {
+     max-width: 33.3%;
+ }
+ 
+ .footer-title {
+     font-size: clamp(1rem, 2vw, 24px);/*24px*/
+     margin-bottom: 15px;
+ }
+ 
+ .left{
+     line-height: 1.5em;/*32px*/
+ }
+ 
+ .footer-content{
+     max-width: 33.3%;
+     margin: 38px auto;
+     padding: 7px;
+     color: white;
+     line-height: 24px;
+     height: 20lvh;
+ }
+ 
+ .list {
+     padding: 0;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     height: 80px;
+ }
+ 
+ .list li{
+     width: auto;
+     list-style-type: none;
+     position: relative;
+ }
+ 
+ .listlink {
+     padding-right: 48px;
+ }
+
+ .list li::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #ffdd00;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+/*home*/
+.lists:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    width: 50px;
+}
+
+/*about us*/
+.lists1:hover::before{
+    transform: scaleX(.5);
+    transform-origin: left;
+}
+
+/*services*/
+.lists2:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    width: 68px;
+}
+
+/*contact us*/
+.link1:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    width: 90px;
+    margin-left: 30px;
+}
+
+/*Work with us*/
+.link2:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    width: 110px;
+    margin-left: 30px;
+}
+
+/*capability statement*/
+.link:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    width: 160px;
+    margin-left: 30px;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+/*a:hover{
+    color: #ffdd00
+}*/
+
+.bottom-bar{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 14px 0px;
+}
+
+.bottom-bar p{
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 7px;
+}
+
+/* Default styles */
+footer {
+    background: rgb(65, 65, 65);
+    padding-top: 50px;
+}
+
+.container-footer {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 33.3%;
+}
+
+.footer-title {
+    font-size: clamp(1rem, 2vw, 24px); /* Adjusts font size based on screen size *//*24px*/
+    margin-bottom: 15px;
+}
+
+.left {
+    line-height: 1.5em;/*32px*/
+}
+
+.footer-content {
+    flex: 1 1 100%;
+    margin: 20px 0;
+    padding: 10px;
+    color: white;
+    line-height: 1.5em;
+    
+    /*max-width: 33.3%;*/
+    /*margin: 38px auto;*/
+    /*padding: 7px;*/
+
+    /*line-height: 24px;*/
+    /*height: 20lvh;*/
+}
+
+.list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 90px;
+}
+
+.list li {
+    width: auto;
+    list-style-type: none;
+    position: relative;
+}
+
+.listlink {
+    padding-left: 32px;/*32px*/
+}
+
+a {
+    text-decoration: none;
+}
+
+/*a:hover {
+    color: #ffdd00;
+}*/
+
+.bottom-bar {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 14px 0px;
+}
+
+.bottom-bar p {
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 7px;
+}
+
+
+
+
+
+
+
+/*
+ABOUT PAGE HTML
+*/
+
+/*
+ABOUT-HEADER
+*/
+
+.about-container {
+    height: calc(80vh - 80px);
+    background: url(./assets/sgaboutpg.png) no-repeat center center;
+    background-size: 100% 100%;/*this shows the entire picture, instead of part of the picture being cut off*/
+    background-attachment: fixed; /* Optional, remove if causing issues */
+    z-index: -1;
+    background-color:#0A1D42; /*for backup*/
+}
+
+
+
+
+/*about us title*/
+.about-us-title{
+    color: white;
+    font-size: 44px;
+    padding: 230px;
+    margin-left: 40%;
+
+}
+
+.about__header{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about{
+    position: relative;
+}
+
+#tradition{
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 78px;
+}
+
+/*add width and max width on container*/
+.about-container--tradition{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+ }
+ 
+ .about-para{
+     width: 100%;
+     padding: 60px 60px 0 60px; 
+ }
+ 
+ 
+ .about-para1 {
+     font-size: 3.2rem; /*52px*/
+     color:#072a71;
+     padding-bottom: 10px;
+     font-weight: bold;
+     font-style: 'Arial', 'Roboto', 'sans-serif';
+ 
+ }
+ 
+ .about-para2, .about-para3{
+     line-height: 1.5;
+     font-size: 1.5rem;
+     color: #778193;
+     text-align: justify;
+ }
+ 
+ .about-para2{
+     margin-bottom: 18px;
+ }
+ 
+ /*id=slides section*/
+ 
+ #slides{
+     max-width: 1280px;
+     margin: 0 auto;
+     padding-bottom: 78px;
+ }
+ 
+ .slide-content {
+     width: 100%;
+     padding: 0px 60px 60px 60px;
+ }
+ 
+ .slide-content h2{
+     padding-bottom: 10px;
+     font-size: 52px;
+     font-weight: bold;
+     color: #072A71;
+ }
+ 
+ .num4{
+     padding-bottom: 100px;
+ }
+ 
+ .h2-pic1a,
+ .h2pic {
+     text-align: right;
+ }
+ 
+ .h2pic{
+     margin-top: 40px;
+ }
+ 
+ 
+ .slide-content p{
+     font-size: 24px;
+     text-align: justify;
+     color: #778193;/*#333*/
+     line-height: 1.5;
+ }
+ 
+ .pic1,
+ .pic2, 
+ .pic1a,
+ .pic1b {
+     height: 400px;
+     width: 400px;
+     border-radius: 100%;
+     float: left;
+     shape-outside: circle(150px);
+     shape-margin: 50px;
+     margin-right: 50px;
+     filter: drop-shadow(7px 7px 7px #072A71);
+ }
+ 
+ .pic1,
+ .pic1b
+ {
+     height: 300px;
+     width: 300px;
+     float: left; /*direction of the float*/
+     shape-margin: 20px;
+     margin: 10px 20px auto;
+ }
+ 
+ .pic2 {
+     height: 300px;
+     width: 300px;
+     float: right;
+     shape-margin: 20px;
+     margin: 10px 20px auto;
+ }
+ 
+ .pic1a{
+     height: 300px;
+     width: 300px;
+     float: right;
+     shape-margin: 20px;
+     margin: 10px 20px auto;
+ }
+ 
+ 
+ /*
+ partner with us about section
+ */
+ 
+ #about-partner{
+     background-color: #0A1D42;
+     height: auto;
+ }
+ 
+ .about-partner{
+     max-width: 1280px;
+     margin: 0 auto;
+ 
+ }
+ 
+ .about-partner-box{
+     padding: 120px;
+     text-align: center;
+     width: 100%;
+ }
+ 
+ .about-partner-box h2{
+     color: white;
+     font-size: 54px;
+     margin-bottom: 24px;
+     font-weight: 400;
+ }
+ 
+ .about-partner-hr{
+     max-width: 150px;
+     margin: 20px auto;
+     border: 2px solid #ffdd00/*#4A79D9 or #ffdd00*/;
+     border-radius: 10px;
+ }
+ 
+ .about-partner-box p{
+     color: #B6B9BE;
+     font-size: 24px;
+     text-align: center;
+     line-height: 1.5;
+     margin-bottom: 52px;
+ }
+
+ /*
+CAREERS
+*/
+
+.careers-row{
+    width: 100%;
+    max-width: 1300px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+.values__container-cs {
+    background-color: #072a71;
+ }
+
+ /*
+CAPABILITY STATEMENT PAGE
+*/
+
+.cs-container{
+    /*this changes the height of the background*/
+    height: calc(100vh - 80px);
+    height: auto;
+    /*background-color: rgb(230, 230, 230);/*#0A1D42*/
+    background: url(./assets/americanflag2-fotor-20241217182454.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cs-row {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:center;
+}
+
+.cs-line{
+    background-color:#072a71;
+    width: 100%;
+}
+
+.cs-img{
+    width: 100%;
+    max-width: 900px;
+    /*this changes the height of the form*/
+    height: calc(80vh - 0px);
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 8px solid #072a71;*/
+    margin-bottom: 76px;
+    margin-top: 24px;
+ }
+ 
+ 
+ .cs-banner video{
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     top: 0;
+     z-index: -1;
+ }
+ 
+ @media(min-aspect-ratio: 16/9){
+     .cs-banner video{
+         width:100%;
+         height: 100%;
+ 
+     }
+ }
+ 
+ 
+ 
+ 
+ 
+ /*
+ CONTACT PAGE
+ */
+ 
+ .contact-body {
+     background: url(./assets/apartmentwalkway.jpg);
+     /*background: linear-gradient(90deg, #ffffff 0%, #ffffff 40%);*/
+     display: grid;
+     place-items: center;
+     font-family: 'Roboto', sans-serif;
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 100%;
+     /*background-attachment: fixed;*/
+     background-size: cover;
+     z-index: -2;
+ }
+ 
+ /*this puts get in touch box and map/black box next to each other*/
+ .contact-rowcontrol{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 auto;
+ }
+ 
+ /*this lines the boxes up evenly and allows us to match the width of the contact-from box*/
+ #control-map-contactaddress{
+     margin-bottom: 16px;
+     max-width: 660px;
+     width: 100%
+ }
+ 
+ .contact-from{
+     background-color: #f0f3f7;
+     padding: 48px 40px;
+     box-shadow: 2px 0px 3px 0px rgba(158, 157, 157, 0.8);
+     margin-bottom: 16px;
+     /*this widdens the contact form and the map and contact info*/
+     width: 660px;
+     margin-right: 10px;
+ 
+ }
+ 
+ .contact-from h5{
+     color: #07294d; /*color of contact us*/
+     position: relative;
+     padding-bottom: 12px;
+ }
+ 
+ .contact-from h5:before{
+     content: "";
+     position: absolute;
+     width: 72px; /*length of yellow line under contact us*/
+     height: 2px;
+     background-color: #ffdd00; /*this is for the yellow line under contact us*/
+     bottom: 0;
+     left: 0;
+ }
+ 
+ /*this is for the get in touch*/
+ .contact-from .contact-h2{
+     font-size: 36px;
+     color: #072a71;
+     padding-top: 10px;
+ }
+ 
+ .contact-from .singel-form .contact-input, textarea{
+     width: 100%;
+     height: 50px;
+     /*this changes the padding in all placeholders but more so the textarea "message"*/
+     padding: 16px 20px;
+     border: 1px solid #a1a1a1;
+     border-radius: 5px;
+     color: #8a8a8a;
+     font-size: 15px;
+ }
+ 
+ 
+ .contact-from .singel-form textarea{
+     padding-top: 10px;
+     height: 100px;
+     resize: none;
+ }
+ 
+ .contact-from .singel-form{
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ .main-btn{
+     /*text-align: center;
+     border: 1px solid #ffc600;
+     padding: 10px 40px;
+     font-weight: 700;
+     line-height: 30px;
+     color: #163153;
+     position: relative;
+     transition: 0.4s ease-in-out;
+     background-color: #ffc600;*/
+     margin: 24px auto;
+     width: 190px;
+     padding: 12px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color:#072a71;
+     font-size: 16px;
+     color: white;
+ }
+
+ .main-btn:hover{
+    color: #ffdd00
+}
+
+.contact-address{
+    background-color: #07294d;/*#252628*/
+    /*this evens out the icons in the black box*/
+    padding: 4px 0px 30px 0px;
+    width: 100%;
+}
+
+.contact-address .contact-ul .contact-li{
+    padding-top: 30px;
+    /*list-style: none;*/
+}
+
+.contact-address .contact-ul .contact-li .singel-address{
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact-address .contact-ul .contact-li .singel-address .icon-contact{
+    border-radius: 50%;
+    border: 1px solid #ffdd00;/*#d83030*/
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    background: #ffdd00/*#d83030*/
+}
+
+/*might have other issues with i*/
+.contact-address .contact-ul .contact-li .singel-address .icon-contact i{
+   width: 50px;
+   height: 50px;
+   line-height: 50px; 
+}
+
+.contact-address, .contact-ul, .contact-li, .singel-address, .cont-contact{
+    padding-left: 20px;
+}
+
+.contact-address, .contact-ul, .contact-li, .singel-address, .cont-contact, .contact-para{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color:white;/*#fff*/
+    margin: 0px;
+    margin-right: 15px;
+}
+
+.color1{
+    border: 1px solid #ffdd00!important;/*#225688*/
+    background: #ffdd00!important;/*#225688*/
+}
+
+.color2{
+    border: 1px solid #ffdd00!important;/*#f3a712*/
+    background: #ffdd00!important;/*#f3a712*/
+}
+
+.map iframe{
+    width: 100%;
+    height: 288px;
+}
+
+/*
+SERVICES 
+PAGE
+*/
+
+/*height of img*/
+.service-container{
+
+    height: calc(84vh - 80px);
+    /*background-color: rgb(2, 15,39);/*#0A1D42*/
+    background: url(https://static.wixstatic.com/media/74b1f0_739560f6f6ae4b95a09c0a0636032465~mv2.jpg/v1/fill/w_1500,h_680,al_c,q_85,enc_avif,quality_auto/74b1f0_739560f6f6ae4b95a09c0a0636032465~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.service-hr {
+    max-width: 120px;
+    margin: 18px auto;
+    border: 2px solid #ffdd00/*#4A79D9 or #ffdd00*/;
+    border-radius: 10px;
+}
+
+#service{
+    position: relative;
+}
+
+/*what we offer box*/
+.service-img-text{
+    position: absolute;
+    top: 40%;
+    right: 34%;
+    padding: 20px;
+    left: 0%;
+    width: 100%;
+}
+
+/*text inside the box*/
+.service-text{
+    font-size: 66px;
+    text-align: center;
+    color: #ffffff;
+    padding: 32px; /*puts text in middle*/
+}
+
+#service-width {
+    margin-top: 0px; /*this elimates the white space between the contact container in the footer and the rest of the material on the page*/
+    background-color: #072a71;
+}
+
+.service-row {
+    display: flex;
+    justify-content: center;
+    max-width: 980px;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
+
+}
+
+/*box of text*/
+.services-values {
+    width: 100%;
+    height: 100%;/*150px*/
+    margin: 100px auto 124px auto;
+    flex-direction: column;
+    color:#ffffff;
+}
+
+.service-value__label, .service-value__label--para {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+}
+
+/*text on titles in blue box*/
+.service-value__label {
+    font-size: 1.9rem;/**/
+    font-weight: bold;
+
+}
+
+/*paragraph in blue box*/
+.service-value__label--para {
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+
+#sv2 {
+    background-color: #ffffff;/*#f0f3f7*/
+    min-height: 50vh;
+}
+
+
+.services-values-2-box {
+    max-width: 980px;
+    width: 100%;
+    margin: 80px auto;
+    /*margin: 52px auto;*/
+    flex-direction: column;
+    /*move to services-values-2-para
+    color:#073796;
+    padding: 168px;
+    letter-spacing:normal;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;/*B*/
+    align-items: center;
+
+}
+
+.services-values-2-para{
+    color:#073796;
+    letter-spacing:normal;
+    text-align: center;
+    font-size: 2.25rem;/*36px*/
+    line-height: 1.25;
+    font-weight: bold;
+    position: relative;
+    margin: 120px 0 150px 0px;
+
+}
+
+/*Our services portion*/
+
+.services-wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #0A1D42;/*#0A1D42*/
+    padding-bottom: 72px;
+    /*background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    /*background-attachment: fixed;*/
+    /*background-size: cover;
+    z-index: -2;*/
+
+}
+
+.services-wrapper h1{
+    font-size: 58px;
+    margin: 72px 0 48px 0;
+    color:#ffffff;
+    letter-spacing: 0.08em;
+    position: relative;
+}
+
+.services-wrapper h1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 5px;
+    background: #ffdd00;
+    border-radius: 10px;
+}
+
+.sv3-para {
+    width: 100%;
+    max-width: 980px;
+    text-align: center;
+    font-size: 18px;
+    line-height:1.5;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+
+.services-content-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1350px; /*1032px*/
+    margin-top: 30px;
+}
+
+.services-card {
+   min-height: 200px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 18px 4px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2)
+}
+
+.services-card i {
+    margin: 20px;
+    color: #ffdd00;
+}
+
+.services-card h2{
+    margin-bottom: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: #073796;
+}
+
+.services-card p {
+    color: #6c757d;
+    text-align: center;
+}
+
+.services-card:hover i{
+    color:#ffdd00
+}
+
+
+.services-card:hover p{
+    color: black;
+}
+
+.services-card:hover h2{
+    font-weight: 600;
+}
+
+.services-card:nth-child(1):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/securityguard.jpg');
+    background-size: cover;
+}
+
+.services-card:nth-child(2):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/INVEST.jpeg');
+    background-size: cover;
+}
+
+.services-card:nth-child(3):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/construction-training.jpeg');
+    background-size: cover;
+}
+
+.services-card:nth-child(4):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/janitorialimg.jpg');
+    background-size: cover;
+}
+
+.services-card:nth-child(5):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/consultingimg2.jpeg');
+    background-size: cover;
+}
+
+.services-card:nth-child(6):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/wiringinstallationimg.jpeg');
+    background-size: cover;
+}
+
+.services-card:nth-child(7):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/power:comunicationlineimg.jpeg');
+    background-size: cover;
+}
+
+.services-card:nth-child(8):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/landscapingimg.jpg');
+    background-size: cover;
+}
+
+.services-card:nth-child(9):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/pouredconcreteimg.jpeg');
+    background-size: cover;
+}
+
+.services-card:nth-child(10):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/telecommunicationimg.jpg');
+    background-size: cover;
+}
+
+.services-card:nth-child(11):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/trashremovalimg.jpeg');
+    background-size: cover;
+}
+
+.services-card:nth-child(12):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/uniformsupplierimg.jpeg');
+    background-size: cover;
+}
+
+/*
+ACCREDIDATIONS 
+*/
+
+
+.accred-body {
+    background: #f2f2f2; /*light gray*/
+}
+
+/*this animates the carousel*/
+@keyframes slide{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%) /*this makes it go 100px left*/
+    }
+}
+
+
+/*this is to stop the overflow from going 
+beyond the width of the page. no horizontal scroll bar*/
+.accred-logos{
+    overflow: hidden; /*comment this out*/
+    padding: 60px 0; /*change padding*/
+    background: white;
+    white-space: nowrap; /*without this it would wrap under each other*/
+    position: relative; 
+}
+
+/*this makes it pause when someone hovers over it*/
+.accred-logos:hover .accred-logos-slide{
+    animation-play-state: paused;
+}
+
+/*this makes the logos not wrap or go 
+to the next line no matter what*/
+.accred-logos-slide{
+    display:inline-block;
+    animation: 35s slide infinite linear; /*this is the element we will be animating using our "slide animation*/
+    /*ths second 35s is what speeds it up or slows it down*/
+}
+
+.accred-logos-slide img{
+    height:250px; /*change height of each logo*/
+    margin: 0px 40px 0 40px; /*this puts space between the logos. top was 50px*/
+}
+
+
+
+/*
+CAREERS
+*/
+
+div#form1-container{
+    padding: 0px;
+}
+
+div#form2-container{
+    padding: 0px;
+}
+
+/* Ensure the form container takes up the full height of the screen */
+#form1-container{
+    height: 120vh; /* Full viewport height */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Add space on the sides if needed */
+    box-sizing: border-box;
+  }
+
+  #form2-container {
+    height: 120vh; /* Full viewport height */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 18px 0; /* Add space on the sides if needed */
+    box-sizing: border-box;
+  }
+
+  /* Make the iframe (form) take up the full container size */
+  #form1-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+
+
+/*
+W-4: FORM PAGE
+*/
+
+#w-4 {
+    background: url(./assets/piedmont-parkcityview.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+.w4-container{
+    width: 100%;
+    max-width: 1135px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin: 0 auto;
+}
+
+/*
+G-4: FORM PAGE
+*/
+
+#g-4 {
+    background: url(./assets/piedmont-parkcityview.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+.g4-container{
+    width: 100%;
+    max-width: 1118px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin: 0 auto;
+}
+
+
+/*
+I-9: FORM PAGE
+*/
+
+#i-9 {
+    background: url(./assets/piedmont-parkcityview.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+.i9-container{
+    width: 100%;
+    max-width: 1122px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin: 0 auto;
+}
+
+/*
+PAYCOR: FORM PAGE
+*/
+
+#paycor {
+    background: url(./assets/piedmont-parkcityview.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+
+.paycor-container{
+    width: 100%;
+    max-width: 1122px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin: 0 auto;
+}
+
+
+/*Media Query - Responsiveness*/
+
+/*
+
+HOME PAGE
+
+*/
+
+/*
+Navigation Bar
+*/
+
+/*COVERS ALL MEASUREMENTS DOWN TO MOBILE DEVICES*/
+@media (max-width: 1118px) {
+    img.logo{
+        left: 8%;
+    }
+}
+
+/*1/2 the screen on laptop*/
+@media (min-width: 769px) and (max-width: 944px) {
+img.logo{
+    left: 6%;
+    top: 20px;
+    width: 280px;
+}
+}
+
+@media (max-width: 1200px) {
+    label #btn{
+        display: block;
+    }
+
+    ul.nav__links{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #07294d;/*white*/
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    .nav__link{
+        color: white;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    /*div.header__description{
+        z-index:-1;
+    }*/
+
+    .nav__links{/*20px*/
+        font-size: 52px;
+        font-weight: bold;;
+    }
+
+    #check:checked ~ .nav__links{
+        left: 0;
+    }
+
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+}
+
+
+
+/*
+HEADER WITH GLOBE ON HOME PAGE
+*/
+
+/* Adjust video size for wider aspect ratios */
+@media (min-aspect-ratio: 16/10) {
+    .banner video {
+        width: 100%;
+        height: auto; /* Preserve original aspect ratio */
+        object-fit: cover;
+    }
+}
+
+/* Adjust video size for narrower aspect ratios */
+@media (max-aspect-ratio: 16/10) {
+    .banner video {
+        width: auto; /* Ensure video doesn't stretch horizontally */
+        height: 100%; /* Fill container vertically */
+        object-fit: cover;
+    }
+}
+
+/* For iPhone Mini (375px) *//*TRIAL*/
+@media (max-width: 375px) {
+    div.header__container {
+        height: calc(70vh - 80px); /* Reduce height for smaller screens */
+    }
+
+    div.header__description {
+        margin-top: -50px; /* Adjust margin to center content properly */
+    }
+
+    .banner video {
+        height: calc(50vh - 60px); /* Reduce video height proportionally */
+
+    }
+}
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    div.header__container{
+        height: calc(96vh - 80px);
+    }
+
+    .banner video {
+        height: calc(112vh - 60px); /* Adjust height for smaller viewports */
+        margin-left: -49%;
+    }
+
+    div.header__description{
+        margin-top: 50px;/* was 130px*/
+    }
+}
+
+
+
+@media (min-width:438px) and (max-width: 440px){
+    div.header__container{
+        height: calc(96vh - 80px);
+    }
+    .banner video {
+        height: calc(112vh - 60px); /* Adjust height for smaller viewports */
+        margin-left: -49%;
+    }
+    div.header__description{
+        margin-top: 50px;/* was 130px*/
+    }
+}
+
+
+/* For mobile devices (max-width: 480px) */
+@media (min-width: 438px) and (max-width: 480px) {
+    div.header__container{
+        height: calc(100vh - 80px);
+    }
+
+    div.header__description{
+        margin-top: 50px;/* was 130px*/
+    }
+
+    h1.header-title{
+        font-size:1.4rem;
+    }
+
+
+
+    p.subheader{
+        font-size: .75rem; /*look on phone and see if this is visible*/
+    }
+
+    .banner video {
+        height: calc(100vh - 60px); /* Adjust height for smaller viewports */
+
+    }
+}
+
+/* Media Query for Medium-Small Screens *//*smallest width on laptop*/
+@media (max-width: 608px) {
+    h1.header-title{
+        font-size: 1.5rem;
+    }
+
+    p.subheader{
+        font-size: 1rem;
+    }
+
+    div.container__highlight{
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    video {
+        margin-bottom: 66px;
+       }
+    
+        /*the 16/10 changes the size of the video*/
+        @media(min-aspect-ratio: 16/9){
+            .banner video{
+                width:100%;
+                height: 100%;
+            }
+        }
+    
+        header {
+            height: calc(70vh - 80px);
+            /*background-color: rgb(2, 15,39)/*#0A1D42*/
+        }
+
+        .header-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    
+    
+        .subheader {
+            font-size: 18px;
+            margin-top: 20px;
+         }
+
+    }
+
+
+/*For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+
+    div.header__container{
+        height: calc(78vh - 80px);
+    }
+
+
+    .header__description{
+        margin-top: 150px;
+    }
+
+    .banner video {
+        max-height: auto; /* calc(64vh - 60px) Adjust height for smaller viewports */
+        max-width: auto;
+        margin-left: -50%;
+        object-fit: contain;
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+
+    div.blue-box {
+        margin-left: 50%;
+    }
+}
+
+
+/*half screen for laptop*/
+@media (min-width: 769px) and (max-width: 879px){
+    h1.header-title{
+        font-size: 2rem;
+    }
+
+    .banner video {
+        height: calc(120vh - 60px); /* Adjust height for smaller viewports */
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+
+    p.subheader{
+        font-size: 1.1rem;
+    }
+}
+
+
+/*half laptop page*/
+@media (min-width: 945px) and (max-width: 1020px){
+    div.header__container{
+        height: calc(76vh - 80px);
+    }
+
+    div.header__description{
+        margin-top: 6px;
+    }
+
+    h1.header-title{
+        font-size: 2.3rem;
+    }
+
+
+    .banner video {
+        height: calc(100vh - 60px); /* Adjust height for smaller viewports */
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+}
+
+
+/*3/4 screen of laptop*/
+@media (max-width: 1176px) {
+    div.header__container{
+        height: calc(78vh - 80px);
+    }
+
+    div.header__description{
+        margin-top: 6px;
+    }
+
+    .banner video {
+        height: calc(87vh - 60px); /* Adjust height for smaller viewports */
+    }
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+    .banner video{
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+}
+
+
+/*between 3/4 and full screen laptop*/
+@media (max-width:1370px) {
+    div.header__container{
+        height: calc(80vh - 80px);
+    }
+
+    div.header__description{
+        margin-top: 6px;
+    }
+
+    .banner video {
+        height: calc(98vh - 60px); /* Adjust height for smaller viewports */
+    }
+}
+
+
+/*large screen desktops*/
+@media (max-width: 2000px) {
+    div.header__container{
+        height: calc(82vh - 80px);
+    }
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        height: clamp(50vh, 100vh, 150vh); /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+    }
+}
+
+
+
+
+
+/*
+VALUES SECTION ON HOME PAGE
+*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .row{
+        flex-direction:column;
+    }
+
+    /*this creates or eliminates the white space above 
+    company values on the index.html page*/
+    .main-homepg{
+        margin-top: -89px;
+    }
+
+     /*size of the blue containers*/
+     .values {
+        padding-top: 10px;
+    }
+
+
+    #verticle-line {
+        width: 768px;
+        height: 4px;
+        background-color: white;
+    }
+}
+
+
+
+
+/*
+ACCREDIDATIONS SECTION ON HOME PAGE
+*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .accred-logos{
+        height: 250px;
+    }
+
+    .accred-logos-slide img{
+        width: 150px;
+        height: 200px;
+        padding-bottom: 110px;
+    }
+}
+
+
+
+
+
+/*
+TEAMS SECTION ON HOME PAGE
+*/
+
+/* Small Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .teams {
+        padding: 40px 20px;
+        max-width: 100%; /* Use full width */
+        margin: 10px; /* Reduce margin further */
+    }
+
+    .team__link {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .team__link--para {
+        font-size: 12px; /* Smaller paragraph font size */
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .row{
+        flex-direction:column;
+    }
+
+    .team__wrapper {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+
+    .teams {
+        margin:24px;
+        padding: 84px 50px;
+        height: 550px; 
+    }
+
+    .growth {
+        padding-top: 120px;
+    }
+
+    .beyond {
+        padding-top: 98px;
+    }
+
+    /*.rapid {
+    
+    }*/
+
+    .team__link--para {
+        font-size: 20px;
+    }
+}
+
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .teams {
+        padding: 60px 30px;
+        max-width: 600px; /* Adjust max width for mobile */
+        margin: 16px; /* Reduce margin for better spacing */
+    }
+
+    .team__link {
+        font-size: 24px; /* Smaller headings */
+    }
+
+    .team__link--para {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+}
+
+
+/*1/2 the screen on laptop*/
+@media (min-width: 769px) and (max-width: 944px) {
+    /*
+    home page
+    */
+    
+    div.teams{
+        margin: 6px;
+    }
+}
+
+@media (min-width: 945px) and (max-width: 1020px){
+    div.team__wrapper{
+        margin: 0 auto;
+       } 
+}
+
+/* Tablet Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .teams {
+        padding: 80px 40px; /* Reduce padding for smaller screens */
+        max-width: 800px;
+    }
+
+    .team__link {
+        font-size: 28px; /* Slightly smaller text for smaller screens */
+    }
+
+    .team__link--para {
+        font-size: 16px; /* Adjust paragraph text size */
+    }
+}
+
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+    div.teams{
+        margin-left: 0px; 
+     }
+ 
+     div.team__wrapper{
+         margin-left: 24px;
+     }
+    }
+
+
+   /*
+   SECURITY SERVICES ON HOME PAGE
+   */
+
+   /*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    img.figure__img{
+        border-radius: 0;
+        width:100%;
+        height: 100%;
+    }
+}
+   
+   /*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    img.figure__img{
+        border-radius: 0;
+        width:100%;
+        height: 100%;
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (min-width: 438px) and (max-width: 480px) {
+    div.section{
+        width: 300px;
+    }
+
+    /*trial for security services title. all of this and the div.section wasnt here before and it looked fine*/
+    p.section__title{
+        font-size: 2.7rem;/*42px*/
+        width: 500px;
+        margin-left: -33.33%;
+        margin-bottom: 24px;
+    }
+
+    p.section__title--para{
+        font-size: 1.2rem;
+    }
+
+    li.highlight__link{
+        font-size: 1.1rem;
+    }
+
+    ul.highlight__links{
+        padding-left: 22px;
+    }
+
+    img.figure__img {
+        width: 90%;
+        padding: 20px 0 0 0;
+        border-radius: 0;
+        min-height: 370px;
+        max-width: 100%;
+        /*border-radius: 20%;*/
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .row{
+        flex-direction:column;
+    }
+
+    .container__highlight {
+        margin: 50px 50px 0px 50px;
+        padding: 50px;
+    }
+    
+    
+    .section {
+       width: 100%;
+    }
+    
+    .section__title {
+        font-size: 52px;
+        max-width: 768px;
+        margin-bottom: 14px;
+    }
+    
+    .section__title--para{
+        font-size: 22px; /*18px*/
+    }
+    
+    .highlight__link {
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    
+    .figure__img {
+        width: 100%;
+        padding: 70px 50px;
+        /*border-radius: 20%;*/
+    }
+}
+
+/* Media Query for Medium-Small Screens *//*smallest width on laptop*/
+@media (max-width: 608px) {
+    p.section__title{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        min-width: 334px;
+        width: 100%;
+        margin-left: -29%;
+        font-size: 2.7rem;
+    }
+
+    p.section__title--para{
+        min-width: 300px;
+        width: 100%;
+        margin-left: -20%;
+    }
+
+    img.figure__img{
+        width:100%;   
+       }
+}
+
+/*half laptop page*/
+@media (min-width: 945px) and (max-width: 1020px){
+    div.row2{
+        width: 900px;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+       }
+    
+       p.section__title{
+        font-size: 3.3rem;
+        margin-top: 10%;;
+       }
+    
+       div.section{
+        width:60%;
+        margin-right: 12%; 
+       }
+    
+       img.figure__img{
+        width: 90%;
+        margin-left: 4%; 
+        margin-top: -2%;
+       }
+}
+
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+    div.row2{
+        margin-left: -30px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.7rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.3rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:60%;
+            height: 50%;
+       }
+}
+
+@media (min-width: 1181px) and (max-width: 1370px){
+    div.row2{
+        margin-left: 20px;
+    }
+}
+
+
+
+   /*
+   PROTECT SECURITY SECTION ON HOME PAGE
+   */
+
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    p.protect-security--para{
+        margin-right: 10%;
+    }
+
+    li.cont{
+        margin-left: 30px;
+    }
+
+    li.cont2{
+        margin-left: 35px;
+    }
+
+    li.cont3{
+        margin-left: 32px;
+    }
+
+
+    li.cont4{
+        margin-left: 40px;
+    }
+
+    p.protect-para{
+        margin-right: 10%;
+    }
+}
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    p.protect-security--para{
+        margin-right: 10%;
+    }
+
+    li.cont{
+        margin-left: 30px;
+    }
+    li.cont2{
+        margin-left: 35px;
+    }
+    li.cont3{
+        margin-left: 32px;
+    }
+    li.cont4{
+        margin-left: 40px;
+    }
+    p.protect-para{
+        margin-right: 10%;
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (min-width: 438px) and (max-width: 480px) {
+    p.protect-content--para{
+        font-size: 2.5rem;
+        margin-top: 24%;
+        margin-bottom: 6%;
+    }
+
+    p.protect-security--para{
+        margin-right: 6%;
+    }
+
+    img.img1{
+        margin-right: 76px;
+    }
+
+    p.protect-para{
+        margin-right: 6%;
+    }
+}
+
+
+/* Media Query for Small Mobile Screens */
+@media (max-width: 480px) {
+    #protect {
+         padding: 50px; /* Further reduce padding for very small screens */
+     }
+ 
+     .row-protect {
+         max-width: 100%;
+     }
+ 
+     .protect-content--para {
+         font-size: 1.5rem; /* Further reduced size */
+         padding-bottom: 24px; /* Reduced spacing */
+     }
+ 
+     .protect-list {
+         font-size: 0.875rem; /* Smaller font size */
+         line-height: 1.4; /* Adjusted line height */
+     }
+ 
+     .img1, .img2, .img3, .img4 {
+         width: 40px; /* Smaller icon size */
+         margin: 12px; /* Adjusted spacing */
+     }
+ 
+     img.img4{
+         margin-left: 96px;
+     }
+ 
+     .protect-para {
+         font-size: 0.875rem; /* Smaller font size for readability */
+         margin-top: 24px; /* Reduced margin */}
+ 
+ 
+     div.container-protect{
+     margin-left: -108px;
+     }
+     
+     /*p.protect-content--para{
+     max-width: 550px;/*max-width: 550px*//*
+     width: 100%;
+     margin-left: 56px;
+     font-size: 2.9rem;
+     }*/
+     
+     
+     p.protect-security--para, .protect-para{
+         max-width: 550px;
+         font-size: 17px;
+      text-align: center;
+      line-height: 28px;
+      margin-top: 16px;
+      margin-bottom: 0px;
+     }
+     
+     p.protect-security--para{
+     /*padding-right: 10px;*/
+     margin-bottom: 40px;
+     }
+     
+     .protect-list.cont, li.protect-list{
+     font-size: 22px; 
+     font-weight: bold;
+     width: 100%;
+     max-width: 550px;
+     /*margin-bottom: 50px;*/
+     }
+     
+     ul.protect-content__ul{
+     display: flex;
+     flex-direction: column;
+     margin-right: 120px;/*420px*/
+     gap: 40px;
+     }
+     
+     .cont2 {
+     margin-left: 54px;
+     }
+     
+     .cont3 {
+     margin-left: 54px;
+     }
+     
+     .cont4 {
+     margin-left: 58px;
+     display: flex;
+     flex-direction: column;
+     }  
+     
+     
+     
+     /*this is for the text over the icons so 
+     that ea. li can be next to each other.*/
+     .protect-content__ul{
+      display: flex;
+     }
+     
+     /*this moves the text "no one size, etc"*/
+     .cont{
+     margin-left: 52px;
+     /*
+      margin-right: 52px;*/
+     }
+     
+     .img1{
+      margin-left: 72px;
+      margin-right: 72px;
+     }
+     
+     img.img2{
+      margin-left: 76px;
+      margin-right: 72px;
+     }
+     
+     img.img3{
+      margin-left: 60px;
+      margin-right: 72px;
+     }
+     
+     img.img4.img4b{
+      margin-left: 112px !important;/*can't find the overlap*/
+     }
+ }
+
+
+ /*SMALLEST SCREEN ON LAPTOP IS 500PX AND THEN IT GOES UP*/
+ @media (min-width: 481px) and (max-width: 519px) {
+    div.container-protect{
+        margin-left: -128px;
+        }
+        
+        p.protect-content--para{
+        max-width: 550px;/*max-width: 550px*/
+        width: 100%;
+        margin-left: 56px;
+        font-size: 2.9rem;
+        }
+        
+        
+        p.protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 17px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+        }
+        
+        p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+        }
+        
+        .protect-list.cont, li.protect-list{
+        font-size: 22px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+        }
+        
+        ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        gap: 40px;
+        }
+        
+        .cont2 {
+        margin-left: 54px;
+        }
+        
+        .cont3 {
+        margin-left: 54px;
+        }
+        
+        .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+        }  
+        
+        
+        
+        /*this is for the text over the icons so 
+        that ea. li can be next to each other.*/
+        .protect-content__ul{
+         display: flex;
+        }
+        
+        /*this moves the text "no one size, etc"*/
+        .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+        }
+        
+        .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+        }
+        
+        img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+        }
+        
+        img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+        }
+        
+        img.img4.img4b{
+         margin-left: 112px !important;/*can't find the overlap*/
+        }
+}
+
+
+@media (min-width: 520px) and (max-width: 562px) {
+    div.container-protect{
+        margin-left: -108px;
+        }
+        
+        p.protect-content--para{
+        max-width: 550px;/*max-width: 550px*/
+        width: 100%;
+        margin-left: 56px;
+        font-size: 2.9rem;
+        }
+        
+        
+        p.protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 17px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+        }
+        
+        p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+        }
+        
+        .protect-list.cont, li.protect-list{
+        font-size: 22px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+        }
+        
+        ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        gap: 40px;
+        }
+        
+        .cont2 {
+        margin-left: 54px;
+        }
+        
+        .cont3 {
+        margin-left: 54px;
+        }
+        
+        .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+        }  
+        
+        
+        
+        /*this is for the text over the icons so 
+        that ea. li can be next to each other.*/
+        .protect-content__ul{
+         display: flex;
+        }
+        
+        /*this moves the text "no one size, etc"*/
+        .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+        }
+        
+        .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+        }
+        
+        img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+        }
+        
+        img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+        }
+        
+        img.img4.img4b{
+         margin-left: 112px !important;/*can't find the overlap*/
+        }
+}
+
+@media (min-width: 563px) and (max-width: 608px) {
+    div.container-protect{
+        margin-left: -90px;
+        }
+        
+        p.protect-content--para{
+        max-width: 550px;/*max-width: 550px*/
+        width: 100%;
+        margin-left: 44px;
+        font-size: 3.1rem;
+        }
+        
+        
+        .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+        }
+        
+        p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+        }
+        
+        .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+        }
+        
+        ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        
+        }
+        
+        .cont2 {
+        margin-left: 54px;
+        }
+        
+        .cont3 {
+        margin-left: 54px;
+        }
+        
+        .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+        }  
+        
+        
+        
+        /*this is for the text over the icons so 
+        that ea. li can be next to each other.*/
+        .protect-content__ul{
+         display: flex;
+        }
+        
+        /*this moves the text "no one size, etc"*/
+        .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+        }
+        
+        .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+        }
+        
+        img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+        }
+        
+        img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+        }
+        
+        img.img4.img4b{
+         margin-left: 115px !important;/*can't find the overlap*/
+        }
+}
+
+
+@media (min-width: 609px) and (max-width: 688px) {
+    div.container-protect{
+        margin-left: -59px;
+     }
+    
+     .protect-content--para{
+        max-width: 550px;
+        width: 100%;
+        margin-left: 38px;
+     }
+    
+    
+     .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+     }
+    
+     p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+     }
+    
+     .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+    }
+    
+    ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+    
+    }
+    
+    .cont2 {
+        margin-left: 54px;
+    }
+    
+    .cont3 {
+        margin-left: 54px;
+    }
+    
+    .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+    }  
+    
+     /*this is for the text over the icons so 
+     that ea. li can be next to each other.*/
+     .protect-content__ul{
+         display: flex;
+     }
+    
+     /*this moves the text "no one size, etc"*/
+     .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+     }
+    
+     .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+     }
+    
+     img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+     }
+    
+     img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+     }
+    
+     img.img4.img4b{
+         margin-left: 115px !important;/*can't find the overlap*/
+     }
+}
+
+
+@media (min-width:689px) and (max-width:733px){
+    .protect-content--para{
+        max-width: 550px;
+        width: 100%;
+        margin-left: 41px;
+     }
+    
+    
+     .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+     }
+    
+     p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+     }
+    
+     .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+    }
+    
+    ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+    
+    }
+    
+    .cont2 {
+        margin-left: 54px;
+    }
+    
+    .cont3 {
+        margin-left: 54px;
+    }
+    
+    .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+    }  
+    
+    
+    
+     /*this is for the text over the icons so 
+     that ea. li can be next to each other.*/
+     .protect-content__ul{
+         display: flex;
+     }
+    
+     /*this moves the text "no one size, etc"*/
+     .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+     }
+    
+     .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+     }
+    
+     img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+     }
+    
+     img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+     }
+    
+     img.img4.img4b{
+         margin-left: 115px !important;/*can't find the overlap*/
+        
+     }
+}
+
+
+@media (min-width: 734px) and (max-width: 768px){
+    .row-protect {
+        max-width: 768px;
+        /*margin-right: 24px;
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1280px;
+        width: 100%;*/
+     }
+
+     .protect-content--para{
+        padding-left: 10px;
+     }
+    
+    
+     .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+     }
+    
+     p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+     }
+    
+     .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+    }
+    
+    ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+    
+    }
+    
+    .cont2 {
+        margin-left: 54px;
+    }
+    
+    .cont3 {
+        margin-left: 54px;
+    }
+    
+    .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+    }  
+    
+    
+    
+     /*this is for the text over the icons so 
+     that ea. li can be next to each other.*/
+     .protect-content__ul{
+         display: flex;
+     }
+    
+     /*this moves the text "no one size, etc"*/
+     .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+     }
+    
+     .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+     }
+    
+     img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+     }
+    
+     img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+     }
+    
+     img.img4.img4b{
+         margin-left: 127px !important;/*can't find the overlap*/
+     }
+}
+
+
+ /*half screen for laptop*/
+ @media (min-width: 769px) and (max-width: 879px){
+    div.container-protect{
+        margin-left: -114px;
+    }
+    p.protect-content--para{
+        margin-left: 220px;
+        margin-bottom: 16px;
+        font-size: 2.7rem;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+        font-size: 1rem;
+    }
+    /*2x2 for protect security values*/
+    li.protect-list{
+        font-size: 1.2rem;
+        display: flex;
+        justify-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
+    img.img1{
+        margin-left: 12px;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 40px;
+    }
+
+/*copied from other section above*/
+   div.protect-content{
+        width: 700px;
+    }
+    
+    ul.protect-content__ul{
+        margin-top: 74px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-left: 16%;
+        gap: 40px;
+    }
+    
+    li.cont2{
+        max-width: 200px;
+    }
+    
+    li.cont3{
+        max-width: 200px;
+    }
+    
+    li.cont4{
+        max-width: 270px;
+    }
+    
+    img.img1{
+        margin-left: 70px !important;
+    }
+    
+    img.img2{
+        margin-left: 74px !important;
+    }
+    
+    img.img3{
+        margin-left: 70px !important;
+        margin-top: 0px;
+    }
+    
+    img.img4.img4b{
+        margin-left: 100px !important;
+        margin-top: 40px;
+    }
+
+    p.protect-para{
+        font-size: 1rem;
+    }
+ }
+
+
+@media (min-width: 880px) and (max-width: 919px){
+    div.container-protect{
+        margin-left: -44px;
+    }
+    p.protect-content--para{
+        margin-left: 220px;
+        margin-bottom: 16px;
+        font-size: 2.7rem;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+        font-size: 1rem;
+    }
+    /*2x2 for protect security values*/
+    li.protect-list{
+        font-size: 1.2rem;
+        display: flex;
+        justify-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
+    img.img1{
+        margin-left: 12px;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 40px;
+    }
+
+/*copied from other section above*/
+   div.protect-content{
+        width: 700px;
+    }
+    
+    ul.protect-content__ul{
+        margin-top: 74px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-left: 16%;
+        gap: 40px;
+    }
+    
+    li.cont2{
+        max-width: 200px;
+    }
+    
+    li.cont3{
+        max-width: 200px;
+    }
+    
+    li.cont4{
+        max-width: 270px;
+    }
+    
+    img.img1{
+        margin-left: 70px !important;
+    }
+    
+    img.img2{
+        margin-left: 74px !important;
+    }
+    
+    img.img3{
+        margin-left: 70px !important;
+        margin-top: 0px;
+    }
+    
+    img.img4.img4b{
+        margin-left: 100px !important;
+        margin-top: 40px;
+    }
+
+    p.protect-para{
+        font-size: 1rem;
+    }
+  }
+
+
+@media (min-width: 920px) and (max-width: 944px){
+    div.container-protect{
+        margin-left: -40px;
+    }
+    p.protect-content--para{
+        margin-left: 220px;
+        margin-bottom: 16px;
+        font-size: 2.7rem;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+        font-size: 1rem;
+    }
+    /*2x2 for protect security values*/
+    li.protect-list{
+        font-size: 1.2rem;
+        display: flex;
+        justify-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
+    img.img1{
+        margin-left: 12px;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 40px;
+    }
+
+/*copied from other section above*/
+   div.protect-content{
+        width: 700px;
+    }
+    
+    ul.protect-content__ul{
+        margin-top: 74px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-left: 18%;
+        gap: 40px;
+    }
+    
+    li.cont2{
+        max-width: 200px;
+    }
+    
+    li.cont3{
+        max-width: 200px;
+    }
+    
+    li.cont4{
+        max-width: 270px;
+    }
+    
+    img.img1{
+        margin-left: 70px !important;
+    }
+    
+    img.img2{
+        margin-left: 74px !important;
+    }
+    
+    img.img3{
+        margin-left: 70px !important;
+        margin-top: 0px;
+    }
+    
+    img.img4.img4b{
+        margin-left: 100px !important;
+        margin-top: 40px;
+    }
+
+    p.protect-para{
+        font-size: 1rem;
+    }
+  }
+
+
+  /*between 1/2 and 3/4 laptop screen*/
+  @media (min-width: 945px) and (max-width: 977px){
+    
+    div.row-protect{
+        margin-left: -48%;
+        }
+        p.protect-content--para{
+            margin-bottom: 16px;
+            margin-left: 160px;
+            font-size: 2.7rem;
+          }
+          p.protect-security--para{
+            text-align: center;
+            font-size: 16px;
+          }
+          p.protect-para{
+            font-size: 16px;
+            margin-top: 44px;
+          }
+    
+        ul.protect-content__ul{
+            margin-top: 44px;
+        }
+
+    li.protect-list{
+        font-size: 1.2rem;
+    }
+    li.cont{
+        min-width: 166px;
+    }
+
+    div.container-protect{
+        max-width: 550px;
+        margin-left: 110px;
+    }
+  }
+
+
+  /*closer to 3/4 on laptop*/
+  @media (min-width: 978px) and (max-width: 1000px){
+    div.row-protect{
+        margin-left: -130px;
+      }
+      p.protect-content--para{
+        margin-bottom: 16px;
+      }
+      p.protect-security--para{
+        text-align: center;
+      }
+
+    ul.protect-content__ul{
+        margin-top: 74px;
+    }
+
+    li.protect-list{
+        font-size: 1.3rem;
+    }
+
+    li.cont{
+        min-width: 166px;
+    }
+
+    li.cont4{
+        min-width: 204px;
+    }
+
+    img.img1{
+        margin-left: 28px;
+    }
+
+    img.img2, img.img3{
+        margin-left: 50px;
+    }
+
+    img.img4{
+        margin-left: 52px;
+    }
+  }
+
+
+@media (min-width: 1001px) and (max-width: 1070px) {
+    div.row-protect{
+      margin-left: -120px;
+    }
+    p.protect-content--para{
+      margin-left: 130px;
+      margin-bottom: 16px;
+    }
+    p.protect-security--para{
+      text-align: center;
+    }
+    ul.protect-content__ul{
+      margin-top: 74px;
+    }
+    li.protect-list{
+      font-size: 1.3rem;
+    }
+    li.cont{
+      min-width: 190px;
+    }
+    li.cont4{
+      min-width: 214px;
+    }
+
+    img.img1{
+        margin-left: 44px;
+    }
+
+    img.img2{
+        margin-left: 74px;
+    }
+
+    img.img3{
+        margin-left: 74px;
+    }
+
+    img.img4.img4b{
+        margin-left: 34px !important;
+    }
+}
+
+
+@media (min-width:1071px) and (max-width: 1098px){
+    div.row-protect{
+        margin-left: -100px;
+      }
+      p.protect-content--para{
+        margin-left: 130px;
+        margin-bottom: 16px;
+      }
+      p.protect-security--para{
+        text-align: center;
+      }
+      ul.protect-content__ul{
+        margin-top: 74px;
+      }
+      li.protect-list{
+        font-size: 1.3rem;
+      }
+      li.cont{
+        min-width: 190px;
+      }
+      img.img4.img4b{
+        margin-right: 64px;
+      }
+  }
+
+
+
+  /*a little over half a page on laptop*/
+  @media (min-width: 1099px) and (max-width: 1169px){
+    div.container-protect{
+        margin-left: -13%;
+    }
+
+    p.protect-content--para{
+      margin-left: 130px;
+      margin-bottom: 16px;
+    }
+    p.protect-security--para{
+      text-align: center;
+    }
+    ul.protect-content__ul{
+      margin-top: 74px;
+    }
+    li.protect-list{
+      font-size: 1.3rem;
+    }
+    
+    img.img1.imga{
+      margin-right: 198px !important;
+    }
+    img.img4{
+      margin-right: 68px;
+    }
+}
+
+
+
+@media (min-width: 1170px) and (max-width: 1176px) {
+    div.container-protect{
+        margin-left: -8%;
+    }
+    p.protect-content--para{
+        margin-left: 44px;
+        margin-bottom: 16px;
+      }
+      p.protect-security--para{
+        text-align: center;
+      }
+      ul.protect-content__ul{
+        margin-top: 74px;
+      }
+      li.protect-list{
+        font-size: 1.3rem;
+      }
+
+      li.protect-list.cont4{
+          display: flex;
+          flex-direction: column;
+      }
+    
+      li.cont{
+        min-width: 200px;
+      }
+      
+      img.img4{
+          margin-left: 80px !important;
+      }
+  }
+
+
+  /*3/4 screen of laptop*/
+@media (max-width: 1176px) {
+    li.cont{
+        min-width: 150px;
+      }
+      
+      img.img4{
+        margin-left: 75px !important;
+      }
+}
+
+
+/*between half and 3/4 screen on laptop*/
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+    div.container-protect{
+        margin-left: -10%;
+       }
+       p.protect-content--para{
+        margin-left: 74px;
+        margin-bottom: 16px;
+       }
+
+       p.protect-security--para{
+        text-align: center;
+      }
+       
+       ul.protect-content__ul{
+        margin-top: 74px;
+       }
+
+       li.protect-list{
+        font-size: 1.3rem;
+      }
+    
+       li.cont{
+        min-width: 166px;/*170px*/
+       }
+    
+       li.cont3{
+        min-width: 220px;
+       }
+       img.img1.imga{
+        margin-right: 200px;
+       }
+
+       img.img2, img.img3, img.img4{
+        margin-left: 80px;
+    }
+    
+       img.img4{
+        margin-right: 60px;
+       }
+}
+
+
+@media (min-width: 1181px) and (max-width: 1202px) {
+    div.container-protect{
+        margin-left: -12%;
+    }
+     p.protect-content--para{
+        margin-left: 84px;
+        margin-bottom: 16px;
+      }
+      p.protect-security--para{
+        text-align: center;
+      }
+      ul.protect-content__ul{
+        margin-top: 74px;
+      }
+      li.protect-list{
+        font-size: 1.3rem;
+      }
+      li.protect-list.cont4{
+        display: flex;
+        flex-direction: column;
+    }
+    img.img1{
+        margin-right: 204px;
+    }
+
+    img.img4{
+        margin-left: 84px;
+    }
+}
+
+
+@media (min-width: 1203px) and (max-width: 1221px) {
+    div.container-protect{
+        margin-left: -6%;
+    }
+    p.protect-content--para{
+        margin-left: 20px;
+        margin-bottom: 16px;
+      }
+    p.protect-security--para{
+        text-align: center;
+      }
+      ul.protect-content__ul{
+        margin-top: 74px;
+      }
+    li.protect-list{
+        font-size: 1.3rem;
+    }
+    li.protect-list.cont4{
+        display: flex;
+        flex-direction: column;
+    }
+    img.img1{
+        margin-left: 64px;
+    }
+    img.img4{
+        margin-left: 84px;
+    }
+}
+
+
+@media (min-width: 1222px) and (max-width: 1279px) {
+    div.container-protect{
+        margin-left: -4%;
+    }
+    p.protect-content--para{
+        margin-left: 20px;
+        margin-bottom: 16px;
+      }
+    p.protect-security--para{
+        text-align: center;
+      }
+      ul.protect-content__ul{
+        margin-top: 74px;
+      }
+    li.protect-list.cont4{
+        display: flex;
+        flex-direction: column;
+    }
+    li.protect-list{
+        font-size: 1.4rem;
+    }
+    img.img1{
+        margin-left: 64px;
+    }
+    img.img4{
+        margin-left: 84px;
+    }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1300px) {
+    div.container-protect{
+        margin-left: -2%;
+    }
+    p.protect-content--para{
+        margin-left: 12px;
+        margin-bottom: 16px;
+      }
+    p.protect-security--para{
+        text-align: center;
+      }
+      ul.protect-content__ul{
+        margin-top: 74px;
+      }
+    li.protect-list.cont4{
+        display: flex;
+        flex-direction: column;
+    }
+    li.protect-list{
+        font-size: 1.4rem;
+    }
+    img.img1{
+        margin-left: 64px;
+    }
+    img.img4{
+        margin-left: 84px;
+    }
+
+    /*li.cont3{
+        min-width: 216px;
+    }
+    img.img2{
+        margin-left: 90px;
+    }*/
+}
+
+
+/*between 3/4 and full screen laptop*/
+@media (max-width:1370px) {
+    li.cont{
+        min-width: 190px;
+    }
+
+    li.cont2{
+        min-width: 236px;
+    }
+
+    li.cont3{
+        min-width: 260px;/*was 260px w/o !important*/
+    }
+
+    li.cont4{
+        min-width: 231px;/*was w/o important*/
+    }
+}
+
+/*right under 4/4 page on laptop*/
+@media (min-width: 1301px) and (max-width: 1495px){
+    p.protect-content--para{
+        margin-bottom: 16px;
+      }
+    p.protect-security--para{
+        text-align: center;
+      }
+      ul.protect-content__ul{
+        margin-top: 74px;
+      }
+    li.protect-list.cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li.cont{
+        min-width: 190px;
+    }
+    li.cont2,li.cont3, li.cont4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.img1{
+        margin-left: 63px;
+    }
+
+    img.img2, img.img3{
+        margin-left: 124px;
+    }
+    
+    img.img4b{
+        margin-left: 126px;
+    }
+    p.protect-para{
+        margin-top: 74px;
+    }
+}
+
+
+/*full page laptop*/
+@media (min-width: 1496px) and (max-width: 1920px) {
+    p.protect-content--para{
+        text-align: center;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+    }
+
+    ul.protect-content__ul{
+        margin-top: 74px;
+    }
+
+    li.protect-list.cont2, li.protect-list.cont3, li.protect-list.cont4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 109px; 
+    }
+    p.protect-para{
+        margin-top: 72px;
+    }
+
+}
+
+@media (min-width: 1921px) and (max-width: 1979px){
+    li.protect-list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*
+JOIN US ON HOME PAGE
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    p.join-us-para{
+        text-align: center;
+    }
+}
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    p.join-us-para{
+        text-align: center;
+    }
+}
+
+/* Media Query for Medium-Small Screens *//*smallest width on laptop*/
+@media (max-width: 608px) {
+    img.join-us-img1{
+        shape-outside: circle(145px);
+        margin-left: -30px;
+        margin-bottom: 0px;
+        
+    
+        /*height: 400px;
+            width: 400px;
+            background: radial-gradient(#072a71, black 75%);
+            border-radius: 100%;
+            float: left;
+            shape-outside: circle(150px);
+            shape-margin: 50px;
+            margin-right: 50px;
+            filter: drop-shadow(7px 7px 7px #072a71);*/
+     }
+
+    img.join-us-img2{
+        shape-outside: circle(130px);
+        margin-right: -30px;
+        margin-bottom: 50px;
+     }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .join-us-title {
+        padding-bottom: 10px;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+        color:#072a71
+    }
+    
+    .join-us-para {
+        font-size: 24px;
+        text-align: justify;
+        color: #778193;
+        line-height: 1.5;
+    }
+    
+    .join-us-img1,
+    .join-us-img2 {
+        height: 300px;
+        width: 300px;
+        shape-margin: 10px;
+        margin-right: 14px;
+        filter: drop-shadow(5px 5px 5px #072a71);
+    }
+    
+    /*try to create more space below this to match the other img*/
+    /*.join-us-img1{
+        
+    }*/
+    
+    .join-us-img2 {
+        float: right;
+        margin-left: 14px;
+    }
+}
+
+
+/*1/2 the screen on laptop*/
+@media (min-width: 769px) and (max-width: 944px) {
+    img.join-us-img1{
+        shape-outside: circle(120px);
+        margin-left: -40px;
+        margin-bottom: 24px;
+        
+    
+        /*height: 400px;
+            width: 400px;
+            background: radial-gradient(#072a71, black 75%);
+            border-radius: 100%;
+            float: left;
+            shape-outside: circle(150px);
+            shape-margin: 50px;
+            margin-right: 50px;
+            filter: drop-shadow(7px 7px 7px #072a71);*/
+     }
+    
+     img.join-us-img2{
+        shape-outside: circle(150px);
+        margin-right: -40px;
+        margin-bottom: 0px;
+     }
+}
+
+
+/*half laptop page*/
+@media (min-width: 945px) and (max-width: 1020px){
+    img.join-us-img2{
+        height: 400px;
+            width: 400px;
+            background: radial-gradient(#072a71, black 75%);
+            border-radius: 100%;
+            float: left;
+            shape-outside: circle(150px);
+            shape-margin: 50px;
+            margin-right: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            filter: drop-shadow(7px 7px 7px #072a71);
+    }
+}
+
+
+/*3/4 screen of laptop*/
+@media (max-width: 1176px) {
+    img.join-us-img2{
+        height: 400px;
+            width: 400px;
+            background: radial-gradient(#072a71, black 75%);
+            border-radius: 100%;
+            float: left;
+            shape-outside: circle(150px);
+            shape-margin: 50px;
+            margin-right: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            filter: drop-shadow(7px 7px 7px #072a71);
+    }
+}
+
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+      /*join us section*/
+      img.join-us-img2{
+        margin-top: 40px;
+
+        /*height: 400px;
+        width: 400px;
+        background: radial-gradient(#072a71, black 75%);
+        border-radius: 100%;
+        float: left;
+        shape-outside: circle(150px);
+        shape-margin: 50px;
+        margin-right: 50px;
+        filter: drop-shadow(7px 7px 7px #072a71);*/
+    }
+}
+
+/*
+BLUE VALUES CONTAINER AT THE BOTTOM OF ALL PAGES, SAME AS VALUES SECTION ABOVE ON HOME PAGE AND HAS BEEN ACCOUNTED FOR
+*/
+
+
+
+/*
+FOOTER
+*/
+
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    div.content1{
+        margin-left:-50px;
+    }
+}
+
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    div.content1{
+        margin-left:-50px;
+    }
+}
+
+
+/* For mobile devices (max-width: 480px) */
+@media (min-width: 438px) and (max-width: 480px) {
+
+    div.container-footer {
+        flex-direction: column; /* Stack items vertically */
+        max-width: 100%; /* Allow container to span full width */
+        padding-left: 10px; /* Adjust padding for smaller screens */
+        padding-right: 10px;
+        gap: 20px; /* Add spacing between stacked items */
+    }
+
+    .footer {
+        flex: 1 1 auto; /* Allow flexible resizing */
+        max-width: 100%; /* Use full width for each item */
+        margin-bottom: 20px; /* Add spacing */
+    }
+
+    div.footer-content {
+        max-width: 100%; /* Ensure content spans the container */
+        height: 50vh; /* Adjust height based on content */
+        margin: 10px 0; /* Adjust vertical spacing */
+        line-height: 1.5; /* Keep text readable */
+    }
+
+    ul.list{
+        padding-left: 40px;
+    }
+
+    p.footer-title.quicklinks{
+        padding-left: 40px;
+    }
+
+}    
+
+/* Media Query for Medium-Small Screens *//*smallest width on laptop*/
+@media (max-width: 608px) {
+    div.container-footer{
+        margin-left: -20px !important;
+        margin-bottom: 60px;
+     }
+
+     p.footer-title{
+        font-size: .8rem;
+     }
+    p.custom-security{
+        font-size: .8rem;
+     }
+
+     p.footer-title{
+        font-size: .8rem;
+     }
+
+     ul.list{
+        font-size: .8rem;
+     }
+
+     li.link2{
+        margin-left: -130px;
+        margin-top: 70px;
+     }
+}
+
+/*For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .footer {
+        flex: 1 1 100%; /* Full width for small screens */
+        max-width: 100%;
+    }
+
+    li.listlink{
+    padding: 0 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex: 1 1 33%; /* Restrict to a third of the container on larger screens */
+        max-width: 33%;
+    }
+}
+
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+div.container-footer{
+    padding-left: 48px;
+}
+
+div.container-footer{
+    margin-left: -10px !important ; /*footer forced*/
+}
+}
+
+
+
+/*between 3/4 and full screen laptop*/
+@media (max-width:1370px) {
+    div.container-footer{
+        margin-left: 100px !important;
+        margin-bottom: 24px;
+    }
+}
+
+
+
+/*
+
+ABOUT US PAGE
+
+*/
+
+/*
+HEADER IMAGE ON ABOUT US PAGE
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    div.about-container {
+        height: calc(80vh - 80px);
+        background: url(./assets/sgaboutpg.png) no-repeat center center;
+        background-size: cover;
+        background-position: top;
+        z-index: -1;
+        background-color: #0A1D42;
+    }
+
+
+    div.about-us-title{
+        font-size: 2.25rem;
+        text-align: center;
+        margin-top: 4%;
+        margin-left: 40%;
+    }
+}
+
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    div.about-container {
+        height: calc(80vh - 80px);
+        background: url(./assets/sgaboutpg.png) no-repeat center center;
+        background-size: cover;
+        background-position: top;
+        z-index: -1;
+        background-color: #0A1D42;
+    }
+    div.about-us-title{
+        font-size: 2.25rem;
+        text-align: center;
+        margin-top: 4%;
+        margin-left: 40%;
+    }
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+    div.about-container {
+        height: calc(80vh - 80px);
+        background: url(./assets/sgaboutpg.png) no-repeat center center;
+        background-size: 100% 100%;
+        background-position: top ;
+        z-index: -1;
+        background-color: #0A1D42;
+    }
+
+
+    div.about-us-title{
+        font-size: 3.1rem;
+        text-align: center;
+        margin-top: 14%;
+        margin-left: 40%;
+        padding: 20px;
+    }
+}
+
+
+/*
+TRADITION OF EXCELLENCE SECTION ON ABOUT US PAGE
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    p.about-para1{
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom:5%;
+    }
+    div.about-para p{
+        text-align: center;
+    }
+}
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    p.about-para1{
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom:5%;
+    }
+    div.about-para p{
+        text-align: center;
+    }
+}
+
+/*Blue line above Tradition of Excellence*/
+@media (max-width: 763px) {
+    div.line{
+        margin-top: 80px;
+    }
+}
+
+/*Blue line above Tradition of Excellence*/
+@media (max-width: 768px) {
+    div.line{
+        margin-top: 60px;
+    }
+}
+
+
+/*
+IMAGES WITH TEXT ON ABOUT US PAGE
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+      /*customized solutions picture*/
+      div.slide-content img{
+        margin: 0 auto 24px auto;
+    }
+
+    /*customized title*/
+    div.slide-content h2{
+        text-align: center;
+    }
+
+    /*customized title paragraph*/
+    div.slide-content p{
+        text-align: center;
+    }
+}
+
+
+/*1/2 the screen on laptop*/
+@media (min-width: 769px) and (max-width: 944px) {
+    img.pic1b{
+        shape-outside: circle(130px);
+        margin-left: -30px;
+        margin-bottom: 10px;
+        
+    
+        /*height: 400px;
+            width: 400px;
+            background: radial-gradient(#072a71, black 75%);
+            border-radius: 100%;
+            float: left;
+            shape-outside: circle(150px);
+            shape-margin: 50px;
+            margin-right: 50px;
+            filter: drop-shadow(7px 7px 7px #072a71);*/
+     }
+}
+
+/*half laptop page*/
+@media (min-width: 945px) and (max-width: 1020px){
+    img.pic1b{
+        shape-outside: circle(130px);
+        margin-left: -30px;
+        margin-bottom: 10px;
+        
+        
+    
+        /*height: 400px;
+            width: 400px;
+            background: radial-gradient(#072a71, black 75%);
+            border-radius: 100%;
+            float: left;
+            shape-outside: circle(150px);
+            shape-margin: 50px;
+            margin-right: 50px;
+            filter: drop-shadow(7px 7px 7px #072a71);*/
+     }
+}
+
+
+/*
+PARTNER WITH PROTECT SECTION ON ABOUT US PAGE
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    div.about-partner{
+        margin: 0 auto;
+
+    }
+
+    div.about-partner-box{
+        padding: 90px 60px 90px 60px;
+        text-align: center;
+        width: 100%;
+    }
+
+    div.about-partner-box h2{
+        color: white;
+        font-size: 54px;/*54px*/
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    hr.about-partner-hr{
+        max-width: 100px;
+        margin: 20px auto;
+        border: 2px solid #ffdd00/*#4A79D9 or #ffdd00*/;
+        border-radius: 10px;
+    }
+
+    .about-partner-box p{
+        color: #B6B9BE;
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 52px;
+    }
+}
+
+
+@media (min-width:438px) and (max-width: 440px){
+    /*slides on about page*/
+    /*customized solutions picture*/
+    div.slide-content img{
+        margin: 0 auto 24px auto;
+    }
+    /*customized title*/
+    div.slide-content h2{
+        text-align: center;
+    }
+    /*customized title paragraph*/
+    div.slide-content p{
+        text-align: center;
+    }
+}
+
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    div.about-partner{
+        margin: 0 auto;
+        
+    }
+    
+    div.about-partner-box{
+        padding: 90px 60px 90px 60px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    div.about-partner-box h2{
+        color: white;
+        font-size: 54px;/*54px*/
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    
+    hr.about-partner-hr{
+        max-width: 100px;
+        margin: 20px auto;
+        border: 2px solid #ffdd00/*#4A79D9 or #ffdd00*/;
+        border-radius: 10px;
+    }
+    
+    .about-partner-box p{
+        color: #B6B9BE;
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 52px;
+    }
+}
+
+/* Media Query for Medium-Small Screens *//*smallest width on laptop*/
+@media (max-width: 608px) {
+    h2.partner-protect{
+        font-size: 2.9rem !important;
+        max-width: 100%;
+     }
+}
+
+
+/*
+
+SERVICE PAGE 
+
+*/
+
+/*
+IMAGE IN HEADER
+*/
+
+@media (max-width: 480px) {
+    div.service-container{
+            height: calc(89vh - 80px);
+            margin-top: -210px; /*this pulls this container up and eliminates the white space between the img and the navbar*/
+    }
+}
+
+@media (max-width:768px){
+
+    div.service-container{
+        height: calc(89vh - 80px);
+        margin-top: -210px; /*this pulls this container up and eliminates the white space between the img and the navbar*/
+}
+
+    div.service-row{
+        margin-top: 209px;
+        max-width: 600px
+    }
+}
+
+/*
+OUR EXPERIENCE SECTION ON SERVICE PAGE
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+  /*our experience box*/
+  div.services-values{
+    margin-top: 160px;
+}
+
+/*our experience paragraph*/
+p.service-value__label--para{
+    padding: 0 24px;
+}
+}
+
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+ /*our experience box*/
+ div.services-values{
+    margin-top: 160px;
+}
+/*our experience paragraph*/
+p.service-value__label--para{
+    padding: 0 24px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /*this creates or eliminates the white space above 
+    company values on the index.html page*/
+    .main-homepg{
+        margin-top: -89px;
+    }
+}
+
+
+@media (max-width:768px){
+    div.service-row{
+        margin-top: 209px;
+        max-width: 600px
+    }
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+p.service-value__label--para{
+    margin-left: 24px;
+    margin-right: 24px;
+ }
+}
+
+/*
+WE STARTED WITH A FOCUS SECTION ON SERVICE PAGE
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+     /*we started with a focus paragraph*/
+     p.services-values-2-para{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+     /*we started with a focus paragraph*/
+     p.services-values-2-para{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+    p.services-values-2-para{
+        margin-left: 24px;
+        margin-right: 24px;
+     }
+}
+
+
+/*
+OUR SERVICES SECTION ON SERVIES PAGE
+*/
+
+@media(max-width:991px){
+
+    .services-wrapper{
+        padding:25px;
+    }
+
+    .services-wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+}
+
+
+/*
+SERVICES SECTION ON SERVICES PAGE
+*/
+
+
+@media(max-width:991px){
+
+    .services-content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .services-card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+div.services-content-box {
+    width: 1000px; /*1350px*/
+}
+}
+
+
+
+/*
+
+CAPABILITY STATEMENT
+
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+div.cs-banner{
+    margin-bottom: 100px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+}
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+div.cs-banner{
+    margin-bottom: 100px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+img.cs-img{
+    height: calc(88vh - 0px);
+    margin-top: -4px;
+  }
+}
+
+
+/*
+
+CONTACT US PAGE
+
+*/
+
+
+/*
+CONTACT FORM
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    section#contact-body{
+        max-width: 437px;
+        width: 100%;
+
+    }
+
+
+    div.contact-from{
+        max-width: 390px; 
+        margin-left: -60px;
+        margin-top: 24px;
+
+    }
+}
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    section#contact-body{
+        max-width: 437px;
+        width: 100%;
+    }
+   
+    div.contact-from{
+        max-width: 390px; 
+        margin-left: -60px;
+        margin-top: 24px;
+        
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .contact-from {
+        width: 440px;
+    }
+}
+
+
+/* Media Query for Medium-Small Screens *//*smallest width on laptop*/
+@media (max-width: 608px) {
+    div.col-lg-7{
+        width: 550px;
+        max-width: 100%;
+    }
+
+    div.contact-from{
+        margin-left: 75px !important;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-body {
+        height: auto; /* Allow the height to adjust based on content */
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    .contact-rowcontrol {
+        flex-direction: column; /* Stack the form and map vertically */
+        align-items: center; /* Center align the items */
+        gap: 20px; /* Add space between stacked elements */
+    }
+
+    .contact-from/*, 
+    #control-map-contactaddress */{
+        max-width: 100%; /* Make elements take full width */
+        margin: 0 10px; /* Add some horizontal margin */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .contact-from h5:before {
+        width: 50px; /* Reduce the yellow line width */
+    }
+
+    .main-btn {
+        width: 100%; /* Make the button full width */
+        max-width: 300px; /* Limit the button width */
+        margin: 20px auto; /* Center the button */
+    }
+}
+
+/*1/2 the screen on laptop*/
+@media (min-width: 769px) and (max-width: 944px) {
+    div.contact-rowcontrol{
+        width: 700px;
+    }
+
+    section#control-contactfrom{
+        justify-items: center;
+        align-items: center;
+     }
+    
+     div.contact-from{
+        max-width: 79% !important;
+        margin-left: 17.5% !important;
+        margin-top: 8%;
+     }
+}
+
+@media (min-width: 768px) and (max-width: 848px) {
+    .contact-body {
+        padding: 10px;
+        height: auto;
+        padding-top: 24px;
+    }
+
+    .contact-from {
+        width: 740px;
+    }
+
+
+    .contact-rowcontrol {
+        flex-direction: column; /* Stack elements */
+        align-items: center;
+        gap: 10px; /* Tighter spacing between sections */
+    }
+
+    .contact-from/*, 
+    #control-map-contactaddress*/ {
+        max-width: 90%; /* Reduce width more for smaller tablets */
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .contact-from h5 {
+        font-size: 16px; /* Smaller heading */
+    }
+
+    .contact-from h5:before {
+        width: 40px; /* Further shorten the yellow line */
+    }
+
+    .contact-from .contact-h2 {
+        font-size: 24px; /* Compact heading size */
+        text-align: center;
+    }
+
+    .contact-from .singel-form .contact-input, textarea {
+        font-size: 13px; /* Adjust input font */
+        padding: 10px; /* Compact padding */
+    }
+
+    .contact-from .singel-form textarea {
+        height: 70px; /* Further reduce textarea height */
+    }
+
+    .main-btn {
+        width: 100%;
+        max-width: 250px; /* Smaller button */
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 848px) and (max-width: 1015px) {
+    .contact-body {
+        padding: 15px;
+        height: auto; /* Allow content to dictate height */
+    }
+
+    .contact-rowcontrol {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        gap: 15px; /* Moderate spacing between stacked sections */
+    }
+
+    .contact-from/*, 
+    #control-map-contactaddress */{
+        max-width: 85%; /* Reduce width slightly for mid-range devices */
+        margin: 0 auto; /* Center align content */
+        padding: 18px; /* Maintain moderate padding */
+    }
+
+    .contact-from h5 {
+        font-size: 18px; /* Slightly smaller heading size */
+    }
+
+    .contact-from h5:before {
+        width: 48px; /* Shorten the yellow line */
+    }
+
+    .contact-from .contact-h2 {
+        font-size: 26px; /* Scale down heading */
+        text-align: center; /* Center-align heading */
+    }
+
+    .contact-from .singel-form .contact-input, textarea {
+        font-size: 14px; /* Adjust font for inputs */
+        padding: 12px; /* Compact padding */
+    }
+
+    .contact-from .singel-form textarea {
+        height: 80px; /* Adjust textarea height */
+    }
+
+    .main-btn {
+        width: 100%; /* Button takes up full width */
+        max-width: 280px; /* Restrict to a comfortable size */
+        padding: 10px; /* Compact padding */
+        font-size: 14px; /* Slightly smaller button text */
+    }
+}
+
+
+/*half laptop page*/
+@media (min-width: 945px) and (max-width: 1020px){
+    div.contact-from{
+        margin-left: 10%;
+        width: 835px;
+        max-width: 100%;
+        
+     }
+}
+
+
+/*3/4 screen of laptop*/
+@media (max-width: 1176px) {
+    div.contact-from{
+        width: 500px;
+        margin-left: 16%;
+    }
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+    div.contact-rowcontrol{
+        max-width: 980px;
+        margin-left: -128px;
+    }
+    
+    section#control-contactfrom{
+        justify-items: center;
+        align-items: center;
+     }
+    
+     div.contact-from{
+        max-width: 100%;
+        margin-left: 20%;
+        margin-top: 8%;
+     }
+}
+
+/*between half and 3/4 screen on laptop*/
+@media (min-width: 1177px) and (max-width: 1180px) {
+    div.contact-from{
+        margin-left: 15%;
+     }  
+}
+
+
+/*
+CONTACT IMAP
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    div.col-lg-5{
+        width: 100%;
+        max-width: 390px;
+    }
+
+    div.map iframe{
+        margin-left: -33px;
+    }
+}
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    div.col-lg-5{
+        width: 100%;
+        max-width: 390px;
+    }
+    div.map iframe{
+        margin-left: -33px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    /* Map and Contact Address Section */
+    #control-map-contactaddress .col-lg-5 {
+        width: 440px;
+        margin-left: 16px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    /*.contact-from,*/ 
+    #control-map-contactaddress {
+        max-width: 100%; /* Make elements take full width */
+        margin: 0 10px; /* Add some horizontal margin */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .map iframe {
+        height: 200px; /* Adjust map height for smaller screens */
+    } 
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    section#control-map-contactaddress{
+        margin-left: 18%;
+    }
+}
+
+
+/*1/2 the screen on laptop*/
+@media (min-width: 769px) and (max-width: 944px) {
+    section#control-map-contactaddress{
+        width: 1000px;
+        max-width: 81.7%;
+        margin-left: 24.7%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 848px) {
+    /* Map and Contact Address Section */
+    section#control-map-contactaddress div.col-lg-5 {
+        width: 664px;
+        margin-right: 70px;
+    }
+
+    /*contact form,*/
+    #control-map-contactaddress {
+        max-width: 90%; /* Reduce width more for smaller tablets */
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 200px; /* Compact map height */
+    }
+
+
+
+}
+
+@media (min-width: 848px) and (max-width: 1015px) {
+    /*contact-from,*/
+    #control-map-contactaddress {
+        max-width: 85%; /* Reduce width slightly for mid-range devices */
+        margin: 0 auto; /* Center align content */
+        padding: 18px; /* Maintain moderate padding */
+    }
+
+    .map iframe {
+        width: 100%; /* Full-width map */
+        height: 230px; /* Slightly smaller map height */
+    }
+}
+
+/*half laptop page*/
+@media (min-width: 945px) and (max-width: 1020px){
+    section#control-map-contactaddress{
+        margin-left: 9%;  
+     }
+
+    
+}
+
+
+/*a little over half a page on laptop*/
+@media (min-width: 1099px) and (max-width: 1169px){
+    section#control-map-contactaddress{
+        margin-left: 9%;
+        min-width: 700px;
+    }
+}
+
+
+/*3/4 screen of laptop*/
+@media (max-width: 1176px) {
+    section#control-map-contactaddress{
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+    section#control-map-contactaddress{
+        width: 1000px;
+        max-width: 81.7%;
+        margin-left: 24.7%;
+    }
+}
+
+/*between half and 3/4 screen on laptop*/
+@media (min-width: 1177px) and (max-width: 1180px) {
+    section#control-map-contactaddress{
+        margin-left: 14%;
+        min-width: 869px;
+        margin-top: 0%;
+        margin-bottom: 4%;
+     }
+}
+
+/*
+CONTACT INFORMATION BOX
+*/
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    div.contact-address{
+        margin-left: -33px;
+    }
+}
+
+@media (min-width:438px) and (max-width: 440px){
+    div.contact-address{
+        margin-left: -33px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-address {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 848px) {
+    .contact-address {
+        padding: 10px; /* Compact padding */
+        font-size: 13px; /* Smaller font size */
+        line-height: 20px;
+    }
+
+    .contact-address .contact-ul .contact-li {
+        padding-top: 15px; /* Reduce spacing between items */
+    }
+
+    .contact-address .contact-ul .contact-li .singel-address .icon-contact i {
+        width: 40px; /* Compact icons */
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    .contact-address, .contact-ul, .contact-li, .singel-address, .cont-contact, .contact-para {
+        margin-right: 0;
+        text-align: center; /* Center-align for narrow screens */
+    }
+}
+
+
+@media (min-width: 848px) and (max-width: 1015px) {
+    .contact-address {
+        padding: 15px; /* Compact padding */
+        font-size: 14px; /* Slightly smaller font size */
+        line-height: 22px; /* Tighten line height */
+    }
+
+    .contact-address .contact-ul .contact-li {
+        padding-top: 18px; /* Adjust spacing between items */
+    }
+
+    .contact-address .contact-ul .contact-li .singel-address .icon-contact i {
+        width: 42px; /* Reduce icon size */
+        height: 42px;
+        line-height: 42px;
+        font-size: 15px; /* Adjust font size for icons */
+    }
+
+    .contact-address, .contact-ul, .contact-li, .singel-address, .cont-contact, .contact-para {
+        margin-right: 0;
+        text-align: center; /* Center align text for mid-range screens */
+    }
+}
