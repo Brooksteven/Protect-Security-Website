@@ -2022,6 +2022,9 @@ HEADER WITH GLOBE ON HOME PAGE
 
 /* Media Query for Medium-Small Screens *//*smallest width on laptop*/
 @media (max-width: 608px) {
+    div.header__container{
+        height: calc(78vh - 80px);
+    }
     h1.header-title{
         font-size: 1.5rem;
     }
@@ -2037,7 +2040,7 @@ HEADER WITH GLOBE ON HOME PAGE
 }
 
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
     video {
         margin-bottom: 66px;
        }
@@ -2073,7 +2076,7 @@ HEADER WITH GLOBE ON HOME PAGE
 @media (max-width: 768px) {
 
     div.header__container{
-        height: calc(78vh - 80px);
+        height: calc(103vh - 80px);
     }
 
 
@@ -2085,23 +2088,53 @@ HEADER WITH GLOBE ON HOME PAGE
         max-height: auto; /* calc(64vh - 60px) Adjust height for smaller viewports */
         max-width: auto;
         margin-left: -50%;
-        object-fit: contain;
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     }
 
     div.blue-box {
         margin-left: 50%;
     }
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        height: calc(150vh - 60px); /* Adjust height for smaller viewports */
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+}
+
 }
 
 
 /*half screen for laptop*/
 @media (min-width: 769px) and (max-width: 879px){
+    div.header__container{
+        height: calc(76vh - 80px);
+    }
     h1.header-title{
         font-size: 2rem;
     }
 
+    p.value__label--para{
+        font-size: 16px;
+    }
+
     .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
         height: calc(120vh - 60px); /* Adjust height for smaller viewports */
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     }
@@ -2110,6 +2143,36 @@ HEADER WITH GLOBE ON HOME PAGE
         font-size: 1.1rem;
     }
 }
+
+@media (min-width: 880px) and (max-width: 944px){
+    div.header__container{
+        height: calc(76vh - 80px);
+    }
+
+    div.header__description{
+        margin-top: 6px;
+    }
+
+    h1.header-title{
+        font-size: 2.3rem;
+    }
+
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        height: calc(118vh - 60px); /* Adjust height for smaller viewports */
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+}
+
 
 
 /*half laptop page*/
@@ -2128,55 +2191,30 @@ HEADER WITH GLOBE ON HOME PAGE
 
 
     .banner video {
-        height: calc(100vh - 60px); /* Adjust height for smaller viewports */
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        height: calc(115vh - 60px); /* Adjust height for smaller viewports */
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     }
 }
 
 
+
 /*3/4 screen of laptop*/
-@media (max-width: 1176px) {
+@media (min-width: 1021px) and (max-width: 1176px) {
     div.header__container{
         height: calc(78vh - 80px);
     }
 
     div.header__description{
         margin-top: 6px;
-    }
-
-    .banner video {
-        height: calc(87vh - 60px); /* Adjust height for smaller viewports */
-    }
-}
-
-/*right over half the screen size of a laptop and tablet*/
-@media (min-width: 1177px) and (max-width: 1180px){
-    .banner video{
-        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
-    }
-}
-
-
-/*between 3/4 and full screen laptop*/
-@media (max-width:1370px) {
-    div.header__container{
-        height: calc(80vh - 80px);
-    }
-
-    div.header__description{
-        margin-top: 6px;
-    }
-
-    .banner video {
-        height: calc(98vh - 60px); /* Adjust height for smaller viewports */
-    }
-}
-
-
-/*large screen desktops*/
-@media (max-width: 2000px) {
-    div.header__container{
-        height: calc(82vh - 80px);
     }
 
     .banner video {
@@ -2187,8 +2225,178 @@ HEADER WITH GLOBE ON HOME PAGE
         left: 0; /* Cover entire width */
         z-index: -1;
         width: 100%;
-        height: clamp(50vh, 100vh, 150vh); /* Maintain aspect ratio by default */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
         object-fit: cover; /* Ensure video covers the entire container */
+        height: calc(116vh - 60px); /* Adjust height for smaller viewports */
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+
+        /*height: calc(98vh - 60px); /* Adjust height for smaller viewports *//*
+        margin-left: -706px;
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+    div.header__container{
+        height: calc(79vh - 80px);
+    }
+
+    .banner video{
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        height: calc(120vh - 60px); /* Adjust height for smaller viewports */
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1194px){
+    div.header__container{
+        height: calc(80vh - 80px);
+    }
+
+    div.header__description{
+        margin-top: 6px;
+    }
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        height: calc(120vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    /*.banner video {
+        height: calc(97vh - 60px); /* Adjust height for smaller viewports *//*
+        margin-left: -637px;
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+}
+
+@media (min-width: 1195px) and (max-width: 1229px){
+    div.header__container{
+        height: calc(80vh - 80px);
+    }
+
+    div.header__description{
+        margin-top: 6px;
+    }
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        height: calc(120vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    /*.banner video {
+        height: calc(97vh - 60px); /* Adjust height for smaller viewports *//*
+        margin-left: -637px;
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+}
+
+
+/*between 3/4 and full screen laptop*/
+@media (min-width: 1230px) and (max-width:1370px) {
+    div.header__container{
+        height: calc(80vh - 80px);
+    }
+
+    div.header__description{
+        margin-top: 6px;
+    }
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        height: calc(120vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    /*.banner video {
+        height: calc(97vh - 60px); /* Adjust height for smaller viewports *//*
+        margin-left: -637px;
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+}
+
+
+@media (min-width: 1371px) and (max-width: 1400px){
+    div.header__container{
+        height: calc(80vh - 80px);
+    }
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        height: calc(130vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    /*div.header__container{
+        height: calc(80vh - 80px);
+    }
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top *//*
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width *//*
+        z-index: -1;
+        width: 100%;
+        height: calc(120vh - 60px); /* Adjust height for smaller viewports *//*
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+    }
+}
+
+
+/*large screen desktops*/
+@media (min-width: 1401px) and (max-width: 2000px) {
+    div.header__container{
+        height: calc(80vh - 80px);
+    }
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 0; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        height: calc(122vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     }
 }
 
@@ -2323,20 +2531,36 @@ TEAMS SECTION ON HOME PAGE
 
 
 /*1/2 the screen on laptop*/
-@media (min-width: 769px) and (max-width: 944px) {
+@media (min-width: 769px) and (max-width: 844px) {
     /*
     home page
     */
+    .team__wrapper {
+        flex-direction: column;
+        max-width: 380px;
+        gap: 20px;
+    }
     
     div.teams{
         margin: 6px;
     }
+
+    h2.team__link {
+        font-size: 30px; /* Slightly smaller text for smaller screens */
+    }
+
+    p.team__link--para {
+        font-size: 20px; /* Adjust paragraph text size */
+    }
 }
 
-@media (min-width: 945px) and (max-width: 1020px){
+@media (min-width: 845px) and (max-width: 1020px){
     div.team__wrapper{
         margin: 0 auto;
        } 
+       div.teams{
+        margin: 6px;
+    }
 }
 
 /* Tablet Screens (max-width: 1024px) */
@@ -2355,6 +2579,15 @@ TEAMS SECTION ON HOME PAGE
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1176px){
+    .team__link {
+        font-size: 28px; /* Slightly smaller text for smaller screens */
+    }
+
+    .team__link--para {
+        font-size: 16px; /* Adjust paragraph text size */
+    }
+}
 
 /*right over half the screen size of a laptop and tablet*/
 @media (min-width: 1177px) and (max-width: 1180px){
@@ -2365,7 +2598,9 @@ TEAMS SECTION ON HOME PAGE
      div.team__wrapper{
          margin-left: 24px;
      }
+
     }
+
 
 
    /*
@@ -2513,6 +2748,10 @@ TEAMS SECTION ON HOME PAGE
         margin-top: -2%;
        }
 }
+
+/*@media (min-width: 1030px) and (max-width: 1176px{
+
+})*/
 
 
 /*right over half the screen size of a laptop and tablet*/
