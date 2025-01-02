@@ -4930,8 +4930,7 @@ TEAMS SECTION ON HOME PAGE
     
     img.img3{
         margin-left: 100px !important;
-        margin-top: 10px;
-        margin-left: -10px;
+        margin-top: 40px;
     }
     
     img.img4.img4b{
@@ -6253,7 +6252,8 @@ JOIN US ON HOME PAGE
 @media (min-width: 1177px) and (max-width: 1180px){
       /*join us section*/
       img.join-us-img2{
-        margin-top: 40px;
+        margin-top: 10px;
+        margin-left: -10px;
 
         /*height: 400px;
         width: 400px;
