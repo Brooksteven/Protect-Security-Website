@@ -3226,7 +3226,7 @@ TEAMS SECTION ON HOME PAGE
        }
 }
 
-@media (min-width: 1400px) /*and (max-width: 1580px)*/{
+@media (min-width: 1400px) and (max-width: 1580px)/*and (max-width: 1580px)*/{
     div.row2{
         margin-left: 20px;
     }
@@ -3252,11 +3252,13 @@ TEAMS SECTION ON HOME PAGE
             width:60%;
             height: 50%;
        }
+
+       
 }
 
-/*@media (min-width: 1581px) and (max-width: 2000px){
+@media (min-width: 1581px) and (max-width: 2000px){
     div.row2{
-        margin-left: 40px;
+        margin-left: 250px;
     }
 
     div.section{
@@ -3280,7 +3282,7 @@ TEAMS SECTION ON HOME PAGE
             width: 60%;
             height: 50%;
        }
-}*/
+}
 
 
 
@@ -3579,10 +3581,9 @@ TEAMS SECTION ON HOME PAGE
         }
 }
 
-
-@media (min-width: 520px) and (max-width: 562px) {
+@media (min-width: 520px) and (max-width: 524px){
     div.container-protect{
-        margin-left: -108px;
+        margin-left: -110px;
         }
         
         p.protect-content--para{
@@ -3671,22 +3672,22 @@ TEAMS SECTION ON HOME PAGE
         }
 }
 
-@media (min-width: 563px) and (max-width: 608px) {
+@media (min-width: 525px) and (max-width: 530px){
     div.container-protect{
-        margin-left: -90px;
+        margin-left: -104px;
         }
         
         p.protect-content--para{
         max-width: 550px;/*max-width: 550px*/
         width: 100%;
-        margin-left: 44px;
-        font-size: 3.1rem;
+        margin-left: 56px;
+        font-size: 2.9rem;
         }
         
         
-        .protect-security--para, .protect-para{
+        p.protect-security--para, .protect-para{
             max-width: 550px;
-            font-size: 18px;
+            font-size: 17px;
          text-align: center;
          line-height: 28px;
          margin-top: 16px;
@@ -3699,7 +3700,7 @@ TEAMS SECTION ON HOME PAGE
         }
         
         .protect-list.cont, li.protect-list{
-        font-size: 24px; 
+        font-size: 22px; 
         font-weight: bold;
         width: 100%;
         max-width: 550px;
@@ -3710,7 +3711,7 @@ TEAMS SECTION ON HOME PAGE
         display: flex;
         flex-direction: column;
         margin-right: 120px;/*420px*/
-        
+        gap: 40px;
         }
         
         .cont2 {
@@ -3758,14 +3759,377 @@ TEAMS SECTION ON HOME PAGE
         }
         
         img.img4.img4b{
-         margin-left: 115px !important;/*can't find the overlap*/
+         margin-left: 112px !important;/*can't find the overlap*/
+        }
+}
+
+@media (min-width: 531px) and (max-width: 532px){
+    div.container-protect{
+        margin-left: -104px;
+        }
+        
+        p.protect-content--para{
+        max-width: 550px;/*max-width: 550px*/
+        width: 100%;
+        margin-left: 56px;
+        font-size: 2.9rem;
+        }
+        
+        
+        p.protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 17px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+        }
+        
+        p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+        }
+        
+        .protect-list.cont, li.protect-list{
+        font-size: 22px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+        }
+        
+        ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        gap: 40px;
+        }
+        
+        .cont2 {
+        margin-left: 54px;
+        }
+        
+        .cont3 {
+        margin-left: 54px;
+        }
+        
+        .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+        }  
+        
+        
+        
+        /*this is for the text over the icons so 
+        that ea. li can be next to each other.*/
+        .protect-content__ul{
+         display: flex;
+        }
+        
+        /*this moves the text "no one size, etc"*/
+        .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+        }
+        
+        .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+        }
+        
+        img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+        }
+        
+        img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+        }
+        
+        img.img4.img4b{
+         margin-left: 112px !important;/*can't find the overlap*/
         }
 }
 
 
-@media (min-width: 609px) and (max-width: 688px) {
+@media (min-width: 533px) and (max-width: 562px) {
     div.container-protect{
-        margin-left: -59px;
+        margin-left: -92px;
+        }
+        
+        p.protect-content--para{
+        max-width: 550px;/*max-width: 550px*/
+        width: 100%;
+        margin-left: 56px;
+        font-size: 2.8rem;
+        }
+        
+        
+        p.protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 17px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+        }
+        
+        p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+        }
+        
+        .protect-list.cont, li.protect-list{
+        font-size: 22px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+        }
+        
+        ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        gap: 40px;
+        }
+        
+        .cont2 {
+        margin-left: 54px;
+        }
+        
+        .cont3 {
+        margin-left: 54px;
+        }
+        
+        .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+        }  
+        
+        
+        
+        /*this is for the text over the icons so 
+        that ea. li can be next to each other.*/
+        .protect-content__ul{
+         display: flex;
+        }
+        
+        /*this moves the text "no one size, etc"*/
+        .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+        }
+        
+        .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+        }
+        
+        img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+        }
+        
+        img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+        }
+        
+        img.img4.img4b{
+         margin-left: 112px !important;/*can't find the overlap*/
+        }
+}
+
+@media (min-width: 563px) and (max-width: 597px) {
+    div.container-protect{
+        margin-left: -70px ;
+     }
+    
+     .protect-content--para{
+        max-width: 550px;
+        width: 100%;
+        margin-left: 56px;
+        font-size: 2.9rem;
+     }
+    
+    
+     .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+     }
+    
+     p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+     }
+    
+     .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+    }
+    
+    ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        gap: 40px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .cont2 {
+        margin-left: 54px;
+    }
+    
+    .cont3 {
+        margin-left: 54px;
+    }
+    
+    .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+    }  
+    
+     /*this is for the text over the icons so 
+     that ea. li can be next to each other.*/
+     .protect-content__ul{
+         display: flex;
+     }
+    
+     /*this moves the text "no one size, etc"*/
+     .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+     }
+    
+     .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+     }
+    
+     img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+     }
+    
+     img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+     }
+    
+     img.img4.img4b{
+         margin-left: 115px !important;/*can't find the overlap*/
+     }
+}
+
+@media (min-width: 588px) and (max-width: 600px ) {
+    div.container-protect{
+        margin-left: -70px ;
+     }
+    
+     .protect-content--para{
+        max-width: 550px;
+        width: 100%;
+        margin-left: 48px;
+     }
+    
+    
+     .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+     }
+    
+     p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+     }
+    
+     .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+    }
+    
+    ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        gap: 40px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .cont2 {
+        margin-left: 54px;
+    }
+    
+    .cont3 {
+        margin-left: 54px;
+    }
+    
+    .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+    }  
+    
+     /*this is for the text over the icons so 
+     that ea. li can be next to each other.*/
+     .protect-content__ul{
+         display: flex;
+     }
+    
+     /*this moves the text "no one size, etc"*/
+     .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+     }
+    
+     .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+     }
+    
+     img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+     }
+    
+     img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+     }
+    
+     img.img4.img4b{
+         margin-left: 115px !important;/*can't find the overlap*/
+     }
+}
+
+@media (min-width: 601px) and (max-width: 626px){
+    div.container-protect{
+        margin-left: -70px ;
      }
     
      .protect-content--para{
@@ -3801,6 +4165,278 @@ TEAMS SECTION ON HOME PAGE
         display: flex;
         flex-direction: column;
         margin-right: 120px;/*420px*/
+        gap: 40px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .cont2 {
+        margin-left: 54px;
+    }
+    
+    .cont3 {
+        margin-left: 54px;
+    }
+    
+    .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+    }  
+    
+     /*this is for the text over the icons so 
+     that ea. li can be next to each other.*/
+     .protect-content__ul{
+         display: flex;
+     }
+    
+     /*this moves the text "no one size, etc"*/
+     .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+     }
+    
+     .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+     }
+    
+     img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+     }
+    
+     img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+     }
+    
+     img.img4.img4b{
+         margin-left: 115px !important;/*can't find the overlap*/
+     }
+}
+
+@media (min-width: 627px) and (max-width: 647px) {
+    div.container-protect{
+        margin-left: -44px ;
+     }
+    
+     .protect-content--para{
+        max-width: 550px;
+        width: 100%;
+        margin-left: 38px;
+     }
+    
+    
+     .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+     }
+    
+     p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+     }
+    
+     .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+    }
+    
+    ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        gap: 40px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .cont2 {
+        margin-left: 54px;
+    }
+    
+    .cont3 {
+        margin-left: 54px;
+    }
+    
+    .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+    }  
+    
+     /*this is for the text over the icons so 
+     that ea. li can be next to each other.*/
+     .protect-content__ul{
+         display: flex;
+     }
+    
+     /*this moves the text "no one size, etc"*/
+     .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+     }
+    
+     .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+     }
+    
+     img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+     }
+    
+     img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+     }
+    
+     img.img4.img4b{
+         margin-left: 115px !important;/*can't find the overlap*/
+     }
+    /*div.container-protect{
+        margin-left: -90px;
+        }
+        
+        p.protect-content--para{
+        max-width: 550px;/*max-width: 550px*//*
+        width: 100%;
+        margin-left: 44px;
+        font-size: 3.1rem;
+        }
+        
+        
+        .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+        }
+        
+        p.protect-security--para{
+        /*padding-right: 10px;*//*
+        margin-bottom: 40px;
+        }
+        
+        .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*//*
+        }
+        
+        ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*//*
+        
+        }
+        
+        .cont2 {
+        margin-left: 54px;
+        }
+        
+        .cont3 {
+        margin-left: 54px;
+        }
+        
+        .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+        }  
+        
+        
+        
+        /*this is for the text over the icons so 
+        that ea. li can be next to each other.*//*
+        .protect-content__ul{
+         display: flex;
+        }
+        
+        /*this moves the text "no one size, etc"*//*
+        .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*//*
+        }
+        
+        .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+        }
+        
+        img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+        }
+        
+        img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+        }
+        
+        img.img4.img4b{
+         margin-left: 115px !important;/*can't find the overlap*//*
+        }*/
+}
+
+
+@media (min-width: 648px) and (max-width: 688px) {
+    div.container-protect{
+        margin-left: -18px;
+     }
+    
+     .protect-content--para{
+        max-width: 550px;
+        width: 100%;
+        margin-left: 38px;
+        font-size: 3.2rem;
+     }
+    
+    
+     .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+     }
+    
+     p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+     }
+    
+     .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+    }
+    
+    ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        gap: 40px;
+        margin-bottom: 50px;
     
     }
     
@@ -3886,6 +4522,7 @@ TEAMS SECTION ON HOME PAGE
         display: flex;
         flex-direction: column;
         margin-right: 120px;/*420px*/
+        margin-bottom: 50px;
     
     }
     
@@ -3941,19 +4578,10 @@ TEAMS SECTION ON HOME PAGE
 
 
 @media (min-width: 734px) and (max-width: 768px){
-    .row-protect {
-        max-width: 768px;
-        /*margin-right: 24px;
-        /*display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 1280px;
-        width: 100%;*/
-     }
-
-     .protect-content--para{
-        padding-left: 10px;
+    .protect-content--para{
+        max-width: 550px;
+        width: 100%;
+        margin-left: 41px;
      }
     
     
@@ -3983,6 +4611,7 @@ TEAMS SECTION ON HOME PAGE
         display: flex;
         flex-direction: column;
         margin-right: 120px;/*420px*/
+        margin-bottom: 50px;
     
     }
     
@@ -4031,14 +4660,289 @@ TEAMS SECTION ON HOME PAGE
      }
     
      img.img4.img4b{
-         margin-left: 127px !important;/*can't find the overlap*/
+         margin-left: 115px !important;/*can't find the overlap*/
+        
      }
+    /*.row-protect {
+        max-width: 768px;
+        /*margin-right: 24px;
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1280px;
+        width: 100%;*//*
+     }
+
+     .protect-content--para{
+        padding-left: 10px;
+     }
+    
+    
+     .protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 18px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+     }
+    
+     p.protect-security--para{
+        /*padding-right: 10px;*//*
+        margin-bottom: 40px;
+     }
+    
+     .protect-list.cont, li.protect-list{
+        font-size: 24px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*//*
+    }
+    
+    ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 115px;/*420px*//*
+        gap: 40px;
+        margin-bottom: 40px;
+    
+    }
+    
+    .cont2 {
+        margin-left: 54px;
+    }
+    
+    .cont3 {
+        margin-left: 54px;
+    }
+    
+    .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+    }  
+    
+    
+    
+     /*this is for the text over the icons so 
+     that ea. li can be next to each other.*//*
+     .protect-content__ul{
+         display: flex;
+     }
+    
+     /*this moves the text "no one size, etc"*//*
+     .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*//*
+     }
+    
+     .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+     }
+    
+     img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+     }
+    
+     img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+     }
+    
+     img.img4.img4b{
+         margin-left: 127px !important;/*can't find the overlap*//*
+     }*/
+}
+
+@media (min-width: 769px) and (max-width: 775px){
+    div.container-protect{
+        margin-left: -112px;
+    }
+    p.protect-content--para{
+        margin-left: 177px;
+        margin-bottom: 10px;
+        font-size: 3.2rem;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    /*2x2 for protect security values*/
+    li.protect-list{
+        font-size: 1.3rem;
+        display: flex;
+        justify-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
+    img.img1{
+        margin-left: 12px;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 40px;
+    }
+
+/*copied from other section above*/
+   div.protect-content{
+        width: 700px;
+    }
+    
+    ul.protect-content__ul{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-left: 15%;
+        margin-bottom: 60px;
+        gap: 40px;
+    }
+    
+    li.cont{
+        max-width: 220px;
+        margin-left: -8px;
+    }
+
+    li.cont2{
+        max-width: 200px;
+        margin-left: -3px;
+    }
+    
+    li.cont3{
+        max-width: 200px;
+        margin-left: -34px;
+    }
+    
+    li.cont4{
+        max-width: 200px;
+    }
+    
+    img.img1{
+        margin-left: 70px !important;
+    }
+    
+    img.img2{
+        margin-left: 90px !important;
+    }
+    
+    img.img3{
+        margin-left: 100px !important;
+        margin-top: 40px;
+    }
+    
+    img.img4.img4b{
+        margin-left: 80px !important;
+        margin-top: 40px;
+    }
+
+    p.protect-para{
+        font-size: 1.1rem;
+    }
 }
 
 
  /*half screen for laptop*/
- @media (min-width: 769px) and (max-width: 879px){
+ @media (min-width: 774px) and (max-width: 879px){
     div.container-protect{
+        margin-left: -66px;
+    }
+    p.protect-content--para{
+        margin-left: 177px;
+        margin-bottom: 10px;
+        font-size: 3.2rem;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    /*2x2 for protect security values*/
+    li.protect-list{
+        font-size: 1.3rem;
+        display: flex;
+        justify-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
+    img.img1{
+        margin-left: 12px;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 40px;
+    }
+
+/*copied from other section above*/
+   div.protect-content{
+        width: 700px;
+    }
+    
+    ul.protect-content__ul{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-left: 15%;
+        margin-bottom: 60px;
+        gap: 40px;
+    }
+    
+    li.cont{
+        max-width: 220px;
+        margin-left: -8px;
+    }
+
+    li.cont2{
+        max-width: 200px;
+        margin-left: -3px;
+    }
+    
+    li.cont3{
+        max-width: 200px;
+        margin-left: -34px;
+    }
+    
+    li.cont4{
+        max-width: 200px;
+    }
+    
+    img.img1{
+        margin-left: 70px !important;
+    }
+    
+    img.img2{
+        margin-left: 90px !important;
+    }
+    
+    img.img3{
+        margin-left: 100px !important;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+    
+    img.img4.img4b{
+        margin-left: 80px !important;
+        margin-top: 40px;
+    }
+
+    p.protect-para{
+        font-size: 1.1rem;
+    }
+    /*div.container-protect{
         margin-left: -114px;
     }
     p.protect-content--para{
@@ -4051,7 +4955,7 @@ TEAMS SECTION ON HOME PAGE
         text-align: center;
         font-size: 1rem;
     }
-    /*2x2 for protect security values*/
+    /*2x2 for protect security values*//*
     li.protect-list{
         font-size: 1.2rem;
         display: flex;
@@ -4069,7 +4973,7 @@ TEAMS SECTION ON HOME PAGE
         margin-left: 40px;
     }
 
-/*copied from other section above*/
+/*copied from other section above*//*
    div.protect-content{
         width: 700px;
     }
@@ -4117,12 +5021,100 @@ TEAMS SECTION ON HOME PAGE
 
     p.protect-para{
         font-size: 1rem;
-    }
+    }*/
  }
 
 
 @media (min-width: 880px) and (max-width: 919px){
     div.container-protect{
+        margin-left: -36px;
+    }
+    p.protect-content--para{
+        margin-left: 177px;
+        margin-bottom: 20px;
+        font-size: 3.2rem;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    /*2x2 for protect security values*/
+    li.protect-list{
+        font-size: 1.3rem;
+        display: flex;
+        justify-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
+    img.img1{
+        margin-left: 12px;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 40px;
+    }
+
+/*copied from other section above*/
+   div.protect-content{
+        width: 700px;
+    }
+    
+    ul.protect-content__ul{
+        margin-top: 74px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-left: 15%;
+        margin-bottom: 74px;
+        gap: 40px;
+    }
+    
+    li.cont{
+        max-width: 220px;
+        margin-left: -8px;
+    }
+
+    li.cont2{
+        max-width: 200px;
+        margin-left: -3px;
+    }
+    
+    li.cont3{
+        max-width: 200px;
+        margin-left: -34px;
+    }
+    
+    li.cont4{
+        max-width: 200px;
+    }
+    
+    img.img1{
+        margin-left: 70px !important;
+    }
+    
+    img.img2{
+        margin-left: 90px !important;
+    }
+    
+    img.img3{
+        margin-left: 100px !important;
+        margin-top: 40px;
+    }
+    
+    img.img4.img4b{
+        margin-left: 80px !important;
+        margin-top: 40px;
+    }
+
+    p.protect-para{
+        font-size: 1.1rem;
+    }
+    /*div.container-protect{
         margin-left: -44px;
     }
     p.protect-content--para{
@@ -4135,7 +5127,7 @@ TEAMS SECTION ON HOME PAGE
         text-align: center;
         font-size: 1rem;
     }
-    /*2x2 for protect security values*/
+    /*2x2 for protect security values*//*
     li.protect-list{
         font-size: 1.2rem;
         display: flex;
@@ -4153,7 +5145,7 @@ TEAMS SECTION ON HOME PAGE
         margin-left: 40px;
     }
 
-/*copied from other section above*/
+/*copied from other section above*//*
    div.protect-content{
         width: 700px;
     }
@@ -4201,12 +5193,101 @@ TEAMS SECTION ON HOME PAGE
 
     p.protect-para{
         font-size: 1rem;
-    }
+    }*/
   }
 
 
 @media (min-width: 920px) and (max-width: 944px){
     div.container-protect{
+        margin-left: -20px;
+    }
+    p.protect-content--para{
+        margin-left: 177px;
+        margin-bottom: 20px;
+        font-size: 3.2rem;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    /*2x2 for protect security values*/
+    li.protect-list{
+        font-size: 1.3rem;
+        display: flex;
+        justify-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
+    img.img1{
+        margin-left: 12px;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 40px;
+    }
+
+/*copied from other section above*/
+   div.protect-content{
+        width: 700px;
+    }
+    
+    ul.protect-content__ul{
+        margin-top: 74px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-left: 15%;
+        margin-bottom: 74px;
+        gap: 40px;
+    }
+    
+    li.cont{
+        max-width: 220px;
+        margin-left: -8px;
+    }
+
+    li.cont2{
+        max-width: 200px;
+        margin-left: -3px;
+    }
+    
+    li.cont3{
+        max-width: 200px;
+        margin-left: -34px;
+    }
+    
+    li.cont4{
+        max-width: 200px;
+    }
+    
+    img.img1{
+        margin-left: 70px !important;
+    }
+    
+    img.img2{
+        margin-left: 90px !important;
+    }
+    
+    img.img3{
+        margin-left: 100px !important;
+        margin-top: 40px;
+    }
+    
+    img.img4.img4b{
+        margin-left: 80px !important;
+        margin-top: 40px;
+    }
+
+    p.protect-para{
+        font-size: 1.1rem;
+    }
+
+    /*div.container-protect{
         margin-left: -40px;
     }
     p.protect-content--para{
@@ -4219,7 +5300,7 @@ TEAMS SECTION ON HOME PAGE
         text-align: center;
         font-size: 1rem;
     }
-    /*2x2 for protect security values*/
+    /*2x2 for protect security values*//*
     li.protect-list{
         font-size: 1.2rem;
         display: flex;
@@ -4237,7 +5318,7 @@ TEAMS SECTION ON HOME PAGE
         margin-left: 40px;
     }
 
-/*copied from other section above*/
+/*copied from other section above*//*
    div.protect-content{
         width: 700px;
     }
@@ -4285,14 +5366,102 @@ TEAMS SECTION ON HOME PAGE
 
     p.protect-para{
         font-size: 1rem;
-    }
+    }*/
   }
 
 
   /*between 1/2 and 3/4 laptop screen*/
   @media (min-width: 945px) and (max-width: 977px){
+    div.container-protect{
+        margin-left: -20px;
+    }
+    p.protect-content--para{
+        margin-left: 177px;
+        margin-bottom: 20px;
+        font-size: 3.2rem;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    /*2x2 for protect security values*/
+    li.protect-list{
+        font-size: 1.3rem;
+        display: flex;
+        justify-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
+    img.img1{
+        margin-left: 12px;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 40px;
+    }
+
+/*copied from other section above*/
+   div.protect-content{
+        width: 700px;
+    }
     
-    div.row-protect{
+    ul.protect-content__ul{
+        margin-top: 74px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-left: 15%;
+        margin-bottom: 74px;
+        gap: 40px;
+    }
+    
+    li.cont{
+        max-width: 220px;
+        margin-left: -8px;
+    }
+
+    li.cont2{
+        max-width: 200px;
+        margin-left: -3px;
+    }
+    
+    li.cont3{
+        max-width: 200px;
+        margin-left: -34px;
+    }
+    
+    li.cont4{
+        max-width: 200px;
+    }
+    
+    img.img1{
+        margin-left: 70px !important;
+    }
+    
+    img.img2{
+        margin-left: 90px !important;
+    }
+    
+    img.img3{
+        margin-left: 100px !important;
+        margin-top: 40px;
+    }
+    
+    img.img4.img4b{
+        margin-left: 80px !important;
+        margin-top: 40px;
+    }
+
+    p.protect-para{
+        font-size: 1.1rem;
+    }
+
+    /*div.row-protect{
         margin-left: -48%;
         }
         p.protect-content--para{
@@ -4313,9 +5482,6 @@ TEAMS SECTION ON HOME PAGE
             margin-top: 44px;
         }
 
-    li.protect-list{
-        font-size: 1.2rem;
-    }
     li.cont{
         min-width: 166px;
     }
@@ -4323,14 +5489,104 @@ TEAMS SECTION ON HOME PAGE
     div.container-protect{
         max-width: 550px;
         margin-left: 110px;
-    }
+    }*/
   }
 
 
   /*closer to 3/4 on laptop*/
   @media (min-width: 978px) and (max-width: 1000px){
-    div.row-protect{
-        margin-left: -130px;
+    div.container-protect{
+        margin-left: -20px;
+    }
+    p.protect-content--para{
+        margin-left: 177px;
+        margin-bottom: 20px;
+        font-size: 3.2rem;
+    }
+
+    p.protect-security--para{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    /*2x2 for protect security values*/
+    li.protect-list{
+        font-size: 1.3rem;
+        display: flex;
+        justify-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
+    img.img1{
+        margin-left: 12px;
+    }
+
+    img.img2, img.img3, img.img4{
+        margin-left: 40px;
+    }
+
+/*copied from other section above*/
+   div.protect-content{
+        width: 700px;
+    }
+    
+    ul.protect-content__ul{
+        margin-top: 74px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        align-items: center;
+        min-width: 600px;
+        margin-left: 15%;
+        margin-bottom: 74px;
+        gap: 40px;
+    }
+    
+    li.cont{
+        max-width: 220px;
+        margin-left: -8px;
+    }
+
+    li.cont2{
+        max-width: 200px;
+        margin-left: -3px;
+    }
+    
+    li.cont3{
+        max-width: 200px;
+        margin-left: -34px;
+    }
+    
+    li.cont4{
+        max-width: 200px;
+    }
+    
+    img.img1{
+        margin-left: 70px !important;
+    }
+    
+    img.img2{
+        margin-left: 90px !important;
+    }
+    
+    img.img3{
+        margin-left: 100px !important;
+        margin-top: 40px;
+    }
+    
+    img.img4.img4b{
+        margin-left: 80px !important;
+        margin-top: 40px;
+    }
+
+    p.protect-para{
+        font-size: 1.1rem;
+    }
+
+
+    /*div.row-protect{
+        margin-left: -140px;
       }
       p.protect-content--para{
         margin-bottom: 16px;
@@ -4344,7 +5600,7 @@ TEAMS SECTION ON HOME PAGE
     }
 
     li.protect-list{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     li.cont{
@@ -4365,11 +5621,52 @@ TEAMS SECTION ON HOME PAGE
 
     img.img4{
         margin-left: 52px;
-    }
+    }*/
+  }
+
+  @media (min-width: 1001px) and (max-width: 1013px){
+    div.row-protect{
+        margin-left: -140px;
+      }
+      p.protect-content--para{
+        margin-left: 130px;
+        margin-bottom: 16px;
+      }
+      p.protect-security--para{
+        text-align: center;
+      }
+      ul.protect-content__ul{
+        margin-top: 74px;
+      }
+      li.protect-list{
+        font-size: 1.3rem;
+      }
+      li.cont{
+        min-width: 190px;
+      }
+      li.cont4{
+        min-width: 214px;
+      }
+  
+      img.img1{
+          margin-left: 44px;
+      }
+  
+      img.img2{
+          margin-left: 74px;
+      }
+  
+      img.img3{
+          margin-left: 74px;
+      }
+  
+      img.img4.img4b{
+          margin-left: 34px !important;
+      }
   }
 
 
-@media (min-width: 1001px) and (max-width: 1070px) {
+@media (min-width: 1014px) and (max-width: 1070px) {
     div.row-protect{
       margin-left: -120px;
     }
@@ -4436,10 +5733,37 @@ TEAMS SECTION ON HOME PAGE
       }
   }
 
+  @media (min-width: 1099px) and (max-width:1119px){
+    div.container-protect{
+        margin-left: -16%;
+    }
+
+    p.protect-content--para{
+      margin-left: 130px;
+      margin-bottom: 16px;
+    }
+    p.protect-security--para{
+      text-align: center;
+    }
+    ul.protect-content__ul{
+      margin-top: 74px;
+    }
+    li.protect-list{
+      font-size: 1.3rem;
+    }
+    
+    img.img1.imga{
+      margin-right: 198px !important;
+    }
+    img.img4{
+      margin-right: 68px;
+    }
+  }
+
 
 
   /*a little over half a page on laptop*/
-  @media (min-width: 1099px) and (max-width: 1169px){
+  @media (min-width: 1120px) and (max-width: 1169px){
     div.container-protect{
         margin-left: -13%;
     }
