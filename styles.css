@@ -242,6 +242,7 @@ hr {
     color:#ffffff;
 }
 
+
 .value__label, .value__label--para {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -2661,9 +2662,13 @@ TEAMS SECTION ON HOME PAGE
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width:581px){
     .row{
         flex-direction:column;
+    }
+
+    .row2{
+        margin-left: 20px;
     }
 
     .container__highlight {
@@ -2677,13 +2682,57 @@ TEAMS SECTION ON HOME PAGE
     }
     
     .section__title {
-        font-size: 52px;
+        font-size: 2.7rem;
         max-width: 768px;
-        margin-bottom: 14px;
+        margin-bottom: 24px;
     }
     
     .section__title--para{
-        font-size: 22px; /*18px*/
+        font-size: 1.2rem; /*18px*/
+        margin-bottom: 24px;
+    }
+    
+    .highlight__link {
+        margin-right: 30px;
+        font-size: 1.2rem;
+    }
+    
+    .figure__img {
+        width: 450px;
+        padding: 70px 50px;
+        /*border-radius: 20%;*/
+    }
+}
+
+@media (min-width: 581px) and (max-width: 589px) {
+    .row{
+        flex-direction:column;
+    }
+
+    .row2{
+        margin-left: 18px;
+    }
+
+    .container__highlight {
+        margin: 50px 50px 0px 50px;
+        padding: 50px;
+    }
+    
+    
+    .section {
+       width: 100%;
+    }
+    
+    .section__title {
+        font-size: 2.8rem;
+        min-width: 402px;
+        margin-left: -26px;
+        margin-bottom: 24px;
+    }
+    
+    .section__title--para{
+        font-size: 1.4rem; /*18px*/
+        margin-bottom: 24px;
     }
     
     .highlight__link {
@@ -2692,15 +2741,79 @@ TEAMS SECTION ON HOME PAGE
     }
     
     .figure__img {
-        width: 100%;
+        width: 450px;
         padding: 70px 50px;
         /*border-radius: 20%;*/
     }
 }
 
 /* Media Query for Medium-Small Screens *//*smallest width on laptop*/
-@media (max-width: 608px) {
-    p.section__title{
+@media (min-width: 590px) and (max-width: 608px) {
+    .row{
+        flex-direction:column;
+    }
+
+    .row2{
+        margin-left:10px;
+    }
+
+    .container__highlight {
+        margin: 50px 50px 0px 50px;
+        padding: 50px;
+    }
+    
+    
+    .section {
+       width: 100%;
+    }
+    
+    .section__title {
+        font-size: 48px;
+        min-width: 402px;
+        margin-left: -26px;
+        margin-bottom: 24px;
+    }
+    
+    .section__title--para{
+        font-size: 1.4rem; /*18px*/
+        margin-bottom: 24px;
+    }
+    
+    .highlight__link {
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    
+    .figure__img {
+        width: 450px;
+        padding: 70px 50px;
+        /*border-radius: 20%;*/
+    }
+    /*div.row2{
+        margin-left: 10px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.6rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.2rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:60%;
+            height: 50%;
+       }*/
+    /*p.section__title{
         margin-top: 10%;
         margin-bottom: 5%;
         min-width: 334px;
@@ -2717,12 +2830,236 @@ TEAMS SECTION ON HOME PAGE
 
     img.figure__img{
         width:100%;   
+       }*/
+}
+
+@media (min-width: 609px) and (max-width: 768px){
+    .row{
+        flex-direction:column;
+    }
+
+    .row2{
+        margin-left:10px;
+    }
+
+    .container__highlight {
+        margin: 50px 50px 0px 50px;
+        padding: 50px;
+    }
+    
+    
+    .section {
+       width: 100%;
+    }
+    
+    .section__title {
+        font-size: 3rem;
+        max-width: 768px;
+        margin-bottom: 24px;
+    }
+    
+    .section__title--para{
+        font-size: 1.35rem; /*18px*/
+        margin-bottom: 24px;
+    }
+    
+    .highlight__link {
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    
+    .figure__img {
+        width: 590px;
+        padding: 70px 50px;
+        /*border-radius: 20%;*/
+    }
+    /*div.row2{
+        margin-left: 10px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.6rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.2rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:60%;
+            height: 50%;
+       }*/
+}
+
+
+
+@media (min-width: 769px) and (max-width: 793px){
+    div.row2{
+        margin-left:38px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.3rem;
+        margin-bottom: 10px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.18rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:65%;
+            height: 50%;
+       }
+}
+
+@media (min-width: 794px) and (max-width:837px){
+    div.row2{
+        margin-left:38px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.391rem;
+        margin-bottom: 10px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.18rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:65%;
+            height: 50%;
+       }
+}
+
+@media (min-width: 838px) and (max-width: 877px){
+    div.row2{
+        margin-left:20px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.18rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:65%;
+            height: 50%;
+       }
+}
+
+@media (min-width: 878px) and (max-width: 907px){
+    div.row2{
+        margin-left: 10px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.18rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:60%;
+            height: 50%;
+       }
+}
+
+@media (min-width:908px) and (max-width: 944px){
+    div.row2{
+        margin-left: 10px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.6rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.2rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:60%;
+            height: 50%;
        }
 }
 
 /*half laptop page*/
 @media (min-width: 945px) and (max-width: 1020px){
     div.row2{
+        margin-left: -10px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.7rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.3rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:60%;
+            height: 50%;
+       }
+    /*div.row2{
         width: 900px;
         max-width: 100%;
         margin: auto;
@@ -2734,27 +3071,80 @@ TEAMS SECTION ON HOME PAGE
     
        p.section__title{
         font-size: 3.3rem;
-        margin-top: 10%;;
+        margin-top: 10%;
+        margin-bottom: 5%;
        }
     
        div.section{
-        width:60%;
-        margin-right: 12%; 
+        width:70%;
+        margin-right: -4%; 
        }
     
        img.figure__img{
         width: 90%;
         margin-left: 4%; 
         margin-top: -2%;
+       }*/
+}
+
+@media (min-width: 1021px) and (max-width: 1029px){
+    div.row2{
+        margin-left: -10px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.7rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.3rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:60%;
+            height: 50%;
        }
 }
 
-/*@media (min-width: 1030px) and (max-width: 1176px{
 
-})*/
+/*right under TABLET width which is 1180px*/
+@media (min-width: 1030px) and (max-width: 1176px){
+    div.row2{
+        margin-left: -20px;
+    }
+    
+       div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.7rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.3rem;
+       }
+    
+       img.figure__img{
+        border-radius: 0;
+            width:60%;
+            height: 50%;
+       }
+}
 
 
-/*right over half the screen size of a laptop and tablet*/
+/*right over half the screen size of a laptop and this is the tablet size (1180px x 777px)*/
 @media (min-width: 1177px) and (max-width: 1180px){
     div.row2{
         margin-left: -30px;
@@ -2784,9 +3174,113 @@ TEAMS SECTION ON HOME PAGE
 
 @media (min-width: 1181px) and (max-width: 1370px){
     div.row2{
+        margin-left: -40px;
+    }
+
+    div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.7rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.3rem;
+       }
+
+    img.figure__img{
+        border-radius: 0;
+            width:55%;
+            height: 50%;
+       }
+}
+
+@media (min-width: 1371px) and (max-width: 1400px){
+    div.row2{
+        margin-left: -30px;
+    }
+
+    div.section{
+        margin-left: 15%;
+       }
+    
+       p.section__title{
+        font-size: 2.9rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+       p.section__title--para{
+        font-size: 1.3rem;
+       }
+
+    img.figure__img{
+        border-radius: 0;
+            width:55%;
+            height: 50%;
+       }
+}
+
+@media (min-width: 1400px) /*and (max-width: 1580px)*/{
+    div.row2{
         margin-left: 20px;
     }
+
+    div.section{
+        margin-left: 15%;
+        
+       }
+    
+    p.section__title{
+        font-size: 2.9rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+    p.section__title--para{
+        font-size: 1.4rem;
+       }
+
+    img.figure__img{
+        border-radius: 0;
+            width:60%;
+            height: 50%;
+       }
 }
+
+/*@media (min-width: 1581px) and (max-width: 2000px){
+    div.row2{
+        margin-left: 40px;
+    }
+
+    div.section{
+        margin-left: 15%;
+        
+       }
+    
+    p.section__title{
+        font-size: 2.9rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+    
+    
+    p.section__title--para{
+        font-size: 1.4rem;
+       }
+
+    img.figure__img{
+        border-radius: 0;
+            width: 60%;
+            height: 50%;
+       }
+}*/
 
 
 
