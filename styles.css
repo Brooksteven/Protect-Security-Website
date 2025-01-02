@@ -2253,7 +2253,7 @@ HEADER WITH GLOBE ON HOME PAGE
         width: 100%;
         /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
         object-fit: cover; /* Ensure video covers the entire container */
-        height: calc(120vh - 60px); /* Adjust height for smaller viewports */
+        height: calc(125vh - 60px); /* Adjust height for smaller viewports */
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     }
 }
