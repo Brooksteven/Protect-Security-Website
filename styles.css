@@ -1401,10 +1401,10 @@ PAGE
     display: flex;
     justify-content: center;
     max-width: 980px;
+    width: 100%;
     align-items: center;
     margin: 0 auto;
     height: auto;
-
 }
 
 /*box of text*/
@@ -9703,6 +9703,93 @@ IMAGES WITH TEXT ON ABOUT US PAGE
 }
 
 
+@media (min-width: 500px) and (max-width: 716px) {
+    img.pic1b{
+        shape-outside: circle(100px);
+        shape-margin: 28px;
+        margin-left: -50px;
+        margin-bottom: 20px;
+        
+
+
+        /*shape-outside: circle(120px);
+        shape-margin: 30px;
+        margin-left: -10px;
+        margin-bottom: 110px;
+        margin-top: 110px*/
+    }
+
+    div.slide_3{
+        margin-top: 54px;
+    }
+}
+
+@media (min-width: 717px) and (max-width: 721px) {
+    img.pic1b{
+        shape-outside: circle(100px);
+        shape-margin: 28px;
+        margin-left: -50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 722px) and (max-width: 736px) {
+    img.pic1b{
+        shape-outside: circle(100px);
+        shape-margin: 28px;
+        margin-left: -45px;
+        margin-bottom: 18px;
+    }
+}
+
+
+@media (min-width: 737px) and (max-width: 737px) {
+    img.pic1b{
+        shape-outside: circle(100px);
+        shape-margin: 28px;
+        margin-left: -45px;
+        margin-bottom: 18px;
+    }
+}
+
+
+@media (min-width: 738px) and (max-width: 739px) {
+    img.pic1b{
+        shape-outside: circle(110px);
+        shape-margin: 28px;
+        margin-left: -30px;
+        margin-bottom: 18px;
+    }
+}
+
+
+@media (min-width: 740px) and (max-width: 744px) {
+    img.pic1b{
+        shape-outside: circle(120px);
+        margin-left: -30px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 745px) and (max-width: 751px) {
+    img.pic1b{
+        shape-outside: circle(120px);
+        margin-left: -30px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 752px) and (max-width: 768px) {
+    img.pic1b{
+        shape-outside: circle(130px);
+        margin-left: -30px;
+        margin-bottom: 10px;
+    }
+}
+
+
 /*1/2 the screen on laptop*/
 @media (min-width: 769px) and (max-width: 944px) {
     img.pic1b{
@@ -10291,16 +10378,16 @@ CONTACT FORM
      }
     
      div.contact-from{
-        max-width: 100%;
+        max-width: 83%;
         margin-left: 20%;
-        margin-top: 8%;
+        margin-top: 0%;
      }
 }
 
 /*between half and 3/4 screen on laptop*/
 @media (min-width: 1177px) and (max-width: 1180px) {
     div.contact-from{
-        margin-left: 15%;
+        margin-left: -1%;
      }  
 }
 
@@ -10439,21 +10526,21 @@ CONTACT IMAP
 }
 
 /*right over half the screen size of a laptop and tablet*/
-@media (min-width: 1177px) and (max-width: 1180px){
+/*@media (min-width: 1177px) and (max-width: 1180px){
     section#control-map-contactaddress{
         width: 1000px;
         max-width: 81.7%;
         margin-left: 24.7%;
     }
-}
+}*/
 
 /*between half and 3/4 screen on laptop*/
 @media (min-width: 1177px) and (max-width: 1180px) {
     section#control-map-contactaddress{
-        margin-left: 14%;
-        min-width: 869px;
+        margin-left: -12.5%;
+        min-width: 550px;
         margin-top: 0%;
-        margin-bottom: 4%;
+        margin-bottom: 2%;
      }
 }
 
@@ -10506,7 +10593,7 @@ CONTACT INFORMATION BOX
 
 
 @media (min-width: 848px) and (max-width: 1015px) {
-    .contact-address {
+    div.contact-address {
         padding: 15px; /* Compact padding */
         font-size: 14px; /* Slightly smaller font size */
         line-height: 22px; /* Tighten line height */
@@ -10528,3 +10615,4 @@ CONTACT INFORMATION BOX
         text-align: center; /* Center align text for mid-range screens */
     }
 }
+
