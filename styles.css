@@ -7241,7 +7241,7 @@ FOOTER
 }    
 
 /* Media Query for Medium-Small Screens *//*smallest width on laptop*/
-@media (max-width: 608px) {
+/*@media (max-width: 608px) {
     div.container-footer{
         margin-left: -20px !important;
         margin-bottom: 60px;
@@ -7262,11 +7262,11 @@ FOOTER
         font-size: .8rem;
      }
 
-     li.link2{
+     /*li.link2{
         margin-left: -130px;
         margin-top: 70px;
-     }
-}
+     }*//*
+}*/
 
 /*For tablets (max-width: 768px) */
 @media (max-width: 768px) {
@@ -7350,133 +7350,1936 @@ FOOTER
 
 @media (min-width: 481px) and (max-width: 509px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
 
+        
+        flex-direction: column;
+    }
+
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -104px;
+    }
+
+    li.listlink{
+        padding: 0 18px;
+        }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
 
 @media (min-width: 510px) and (max-width: 518px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
 
+        
+        flex-direction: column;
+    }
+
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -94px;
+    }
+
+    li.listlink{
+        padding: 0 18px;
+        }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
 
 @media (min-width: 519px) and (max-width: 529px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
 
+        
+        flex-direction: column;
+    }
+
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -94px;
+    }
+
+    li.listlink{
+        padding: 0 18px;
+        }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
 
 @media (min-width: 530px) and (max-width: 545px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
 
+        
+        flex-direction: column;
+    }
+
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -84px;
+    }
+
+    li.listlink{
+        padding: 0 18px;
+        }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
 
 @media (min-width: 546px) and (max-width: 580px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
 
+        
+        flex-direction: column;
     }
+
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -84px;
+    }
+
+    li.listlink{
+        padding: 0 18px;
+        }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
+    }
+
 }
 
 @media (min-width: 581px) and (max-width: 609px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
 
+        
+        flex-direction: column;
+    }
+
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -94px;
+    }
+
+    li.listlink{
+        padding: 0 18px;
+        }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
 @media (min-width: 610px) and (max-width: 617px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
 
+        
+        flex-direction: column;
+    }
+
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -94px;
+    }
+
+    li.listlink{
+        padding: 0 18px;
+        }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
 @media (min-width: 618px) and (max-width: 623px){
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
+    
+        
+        flex-direction: column;
+    }
 
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -74px;
+    }
+
+    li.listlink{
+        padding: 0 18px;
+        }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
 
 @media (min-width: 624px) and (max-width: 631px){
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
+    
+        
+        flex-direction: column;
+    }
 
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -74px;
+    }
+
+    
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
 
 @media (min-width: 632px) and (max-width: 660px){
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
+    
+        
+        flex-direction: column;
+    }
 
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -74px;
+    }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
 @media (min-width: 661px) and (max-width: 675px){
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
+    
+        
+        flex-direction: column;
+    }
 
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -74px;
+    }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
     }
 }
 
+
 @media (min-width: 676px) and (max-width: 768px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 0px;
+    
+        
+        flex-direction: column;
+    }
 
+    .footer-content{
+        padding: 0;
+        width: 500px;
+        margin-left: -200px;
+        margin: 30px;
+        text-align: center;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    p.footer-title{
+        font-size: 1.3rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+    p.custom-security{
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+       }
+
+    p.custom-security{
+        font-size: 1rem;
+        white-space: normal; /* Default behavior to respect <br> tags */
+        white-space: nowrap; /* Ignore <br> tags and render on one line */
+    }
+
+
+    ul.list{
+        width: 500px;
+        margin-left: -64px;
+    }
+
+
+    li.lists{
+        font-size: 1rem;
+        margin-left: 24px
+    }
+
+    li.lists1{
+        font-size: 1rem;
+    }
+
+    li.lists2{
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+
+    li.link{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 184px;
+    }
+    
+    li.link1{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 116px;
+    }
+
+    li.link2{
+        font-size: 1rem;
+        margin-left: -70px;
+        max-width: 94px;
+    }
+
+    ul.list li {
+        position: relative; /* Ensure ::before is positioned relative to the <li> */
+        display: inline-block; /* Ensure inline-block for spacing */
+    }
+
+    .list li::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #ffdd00;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .4s linear;
+    }
+    
+    /*home*/
+    .lists:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 48px;
+        margin-left: 78px;
+    }
+    
+    /*about us*/
+    .lists1:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 70px;
+        margin-left: 78px;
+    }
+    
+    /*services*/
+    .lists2:hover::before{
+        transform: scaleX(1);
+        transform-origin: right;
+        width: 68px;
+        margin-left: 78px;
+    }
+    
+    /*contact us*/
+    .link1:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 86px;
+        margin-left: 15px;
+    }
+    
+    /*Work with us*/
+    .link2:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 64px;
+        margin-left: 15px;
+    }
+    
+    /*capability statement*/
+    .link:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        width: 155px;
+        margin-left: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 826px) {
+    div.container-footer{
+        margin-left: 8px;
+        margin-top: 20px;
+    }
+
+    .footer-content{
+        padding: 0;
+        margin: 0 -4px;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+   p.custom-security{
+    font-size: .99rem;
+   }
+
+    ul.list{
+        width: 320px;
+    }
+
+    li.lists{
+        font-size: .9rem;
+    }
+
+    li.lists1{
+        font-size: .9rem;
+    }
+
+    li.lists2{
+        font-size: .9rem;
+    }
+
+    li.link{
+        font-size: .9rem;
+    }
+    
+    li.link1{
+        font-size: .9rem;
+    }
+
+    li.link2{
+        font-size: .9rem;
+    }
+}
+
+
+
+@media (min-width: 827px) and (max-width: 875px) {
+    div.container-footer{
+        margin-left: 20px;
+        margin-top: 20px;
+       
+        
+    }
+
+    .footer-content{
+        padding: 0;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    ul.list{
+        width: 320px;
+    }
+}
+
+
+
+@media (min-width: 876px) and (max-width: 887px) {
+    div.container-footer{
+        margin-left: 25px;
+        margin-top: 20px;
+        margin-bottom: 240px;
+        
+    }
+
+    .footer-content{
+        padding: 0;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    ul.list{
+        width: 320px;
+    }
+}
+
+
+@media (min-width: 888px) and (max-width: 936px) {
+    div.container-footer{
+        margin-left: 30px;
+        margin-top: 20px;
+        
+    }
+
+    .footer-content{
+        padding: 0;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    ul.list{
+        width: 320px;
     }
 }
 
 
 /*1/2 the screen on laptop*/
-@media (min-width: 769px) and (max-width: 944px) {
+@media (min-width: 937px) and (max-width: 944px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 40px;
+        margin-top: 20px;
+        
+    }
 
+    .footer-content{
+        padding: 0;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    ul.list{
+        width: 320px;
     }
 }
 
 
 /*half laptop page*/
-@media (min-width: 945px) and (max-width: 1020px){
+@media (min-width: 945px) and (max-width: 960px){
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
 
+    .footer-content{
+        padding: 0;
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+    ul.list{
+        width: 320px;
+    }
+}
+
+
+
+/*half laptop page*/
+@media (min-width: 961px) and (max-width: 1019px){
+    div.container-footer{
+        margin-left: 46px;
+        margin-top: 20px;
+        
+    }
+
+    .footer-content{
+        padding: 0;
+        filter: drop-shadow(1px 1px 1px #072a71);
     }
 }
 
 
 /*3/4 screen of laptop*/
-@media (min-width: 1021px) and (max-width: 1176px) {
+@media (min-width: 1020px) and (max-width: 1029px) {
     div.container-footer{
-        margin-left: 110px;
-        
+        margin-left: 40px;
+    }
 
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+
+/*3/4 screen of laptop*/
+@media (min-width: 1030px) and (max-width: 1176px) {
+    div.container-footer{
+        margin-left: 40px;
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
     }
 }
 
@@ -7491,12 +9294,20 @@ div.container-footer{
 div.container-footer{
     margin-left: -10px !important ; /*footer forced*/
 }
+
+.footer-content{
+    filter: drop-shadow(1px 1px 1px #072a71);
+}
 }
 
 
 @media (min-width: 1181px) and (max-width:1279px) {
     div.container-footer{
         margin-left: 80px;
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
     }
 }
 
@@ -7505,6 +9316,10 @@ div.container-footer{
     div.container-footer{
         margin-left: 90px;
     }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
 }
 
 
@@ -7512,6 +9327,10 @@ div.container-footer{
     div.container-footer{
         margin-left: 110px;
 
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
     }
 }
 
@@ -7522,6 +9341,10 @@ div.container-footer{
         margin-left: 130px;
         
     }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
 }
 
 
@@ -7531,13 +9354,174 @@ div.container-footer{
         margin-left: 166px;
         
     }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
 }
 
-/*@media (min-width: 1181px) and (max-width:1370px) {
+/*right under 4/4 page on laptop*/
+@media (min-width: 1481px) and (max-width: 1495px){
     div.container-footer{
-        margin-left: 130px;
+        margin-left: 166px;
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+}
+
+@media (min-width: 1496px) and (max-width: 1534px) {
+    div.container-footer{
+        margin-left: 210px;
+        
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+
+@media (min-width: 1535px) and (max-width: 1569px) {
+    div.container-footer{
+        margin-left: 230px;
+        
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+
+
+@media (min-width: 1570px) and (max-width: 1611px) {
+    div.container-footer{
+        margin-left: 250px;
+       
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+
+@media (min-width: 1612px) and (max-width: 1647px) {
+    div.container-footer{
+        margin-left: 270px;
+        margin-bottom: 240px;
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+
+
+@media (min-width: 1648px) and (max-width: 1681px) {
+    div.container-footer{
+        margin-left: 295px;
+        margin-bottom: 240px
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+
+@media (min-width: 1682px) and (max-width: 1728px) {
+    div.container-footer{
+        margin-left: 320px;
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+
+@media (min-width: 1729px) and (max-width: 1771px) {
+    div.container-footer{
+        margin-left: 350px;
+        
+        
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+@media (min-width: 1772px) and (max-width: 1839px) {
+    div.container-footer{
+        margin-left: 380px;
+       
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+
+/*full page laptop*/
+@media (min-width: 1840px) and (max-width: 1920px) {
+    div.container-footer{
+        margin-left: 420px;
+        margin-bottom: 240px;
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
+    }
+
+}
+
+/*@media (min-width: 1921px) and (max-width: 1979px){
+    div.container-footer{
+        margin-left: 500px;
+        
+        
+    }
+
+    .footer-content{
+        filter: drop-shadow(1px 1px 1px #072a71);
     }
 }*/
+
+
 
 
 
