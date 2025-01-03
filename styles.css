@@ -7023,9 +7023,33 @@ JOIN US ON HOME PAGE
 /*right over half the screen size of a laptop and tablet*/
 @media (min-width: 1177px) and (max-width: 1180px){
       /*join us section*/
+      
+      img.join-us-img1{
+        height: 350px;
+        width: 350px;
+        background: radial-gradient(#072a71, black 75%);
+        border-radius: 100%;
+        float: left;
+        shape-outside: circle(120px);
+        shape-margin: 45px;
+        margin-right: 50px;
+        filter: drop-shadow(7px 7px 7px #072a71);
+      }
+      
       img.join-us-img2{
-        margin-top: 10px;
+        margin-top: 8px; /*10px*/
         margin-left: -10px;
+
+
+        height: 350px;
+        width: 350px;
+        background: radial-gradient(#072a71, black 75%);
+        border-radius: 100%;
+        float: left;
+        shape-outside: circle(120px);
+        shape-margin: 45px;
+        margin-right: 50px;
+        filter: drop-shadow(7px 7px 7px #072a71);
 
         
         /*height: 400px;
@@ -9288,11 +9312,11 @@ FOOTER
 @media (min-width: 1177px) and (max-width: 1180px){
 div.container-footer{
     padding-left: 48px;
-    margin-bottom: 240px;
+    margin-bottom: 40px;
 }
 
 div.container-footer{
-    margin-left: -10px !important ; /*footer forced*/
+    margin-left: 50px; /*footer forced*/
 }
 
 .footer-content{
@@ -9634,9 +9658,21 @@ TRADITION OF EXCELLENCE SECTION ON ABOUT US PAGE
 /*Blue line above Tradition of Excellence*/
 @media (max-width: 768px) {
     div.line{
-        margin-top: 60px;
+        margin-top: 80px;
     }
 }
+
+/*@media (min-width: 769px) and (max-width: 800px) {
+    div.line{
+        margin-top: 80px;
+    }
+}*/
+
+/*@media (min-width: 801px) and (max-width: 900px) {
+    div.line{
+        margin-top: 280px;
+    }
+}*/
 
 
 /*
