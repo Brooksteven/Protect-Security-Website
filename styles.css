@@ -664,11 +664,12 @@ ACCREDITATIONS
  div.container-footer {
      max-width: 1280px;
      width: 100%;
-     margin-left: 150px;
+     margin-left: 220px;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-wrap: wrap;
+     margin-bottom: 24px;
  }
  
  .footer {
@@ -708,7 +709,7 @@ ACCREDITATIONS
  }
  
  .listlink {
-     padding-right: 48px;
+     padding-right: 140px;
  }
 
  .list li::before{
@@ -728,13 +729,14 @@ ACCREDITATIONS
 .lists:hover::before{
     transform: scaleX(1);
     transform-origin: left;
-    width: 50px;
+    width: 48px;
 }
 
 /*about us*/
 .lists1:hover::before{
-    transform: scaleX(.5);
+    transform: scaleX(1);
     transform-origin: left;
+    width: 70px;
 }
 
 /*services*/
@@ -748,7 +750,7 @@ ACCREDITATIONS
 .link1:hover::before{
     transform: scaleX(1);
     transform-origin: left;
-    width: 90px;
+    width: 86px;
     margin-left: 30px;
 }
 
@@ -756,7 +758,7 @@ ACCREDITATIONS
 .link2:hover::before{
     transform: scaleX(1);
     transform-origin: left;
-    width: 110px;
+    width: 64px;
     margin-left: 30px;
 }
 
@@ -764,7 +766,7 @@ ACCREDITATIONS
 .link:hover::before{
     transform: scaleX(1);
     transform-origin: left;
-    width: 160px;
+    width: 155px;
     margin-left: 30px;
 }
 
@@ -7286,10 +7288,204 @@ FOOTER
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 509px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+@media (min-width: 510px) and (max-width: 518px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+@media (min-width: 519px) and (max-width: 529px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+@media (min-width: 530px) and (max-width: 545px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+@media (min-width: 546px) and (max-width: 580px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+@media (min-width: 581px) and (max-width: 609px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+@media (min-width: 610px) and (max-width: 617px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+@media (min-width: 618px) and (max-width: 623px){
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+@media (min-width: 624px) and (max-width: 631px){
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+@media (min-width: 632px) and (max-width: 660px){
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+@media (min-width: 661px) and (max-width: 675px){
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+@media (min-width: 676px) and (max-width: 768px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+/*1/2 the screen on laptop*/
+@media (min-width: 769px) and (max-width: 944px) {
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+/*half laptop page*/
+@media (min-width: 945px) and (max-width: 1020px){
+    div.container-footer{
+        margin-left: 110px;
+        margin-left: 240px;
+
+    }
+}
+
+
+/*3/4 screen of laptop*/
+@media (min-width: 1021px) and (max-width: 1176px) {
+    div.container-footer{
+        margin-left: 110px;
+        
+
+    }
+}
+
+
 /*right over half the screen size of a laptop and tablet*/
 @media (min-width: 1177px) and (max-width: 1180px){
 div.container-footer{
     padding-left: 48px;
+    margin-bottom: 240px;
 }
 
 div.container-footer{
@@ -7298,14 +7494,50 @@ div.container-footer{
 }
 
 
-
-/*between 3/4 and full screen laptop*/
-@media (max-width:1370px) {
+@media (min-width: 1181px) and (max-width:1279px) {
     div.container-footer{
-        margin-left: 100px !important;
-        margin-bottom: 24px;
+        margin-left: 80px;
     }
 }
+
+
+@media (min-width: 1280px) and (max-width:1300px) {
+    div.container-footer{
+        margin-left: 90px;
+    }
+}
+
+
+@media (min-width: 1301px) and (max-width:1336px) {
+    div.container-footer{
+        margin-left: 110px;
+
+    }
+}
+
+
+/*between 3/4 and full screen laptop*/
+@media (min-width: 1337px) and (max-width:1370px) {
+    div.container-footer{
+        margin-left: 130px;
+        
+    }
+}
+
+
+
+@media (min-width: 1371px) and (max-width: 1480px){
+    div.container-footer{
+        margin-left: 166px;
+        
+    }
+}
+
+/*@media (min-width: 1181px) and (max-width:1370px) {
+    div.container-footer{
+        margin-left: 130px;
+    }
+}*/
 
 
 
