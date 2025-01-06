@@ -1405,6 +1405,8 @@ PAGE
     align-items: center;
     margin: 0 auto;
     height: auto;
+    padding-left: 44px;
+        padding-right: 44px;
 }
 
 /*box of text*/
@@ -1460,6 +1462,9 @@ PAGE
     flex-direction: row;
     justify-content: space-between;/*B*/
     align-items: center;
+    
+        padding-left: 44px;
+        padding-right: 44px;
 
 }
 
@@ -9662,9 +9667,9 @@ TRADITION OF EXCELLENCE SECTION ON ABOUT US PAGE
 
 /*Blue line above Tradition of Excellence*/
 @media (max-width: 768px) {
-    div.line{
+    /*div.line{
         margin-top: 80px;
-    }
+    }*/
 }
 
 /*@media (min-width: 769px) and (max-width: 800px) {
@@ -9958,11 +9963,7 @@ IMAGE IN HEADER
         height: calc(89vh - 80px);
         margin-top: -210px; /*this pulls this container up and eliminates the white space between the img and the navbar*/
 }
-
-    div.service-row{
-        margin-top: 209px;
-        max-width: 600px
-    }
+    
 }
 
 /*
@@ -10003,13 +10004,13 @@ p.service-value__label--para{
     }
 }
 
-
 @media (max-width:768px){
     div.service-row{
         margin-top: 209px;
         max-width: 600px
     }
 }
+
 
 /*right over half the screen size of a laptop and tablet*/
 @media (min-width: 1177px) and (max-width: 1180px){
@@ -10018,6 +10019,342 @@ p.service-value__label--para{
     margin-right: 24px;
  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
+@media (min-width: 376px) and (max-width:437px) {
+    
+}
+
+/*Iphone 16*/
+@media (min-width:438px) and (max-width: 440px){
+    
+}
+
+@media (min-width: 481px) and (max-width: 509px) {
+    /*div.service-row{
+        margin-top: 241px;
+        max-width: 500px;
+    }
+
+    p.service-value__label--para{
+        margin-left: 44px;
+        margin-right: 44px;
+     }*/
+}
+
+@media (min-width: 510px) and (max-width: 518px) {
+   /* div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }
+
+    p.service-value__label--para{
+        margin-left: 44px;
+        margin-right: 44px;
+     }*/
+}
+
+@media (min-width: 519px) and (max-width: 529px) {
+    /*div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }
+
+    p.service-value__label--para{
+        margin-left: 44px;
+        margin-right: 44px;
+     }*/
+}
+
+
+@media (min-width: 530px) and (max-width: 545px) {
+   /* div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }
+
+    p.service-value__label--para{
+        margin-left: 44px;
+        margin-right: 44px;
+     }*/
+}
+
+@media (min-width: 546px) and (max-width: 580px) {
+    /*div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }
+
+    p.service-value__label--para{
+        margin-left: 44px;
+        margin-right: 44px;
+     }*/
+}
+
+@media (min-width: 581px) and (max-width: 609px) {
+    /*div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }
+
+    p.service-value__label--para{
+        margin-left: 44px;
+        margin-right: 44px;
+     }*/
+}
+
+@media (min-width: 610px) and (max-width: 617px) {
+    /*div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }
+
+    p.service-value__label--para{
+        margin-left: 44px;
+        margin-right: 44px;
+     }*/
+}
+
+@media (min-width: 618px) and (max-width: 623px){
+    /*div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }*/
+}
+
+@media (min-width: 624px) and (max-width: 631px){
+    /*div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }*/
+}
+
+@media (min-width: 632px) and (max-width: 660px){
+    /*div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }*/
+
+}
+
+@media (min-width: 661px) and (max-width: 676px){
+    /*div.service-row{
+        margin-top: 241px;
+        max-width: 500px
+    }*/
+
+}
+
+@media(min-width: 677px) and (max-width:767px){
+   /* div.service-row{
+        margin-top: 241px;
+        max-width: 600px
+    }*/
+    
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+    /*div.service-row{
+        margin-top: 89px;
+        max-width: 600px
+    }*/
+
+    
+}
+
+@media (min-width: 769px) and (max-width: 826px) {
+    /*div.service-row{
+        max-width: 600px
+    }*/
+}
+
+@media (min-width: 827px) and (max-width: 875px) {
+   /* div.service-row{
+        max-width: 700px
+    }*/
+}
+
+@media (min-width: 876px) and (max-width: 887px) {
+   /* div.service-row{
+        max-width: 800px
+    }*/
+}
+
+@media (min-width: 888px) and (max-width: 936px) {
+    /*div.service-row{
+        max-width: 800px
+    }*/
+}
+
+/*1/2 the screen on laptop*/
+@media (min-width: 937px) and (max-width: 944px) {
+    /*div.service-row{
+        max-width: 800px
+    }*/
+}
+
+/*half laptop page*/
+@media (min-width: 945px) and (max-width: 960px){
+    /*div.service-row{
+        max-width: 800px
+    }*/
+}
+
+/*half laptop page*/
+@media (min-width: 961px) and (max-width: 1019px){
+    /*div.service-row{
+        max-width: 800px
+    }*/
+}
+
+/*3/4 screen of laptop*/
+@media (min-width: 1020px) and (max-width: 1029px) {
+    /*div.service-row{
+        max-width: 900px
+    }*/
+}
+
+/*3/4 screen of laptop*/
+@media (min-width: 1030px) and (max-width: 1176px) {
+    /*div.service-row{
+        max-width: 900px
+    }*/
+}
+
+/*right over half the screen size of a laptop and tablet*/
+@media (min-width: 1177px) and (max-width: 1180px){
+
+}
+
+@media (min-width: 1181px) and (max-width:1279px) {
+    
+}
+
+@media (min-width: 1280px) and (max-width:1300px) {
+   
+}
+
+@media (min-width: 1301px) and (max-width:1336px) {
+    
+}
+
+/*between 3/4 and full screen laptop*/
+@media (min-width: 1337px) and (max-width:1370px) {
+    
+}
+
+@media (min-width: 1371px) and (max-width: 1480px){
+   
+}
+
+/*right under 4/4 page on laptop*/
+@media (min-width: 1481px) and (max-width: 1495px){
+    
+}
+
+@media (min-width: 1496px) and (max-width: 1534px) {
+    
+}
+
+@media (min-width: 1535px) and (max-width: 1569px) {
+   
+}
+
+@media (min-width: 1570px) and (max-width: 1611px) {
+    
+}
+
+@media (min-width: 1612px) and (max-width: 1647px) {
+    
+}
+
+@media (min-width: 1648px) and (max-width: 1681px) {
+    
+}
+
+@media (min-width: 1682px) and (max-width: 1728px) {
+   
+}
+
+
+@media (min-width: 1729px) and (max-width: 1771px) {
+   
+}
+
+@media (min-width: 1772px) and (max-width: 1839px) {
+   
+}
+
+/*full page laptop*/
+@media (min-width: 1840px) and (max-width: 1920px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 WE STARTED WITH A FOCUS SECTION ON SERVICE PAGE
