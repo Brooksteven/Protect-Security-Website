@@ -9,6 +9,8 @@
 
 html, body{
     overflow-x: hidden;
+    
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -392,6 +394,7 @@ TEAM
 
 
 .teams {
+    position: relative;
     text-align: center;
     margin:24px;
     border: 2px solid white;
@@ -411,6 +414,7 @@ TEAM
     max-width: 980px;
     width: 100%;
     height: 500px;
+    transition: all 0.3s ease-in-out;
 }
 
 .team__link, .team__link--para {
@@ -435,6 +439,84 @@ TEAM
     color: #778193;
     font-size: 1.2rem;
 }
+
+
+
+
+
+
+div.teams:hover h2{
+    font-size: 30px;
+    color: #072a71;
+    margin-bottom: 28px;
+}
+
+div.teams:hover hr{
+    max-width: 80px; 
+    margin: 1rem auto;/*12px auto*/
+    border: 2px solid #ffdd00/*#4A79D9 or #ffdd00*/;
+    border-radius: 10px;
+}
+
+div.teams:hover p{
+    margin-top: 28px;
+    line-height: 1.6;
+    color: #778193;
+    font-size: 1.2rem;
+    margin-bottom: 28px;
+}
+
+
+div.teams:hover button{
+    margin: 24px auto;
+    width: 190px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#072a71;
+    font-size: 16px;
+}
+
+
+
+div.teams.growth:hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/securityguard.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+div.teams:nth-child(2):hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/INVEST.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+div.teams.beyond:hover{
+    background: linear-gradient(45deg, 
+    rgba(238, 238, 238, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%),
+    url('./assets/construction-training.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .join-us{
     width: 100%;
