@@ -414,7 +414,9 @@ TEAM
     max-width: 980px;
     width: 100%;
     height: 500px;
-    transition: all 0.3s ease-in-out;
+    /*transition: all 0.4s ease-in-out;*/
+    
+      /* Add transition for smooth effect */
 }
 
 .team__link, .team__link--para {
@@ -449,6 +451,7 @@ div.teams:hover h2{
     font-size: 30px;
     color: #072a71;
     margin-bottom: 28px;
+    
 }
 
 div.teams:hover hr{
@@ -461,9 +464,10 @@ div.teams:hover hr{
 div.teams:hover p{
     margin-top: 28px;
     line-height: 1.6;
-    color: #778193;
+    color: #000000;
     font-size: 1.2rem;
     margin-bottom: 28px;
+    
 }
 
 
@@ -482,29 +486,35 @@ div.teams:hover button{
 
 div.teams.growth:hover{
     background: linear-gradient(45deg, 
-    rgba(238, 238, 238, 0.7) 0%,
-    rgba(255, 255, 255, 0.7) 100%),
-    url('./assets/securityguard.jpg');
+    rgba(238, 238, 238, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 100%),
+    url('https://live.staticflickr.com/5220/5456997148_0606849969_b.jpg');
     background-size: cover;
     background-position: center;
+    transition: all 0.99s ease-in-out;
 }
+
+
 
 div.teams:nth-child(2):hover{
     background: linear-gradient(45deg, 
-    rgba(238, 238, 238, 0.7) 0%,
-    rgba(255, 255, 255, 0.7) 100%),
-    url('./assets/INVEST.jpeg');
+    rgba(238, 238, 238, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 100%),
+    url('./assets/sg-community-impact.jpg');
     background-size: cover;
     background-position: center;
+    transition: all 0.99s ease-in-out;
+    
 }
 
 div.teams.beyond:hover{
     background: linear-gradient(45deg, 
-    rgba(238, 238, 238, 0.7) 0%,
-    rgba(255, 255, 255, 0.7) 100%),
-    url('./assets/construction-training.jpeg');
+    rgba(238, 238, 238, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 100%),
+    url('./assets/standard-quality-img.jpeg');
     background-size: cover;
     background-position: center;
+    transition: all 0.99s ease-in-out;
 }
 
 
