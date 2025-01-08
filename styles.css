@@ -11846,4 +11846,22 @@ CONTACT INFORMATION BOX
 }*/
 
 
+/*
+W-4 Page
+*/
 
+@media (min-width: 1177px) and (max-width: 1180px){
+    iframe {
+        max-width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .form-container { /* Replace with the class of the Jotform container */
+        padding: 10px;
+        width: 100%;
+        overflow: hidden; /* Prevents scrolling issues */
+    }
+
+
+}
