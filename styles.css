@@ -2064,18 +2064,60 @@ HEADER WITH GLOBE ON HOME PAGE
 
 /*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
 @media (min-width: 376px) and (max-width:437px) {
-    div.header__container{
+    /*div.header__container{
         height: calc(96vh - 80px);
-    }
+    }*/
 
-    .banner video {
-        height: calc(112vh - 60px); /* Adjust height for smaller viewports */
+    /*.banner video {
+        height: calc(112vh - 60px); /* Adjust height for smaller viewports *//*
         margin-left: -49%;
-    }
+    }*/
 
     div.header__description{
-        margin-top: 50px;/* was 130px*/
+        margin-top: -110px;/* was 50px*/
+        max-width: 350px;
+        margin-left: 28px;
     }
+
+    h1.header-title{
+        font-size: 1.8rem !important;
+    }
+
+
+    div.header__container{
+        height: calc(0vh - 0px) !important; 
+    }
+
+
+    /*.header__description{
+        /*margin-top: 150px;*//*
+        margin-top: -100px;
+    }*/
+
+    /*div.blue-box {
+        margin-left: 50%;
+    }*/
+
+    .banner video {
+        position: absolute;
+        top: 0; /* Ensure the video covers the top */
+        right: 0;
+        bottom: 0;
+        left: 214px; /* Cover entire width */
+        z-index: -1;
+        width: 100%;
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        object-fit: cover; /* Ensure video covers the entire container */
+        height: calc(57vh - 60px); /* Adjust height for smaller viewports */
+        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        margin-left: -50%;
+}
+
+div.blue-box{
+    margin-left: 100%;
+}
+
+    
 }
 
 
