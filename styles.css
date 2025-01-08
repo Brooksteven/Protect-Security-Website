@@ -10633,7 +10633,7 @@ CONTACT FORM
     }
 }
 
-@media (min-width: 848px) and (max-width: 1015px) {
+@media (min-width: 848px) and (max-width: 944px) {
     .contact-body {
         padding: 15px;
         height: auto; /* Allow content to dictate height */
@@ -10682,23 +10682,105 @@ CONTACT FORM
     }
 }
 
-
-/*half laptop page*/
-@media (min-width: 945px) and (max-width: 1020px){
+@media (min-width: 945px) and (max-width: 1005px){
+    div.contact-rowcontrol{
+        max-width:1100px;
+        /*margin-left: -128px;*/
+    }
+    
     div.contact-from{
         margin-left: 10%;
-        width: 835px;
-        max-width: 100%;
+        max-width: 60%;
+        
+     }
+}
+
+/*half laptop page*/
+@media (min-width: 1006px) and (max-width: 1019px){
+    div.contact-rowcontrol{
+        max-width:1100px;
+        /*margin-left: -128px;*/
+    }
+    
+    div.contact-from{
+        margin-left: 5%;
+        max-width: 70%;
         
      }
 }
 
 
+
+
 /*3/4 screen of laptop*/
-@media (max-width: 1176px) {
+@media (min-width: 1020px) and (max-width: 1029px) {
+    
+
+    div.contact-rowcontrol{
+        max-width:1100px;
+        /*margin-left: -128px;*/
+    }
+    
+    
     div.contact-from{
-        width: 500px;
-        margin-left: 16%;
+        max-width: 70%;
+        margin-left: 6%;
+       
+    }
+}
+
+@media (min-width: 1030px) and (max-width: 1144px) {
+    div.contact-rowcontrol{
+        max-width:1060px;
+        /*margin-left: -128px;*/
+    }
+    
+    section#control-contactfrom{
+        /*justify-items: center;
+        align-items: center;*/
+     }
+    
+    /* div.contact-from{*/
+      /* max-width: 85%;*/
+      /* margin-left: 4%;*/
+       /*margin-top: 0%;*//*
+     }*/
+    
+    
+    
+    div.contact-from{
+        max-width: 80%;
+        margin-left: 3%;
+        /*margin-left: 0%;*/
+       
+    }
+}
+
+
+/*3/4 screen of laptop*/
+@media (min-width: 1145px) and (max-width: 1176px) {
+    div.contact-rowcontrol{
+        max-width:1100px;
+        /*margin-left: -128px;*/
+    }
+    
+    section#control-contactfrom{
+        /*justify-items: center;
+        align-items: center;*/
+     }
+    
+    /* div.contact-from{*/
+      /* max-width: 85%;*/
+      /* margin-left: 4%;*/
+       /*margin-top: 0%;*//*
+     }*/
+    
+    
+    
+    div.contact-from{
+        max-width: 83%;
+        /*margin-left: 0%;*/
+       
     }
 }
 
@@ -10727,6 +10809,113 @@ CONTACT FORM
         margin-left: -1%;
      }  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1181px) and (max-width:1279px) {
+    div.contact-rowcontrol{
+        max-width:1180px;
+        /*margin-left: -128px;*/
+    }
+    
+    section#control-contactfrom{
+        /*justify-items: center;
+        align-items: center;*/
+     }
+    
+     div.contact-from{
+       max-width: 85%;
+       margin-left: 4%;
+       /*margin-top: 0%;*/
+     }
+}
+
+@media (min-width: 1280px) and (max-width:1300px) {
+    div.contact-rowcontrol{
+        max-width:1220px;
+        /*margin-left: -128px;*/
+    }
+}
+
+@media (min-width: 1301px) and (max-width:1336px) {
+    div.contact-rowcontrol{
+        max-width:1220px;
+        /*margin-left: -128px;*/
+    }
+    
+}
+
+/*between 3/4 and full screen laptop*/
+@media (min-width: 1337px) and (max-width:1370px) {
+    
+}
+
+@media (min-width: 1371px) and (max-width: 1480px){
+   
+}
+
+/*right under 4/4 page on laptop*/
+@media (min-width: 1481px) and (max-width: 1495px){
+    
+}
+
+@media (min-width: 1496px) and (max-width: 1534px) {
+    
+}
+
+@media (min-width: 1535px) and (max-width: 1569px) {
+   
+}
+
+@media (min-width: 1570px) and (max-width: 1611px) {
+    
+}
+
+@media (min-width: 1612px) and (max-width: 1647px) {
+    
+}
+
+@media (min-width: 1648px) and (max-width: 1681px) {
+    
+}
+
+@media (min-width: 1682px) and (max-width: 1728px) {
+   
+}
+
+
+@media (min-width: 1729px) and (max-width: 1771px) {
+   
+}
+
+@media (min-width: 1772px) and (max-width: 1839px) {
+   
+}
+
+/*full page laptop*/
+@media (min-width: 1840px) and (max-width: 1920px) {
+    
+}
+
+
+
+
+
+
 
 
 /*
@@ -10798,7 +10987,7 @@ CONTACT IMAP
     }
 }
 
-@media (min-width: 768px) and (max-width: 848px) {
+@media (min-width: 768px) and (max-width: 847px) {
     /* Map and Contact Address Section */
     section#control-map-contactaddress div.col-lg-5 {
         width: 664px;
@@ -10821,7 +11010,7 @@ CONTACT IMAP
 
 }
 
-@media (min-width: 848px) and (max-width: 1015px) {
+@media (min-width: 848px) and (max-width: 944px) {
     /*contact-from,*/
     #control-map-contactaddress {
         max-width: 85%; /* Reduce width slightly for mid-range devices */
@@ -10835,32 +11024,106 @@ CONTACT IMAP
     }
 }
 
-/*half laptop page*/
-@media (min-width: 945px) and (max-width: 1020px){
+
+@media (min-width: 945px) and (max-width: 1005px){
     section#control-map-contactaddress{
-        margin-left: 9%;  
+        margin-left: -17.5%; 
+        margin-top: .2%;
      }
 
-    
+     div.col-lg-5{
+        max-width: 70%;
+        
+     } 
 }
 
-
-/*a little over half a page on laptop*/
-@media (min-width: 1099px) and (max-width: 1169px){
+/*half laptop page*/
+@media (min-width: 1006px) and (max-width: 1019px){
     section#control-map-contactaddress{
-        margin-left: 9%;
-        min-width: 700px;
-    }
+        margin-left: -14.5%; 
+        margin-top: .2%;
+     }
+
+     div.col-lg-5{
+        max-width: 80%;
+        
+     } 
+
 }
 
 
 /*3/4 screen of laptop*/
-@media (max-width: 1176px) {
+@media (min-width: 1020px) and (max-width: 1029px) {
     section#control-map-contactaddress{
-        margin-left: 10%;
-        margin-top: 5%;
-    }
+        margin-left: -14%;  
+        margin-top: .2%;
+     }
+
+     div.col-lg-5{
+        max-width: 80%;
+     }
+
+
 }
+
+/*@media (min-width: 1030px) and (max-width: 1044px){
+    section#control-map-contactaddress{
+        margin-left: -9%;  
+        margin-top: .2%;
+     }
+
+     div.col-lg-5{
+        max-width: 90%;
+     }
+}
+
+@media (min-width: 1045px) and (max-width: 1076px) {
+    section#control-map-contactaddress{
+        margin-left: -9%;  
+        margin-top: .2%;
+     }
+
+     div.col-lg-5{
+        max-width: 90%;
+     }
+}*/
+
+@media (min-width: 1030px) and (max-width: 1144px) {
+    section#control-map-contactaddress{
+        margin-left: -10%;  
+        margin-top: .2%;
+     }
+
+     div.col-lg-5{
+        max-width: 90%;
+     }
+}
+
+/*3/4 screen of laptop*/
+@media (min-width: 1145px) and (max-width: 1176px) {
+    section#control-map-contactaddress{
+        margin-left: -9.5%;  
+        margin-top: .2%;
+     }
+}
+
+
+/*a little over half a page on laptop*/
+/*@media (min-width: 1099px) and (max-width: 1169px){
+    section#control-map-contactaddress{
+        margin-left: 9%;
+        min-width: 700px;
+    }
+}*/
+
+
+/*3/4 screen of laptop*/
+/*@media (max-width: 1176px) {
+   section#control-map-contactaddress{
+        /*margin-left: 0%;*/
+        /*margin-top: 0%;*//*
+    }*//*
+}*/
 
 /*right over half the screen size of a laptop and tablet*/
 /*@media (min-width: 1177px) and (max-width: 1180px){
@@ -10879,6 +11142,15 @@ CONTACT IMAP
         margin-top: 0%;
         margin-bottom: 2%;
      }
+}
+
+
+@media (min-width: 1181px) and (max-width:1279px) {
+    section#control-map-contactaddress{
+        margin-left: -5.5%;
+        padding-right: 2%;
+        margin-top: .2%
+    }
 }
 
 /*
@@ -10904,19 +11176,19 @@ CONTACT INFORMATION BOX
     }
 }
 
-@media (min-width: 768px) and (max-width: 848px) {
+/*@media (min-width: 768px) and (max-width: 848px) {
     .contact-address {
-        padding: 10px; /* Compact padding */
-        font-size: 13px; /* Smaller font size */
+        padding: 10px; /* Compact padding *//*
+        font-size: 13px; /* Smaller font size *//*
         line-height: 20px;
     }
 
     .contact-address .contact-ul .contact-li {
-        padding-top: 15px; /* Reduce spacing between items */
+        padding-top: 15px; /* Reduce spacing between items *//*
     }
 
     .contact-address .contact-ul .contact-li .singel-address .icon-contact i {
-        width: 40px; /* Compact icons */
+        width: 40px; /* Compact icons *//*
         height: 40px;
         line-height: 40px;
         font-size: 14px;
@@ -10924,34 +11196,34 @@ CONTACT INFORMATION BOX
 
     .contact-address, .contact-ul, .contact-li, .singel-address, .cont-contact, .contact-para {
         margin-right: 0;
-        text-align: center; /* Center-align for narrow screens */
+        text-align: center; /* Center-align for narrow screens *//*
     }
-}
+}*/
 
 
-@media (min-width: 848px) and (max-width: 1015px) {
+/*@media (min-width: 848px) and (max-width: 1015px) {
     div.contact-address {
-        padding: 15px; /* Compact padding */
-        font-size: 14px; /* Slightly smaller font size */
-        line-height: 22px; /* Tighten line height */
+        padding: 15px; /* Compact padding *//*
+        font-size: 14px; /* Slightly smaller font size *//*
+        line-height: 22px; /* Tighten line height *//*
     }
 
     .contact-address .contact-ul .contact-li {
-        padding-top: 18px; /* Adjust spacing between items */
+        padding-top: 18px; /* Adjust spacing between items *//*
     }
 
     .contact-address .contact-ul .contact-li .singel-address .icon-contact i {
-        width: 42px; /* Reduce icon size */
+        width: 42px; /* Reduce icon size *//*
         height: 42px;
         line-height: 42px;
-        font-size: 15px; /* Adjust font size for icons */
+        font-size: 15px; /* Adjust font size for icons *//*
     }
 
     .contact-address, .contact-ul, .contact-li, .singel-address, .cont-contact, .contact-para {
         margin-right: 0;
-        text-align: center; /* Center align text for mid-range screens */
+        text-align: center; /* Center align text for mid-range screens *//*
     }
-}
+}*/
 
 
 
