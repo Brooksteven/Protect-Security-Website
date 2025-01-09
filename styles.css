@@ -389,7 +389,8 @@ TEAM
     align-items: center;
     margin: 0px auto;
     max-width: 1200px;
-    width: 100%
+    width: 100%;
+    filter: drop-shadow(7px 7px 7px rgb(150, 157, 174));
 }
 
 
