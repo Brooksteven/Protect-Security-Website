@@ -2112,6 +2112,8 @@ HEADER WITH GLOBE ON HOME PAGE
         height: calc(57vh - 60px); /* Adjust height for smaller viewports */
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
         margin-left: -50%;
+        /*try 
+        background-size: cover;*/
 }
 
 div.blue-box{
