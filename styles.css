@@ -138,7 +138,7 @@ label #cancel{
     max-height: 600vh;
     margin-left: -50%; /* -700px Cover entire width */
     z-index: -1;
-    width: 100%;
+    width: 100%; /**/
     height: 100%;/*clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
     object-fit: cover; /* Ensure video covers the entire container */
     display: inline-block;
@@ -2188,22 +2188,44 @@ div.blue-box{
 
 
 @media (min-width: 481px) and (max-width: 767px) {
-    video {
+   /* video {
         margin-bottom: 66px;
        }
-    
+
+       .header-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .subheader {
+        font-size: 18px;
+        margin-top: 20px;
+     }*/
+
+     .banner video {
+        position: absolute;
+        z-index: -1;
+        margin-left: -50px !important;
+        width: 100% !important;
+        height: 93vh !important;
+        object-fit: cover !important; /* Ensure video covers the entire container */
+        object-position: bottom bottom !important;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover !important;
+        
+     }
         /*the 16/10 changes the size of the video*/
-        @media(min-aspect-ratio: 16/9){
-            .banner video{
+        /*@media(min-aspect-ratio: 16/9){
+           /* .banner video{
+
                 width:100%;
                 height: 100%;
-            }
-        }
+            }*//*
+        }/*
     
-        header {
-            height: calc(70vh - 80px);
+       /* header {
+            height: calc(70vh - 80px);*/
             /*background-color: rgb(2, 15,39)/*#0A1D42*/
-        }
+        /*}
 
         .header-title {
             font-size: 28px;
@@ -2214,7 +2236,7 @@ div.blue-box{
         .subheader {
             font-size: 18px;
             margin-top: 20px;
-         }
+         }*/
 
     }
 
@@ -2231,28 +2253,36 @@ div.blue-box{
         margin-top: 150px;
     }
 
-    .banner video {
-        max-height: auto; /* calc(64vh - 60px) Adjust height for smaller viewports */
-        max-width: auto;
-        margin-left: -50%;
-        object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
-    }
+    
 
     div.blue-box {
         margin-left: 50%;
     }
 
     .banner video {
+        overflow: clip;
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        z-index: -1;
+        margin-left: auto;
+        width: 50%;
+        height: 93vh;
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover;
+        overflow: clip;
+        
+
+
+        /*position: absolute;
+        top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
-        left: 0; /* Cover entire width */
+        left: 0; /* Cover entire width *//*
         z-index: -1;
         width: 100%;
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
-        height: calc(150vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default *//*
+        object-fit: cover; /* Ensure video covers the entire container *//*
+        height: calc(150vh - 60px); /* Adjust height for smaller viewports *//*
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
 }
 
@@ -2274,15 +2304,25 @@ div.blue-box{
 
     .banner video {
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        z-index: -1;
+        margin-left: auto;
+        width: 50%;
+        height: 75vh;
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover;
+       
+       
+        /* position: absolute;
+        top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
-        left: 0; /* Cover entire width */
+        left: 0; /* Cover entire width *//*
         z-index: -1;
         width: 100%;
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
-        height: calc(120vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default *//*
+        object-fit: cover; /* Ensure video covers the entire container *//*
+        height: calc(120vh - 60px); /* Adjust height for smaller viewports *//*
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     }
 
@@ -2307,15 +2347,25 @@ div.blue-box{
 
     .banner video {
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        z-index: -1;
+        margin-left: auto;
+        width: 50%;
+        height: 75vh;
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover;
+        
+        
+        /*position: absolute;
+        top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
-        left: 0; /* Cover entire width */
+        left: 0; /* Cover entire width *//*
         z-index: -1;
         width: 100%;
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
-        height: calc(118vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default *//*
+        object-fit: cover; /* Ensure video covers the entire container *//*
+        height: calc(118vh - 60px); /* Adjust height for smaller viewports *//*
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     }
 }
@@ -2339,15 +2389,25 @@ div.blue-box{
 
     .banner video {
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        z-index: -1;
+        margin-left: auto;
+        width: 50%;
+        height: 75vh;
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover;
+
+
+        /*position: absolute;
+        top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
-        left: 0; /* Cover entire width */
+        left: 0; /* Cover entire width *//*
         z-index: -1;
         width: 100%;
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
-        height: calc(115vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default *//*
+        object-fit: cover; /* Ensure video covers the entire container *//*
+        height: calc(115vh - 60px); /* Adjust height for smaller viewports *//*
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     }
 }
@@ -2366,15 +2426,24 @@ div.blue-box{
 
     .banner video {
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        z-index: -1;
+        margin-left: auto;
+        width: 50%;
+        height: 80vh;
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover;
+        
+        /*position: absolute;
+        top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
-        left: 0; /* Cover entire width */
+        left: 0; /* Cover entire width *//*
         z-index: -1;
         width: 100%;
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
-        height: calc(116vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default *//*
+        object-fit: cover; /* Ensure video covers the entire container *//*
+        height: calc(116vh - 60px); /* Adjust height for smaller viewports *//*
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
 
         /*height: calc(98vh - 60px); /* Adjust height for smaller viewports *//*
@@ -2391,15 +2460,25 @@ div.blue-box{
 
     .banner video{
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        z-index: -1;
+        margin-left: auto;
+        width: 50%;
+        height: 80vh;
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover;
+        
+        
+        /*position: absolute;
+        top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
-        left: 0; /* Cover entire width */
+        left: 0; /* Cover entire width *//*
         z-index: -1;
         width: 100%;
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
-        height: calc(125vh - 60px); /* Adjust height for smaller viewports */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default *//*
+        object-fit: cover; /* Ensure video covers the entire container *//*
+        height: calc(125vh - 60px); /* Adjust height for smaller viewports *//*
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     }
 }
@@ -2415,15 +2494,25 @@ div.blue-box{
 
     .banner video {
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        z-index: -1;
+        margin-left: auto;
+        width: 50%;
+        height: 80vh;
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover;
+        
+        
+        /*position: absolute;
+        top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
-        left: 0; /* Cover entire width */
+        left: 0; /* Cover entire width *//*
         z-index: -1;
         width: 100%;
         height: calc(120vh - 60px); /* Adjust height for smaller viewports */
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default *//*
+        object-fit: cover; /* Ensure video covers the entire container *//*
         object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     /*.banner video {
         height: calc(97vh - 60px); /* Adjust height for smaller viewports *//*
@@ -2443,15 +2532,25 @@ div.blue-box{
 
     .banner video {
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        z-index: -1;
+        margin-left: auto;
+        width: 50%;
+        height: 80vh;
+        object-fit: cover; /* Ensure video covers the entire container */
+        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover;
+
+
+        /*position: absolute;
+        top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
-        left: 0; /* Cover entire width */
+        left: 0; /* Cover entire width *//*
         z-index: -1;
         width: 100%;
         height: calc(120vh - 60px); /* Adjust height for smaller viewports */
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default *//*
+        object-fit: cover; /* Ensure video covers the entire container *//*
         object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
     /*.banner video {
         height: calc(97vh - 60px); /* Adjust height for smaller viewports *//*
@@ -2473,17 +2572,21 @@ div.blue-box{
 
     .banner video {
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        /*top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
         left: 0; /* Cover entire width */
         z-index: -1;
-        width: 100%;
-        height: calc(120vh - 60px); /* Adjust height for smaller viewports */
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
+        margin-left: auto;
+       width: 50%;
+       height: 80vh;
+       /*width: 100%;
+        /*height: calc(120vh - 60px); /* Adjust height for smaller viewports */
+       /* height: clamp(50vh, 100vh, 150vh);/* Maintain aspect ratio by default */
         object-fit: cover; /* Ensure video covers the entire container */
         object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
-    /*.banner video {
+        background-size: cover;
+        /*.banner video {
         height: calc(97vh - 60px); /* Adjust height for smaller viewports *//*
         margin-left: -637px;
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
@@ -2498,17 +2601,18 @@ div.blue-box{
 
     .banner video {
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+        /*top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
-        left: 0; /* Cover entire width */
+        left: 0; /* Cover entire width *//*
         z-index: -1;
         width: 100%;
         height: calc(130vh - 60px); /* Adjust height for smaller viewports */
-        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
+        /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default *//*
+        object-fit: cover; /* Ensure video covers the entire container *//*
         object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
-    /*div.header__container{
+        background-size: cover;
+        /*div.header__container{
         height: calc(80vh - 80px);
     }
 
@@ -2534,16 +2638,17 @@ div.blue-box{
 
     .banner video {
         position: absolute;
-        top: 0; /* Ensure the video covers the top */
+       /*top: 0; /* Ensure the video covers the top *//*
         right: 0;
         bottom: 0;
         left: 0; /* Cover entire width */
         z-index: -1;
-        width: 100%;
+        /*width: 100%;
         height: calc(122vh - 60px); /* Adjust height for smaller viewports */
         /*height: clamp(50vh, 100vh, 150vh);*/ /* Maintain aspect ratio by default */
-        object-fit: cover; /* Ensure video covers the entire container */
-        object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        /* object-fit: cover; /* Ensure video covers the entire container */
+        /*object-position: right bottom;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
+        background-size: cover;
     }
 }
 
