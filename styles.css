@@ -1244,6 +1244,20 @@ CAPABILITY STATEMENT PAGE
      top: 0;
      z-index: -1;
  }
+
+ #button-cs {
+    margin-top: -30px;
+    margin-bottom: 54px !important;
+    padding: 10px 20px;
+    width: 370px;
+    font-size: 18px;
+    border: none;
+ }
+
+ .fa-download{
+    margin-left: 8px;
+    
+ }
  
  @media(min-aspect-ratio: 16/9){
      .cs-banner video{
