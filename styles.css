@@ -2801,7 +2801,7 @@ TEAMS SECTION ON HOME PAGE
 
     /*from max-width: 1024px*/
     .teams {
-        padding: 135px 40px; /* Reduce padding for smaller screens */
+        padding: 100px 40px; /* Reduce padding for smaller screens */
         max-width: 800px;
     }
 
