@@ -2687,6 +2687,7 @@ VALUES SECTION ON HOME PAGE
 @media (min-width: 376px) and (max-width: 437px){
     .row{
         flex-direction:column;
+        
     }
 
     /*this creates or eliminates the white space above 
@@ -2698,6 +2699,10 @@ VALUES SECTION ON HOME PAGE
      /*size of the blue containers*/
      .values {
         padding-top: 10px;
+    }
+
+    .values-extra{
+        margin-bottom: 40px;
     }
 
 
@@ -2738,6 +2743,8 @@ VALUES SECTION ON HOME PAGE
 /*
 ACCREDIDATIONS SECTION ON HOME PAGE
 */
+
+
 
 @media (min-width: 481px) and (max-width: 768px) {
     .accred-logos{
