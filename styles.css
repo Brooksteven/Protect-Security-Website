@@ -2855,7 +2855,7 @@ TEAMS SECTION ON HOME PAGE
 
 
 /* Mobile Screens (max-width: 768px) */
-@media (max-width: 768px) {
+@media (min-width: 438px) and (max-width: 768px) {
     .teams {
         padding: 60px 30px;
         max-width: 600px; /* Adjust max width for mobile */
