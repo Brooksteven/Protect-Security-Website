@@ -2779,7 +2779,7 @@ TEAMS SECTION ON HOME PAGE
 
     .teams {
         margin:24px;
-        padding: 84px 50px;
+        /*padding: 84px 50px;*/
         height: 550px; 
     }
 
@@ -2798,6 +2798,21 @@ TEAMS SECTION ON HOME PAGE
     .team__link--para {
         font-size: 20px;
     }
+
+    /*from max-width: 1024px*/
+    .teams {
+        padding: 135px 40px; /* Reduce padding for smaller screens */
+        max-width: 800px;
+    }
+
+    .team__link {
+        font-size: 30px; /* Slightly smaller text for smaller screens */
+        font-weight: bold;
+    }
+
+   /* .team__link--para {
+        font-size: 18px; /* Adjust paragraph text size *//*
+    }*/
 }
 
 
@@ -2906,7 +2921,7 @@ TEAMS SECTION ON HOME PAGE
 }
 
 /* Tablet Screens (max-width: 1024px) */
-@media (max-width: 1024px) {
+@media (min-width: 438px) and (max-width: 1024px) {
     .teams {
         padding: 80px 40px; /* Reduce padding for smaller screens */
         max-width: 800px;
