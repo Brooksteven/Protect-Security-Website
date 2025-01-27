@@ -2766,8 +2766,43 @@ ACCREDIDATIONS SECTION ON HOME PAGE
 TEAMS SECTION ON HOME PAGE
 */
 
+@media (min-width: 376px) and (max-width: 437px) {
+    .row{
+        flex-direction:column;
+    }
+
+    .team__wrapper {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+
+    .teams {
+        margin:24px;
+        padding: 84px 50px;
+        height: 550px; 
+    }
+
+    .growth {
+        padding-top: 120px;
+    }
+
+    .beyond {
+        padding-top: 98px;
+    }
+
+    /*.rapid {
+    
+    }*/
+
+    .team__link--para {
+        font-size: 20px;
+    }
+}
+
+
 /* Small Mobile Screens (max-width: 480px) */
-@media (max-width: 480px) {
+@media (min-width: 438px) and (max-width: 480px) {
     .teams {
         padding: 40px 20px;
         max-width: 100%; /* Use full width */
