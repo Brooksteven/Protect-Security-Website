@@ -2129,9 +2129,17 @@ HEADER WITH GLOBE ON HOME PAGE
         object-fit: cover; /* Ensure video covers the entire container */
         height: calc(57vh - 60px); /* Adjust height for smaller viewports */
         object-position: right;/*this causes the image to move towards the right so the image won't zoom in cutting part of the img/video off*/
-        margin-left: -50%;
+        /*margin-left: -50%;*/
         /*try 
         background-size: cover;*/
+
+/*came from measurements in max-width: 768px*/       
+margin-left: auto;
+width: 100%;
+object-fit: cover;
+object-position: right bottom;
+background-size: cover;
+overflow: clip;
 }
 
 div.blue-box{
@@ -2258,7 +2266,7 @@ div.blue-box{
 
 
 /*For tablets (max-width: 768px) */
-@media (max-width: 768px) {
+@media (min-width: 438px) and (max-width: 768px) {
 
     div.header__container{
         height: calc(103vh - 80px);
@@ -2675,6 +2683,30 @@ div.blue-box{
 /*
 VALUES SECTION ON HOME PAGE
 */
+
+@media (min-width: 376px) and (max-width: 437px){
+    .row{
+        flex-direction:column;
+    }
+
+    /*this creates or eliminates the white space above 
+    company values on the index.html page*/
+    .main-homepg{
+        margin-top: 4px;
+    }
+
+     /*size of the blue containers*/
+     .values {
+        padding-top: 10px;
+    }
+
+
+    #verticle-line {
+        width: 768px;
+        height: 4px;
+        background-color: white;
+    }
+}
 
 @media (min-width: 481px) and (max-width: 768px) {
     .row{
