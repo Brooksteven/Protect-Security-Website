@@ -3752,8 +3752,8 @@ TEAMS SECTION ON HOME PAGE
         }
 
         .protect-content{
-            max-width: 400px;
-            margin-left: 12px;
+            min-width: 380px;
+            margin-left: 16px;
         }
         
         p.protect-content--para{
@@ -3772,10 +3772,15 @@ TEAMS SECTION ON HOME PAGE
          margin-top: 16px;
          margin-bottom: 0px;
         }
+
+        p.protect-para{
+            margin-right: 10px;
+        }
         
         p.protect-security--para{
         /*padding-right: 10px;*/
         margin-bottom: 40px;
+        margin-left: 6px;
         }
         
         .protect-list.cont, li.protect-list{
