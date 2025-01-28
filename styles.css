@@ -7919,8 +7919,9 @@ FOOTER
 /*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
 @media (min-width: 376px) and (max-width:437px) {
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        margin-left: -190px;
+        flex-direction: column;
+        min-width: 850px;
 
     }
 }
