@@ -3722,7 +3722,7 @@ TEAMS SECTION ON HOME PAGE
 
 /*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
 @media (min-width: 376px) and (max-width:437px) {
-    p.protect-security--para{
+    /*p.protect-security--para{
         margin-right: 10%;
     }
 
@@ -3745,7 +3745,96 @@ TEAMS SECTION ON HOME PAGE
 
     p.protect-para{
         margin-right: 10%;
-    }
+    }*/
+
+    div.container-protect{
+        margin-left: -108px; /*-128px*/
+        }
+        
+        p.protect-content--para{
+        min-width: 550px;/*max-width: 550px*/
+        width: 100%;
+        margin-left: 56px;
+        font-size: 2.9rem;
+        }
+        
+        
+        p.protect-security--para, .protect-para{
+            max-width: 550px;
+            font-size: 17px;
+         text-align: center;
+         line-height: 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+        }
+        
+        p.protect-security--para{
+        /*padding-right: 10px;*/
+        margin-bottom: 40px;
+        }
+        
+        .protect-list.cont, li.protect-list{
+        font-size: 22px; 
+        font-weight: bold;
+        width: 100%;
+        max-width: 550px;
+        /*margin-bottom: 50px;*/
+        }
+        
+        ul.protect-content__ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;/*420px*/
+        gap: 40px;
+        }
+        
+        .cont2 {
+        margin-left: 54px;
+        }
+        
+        .cont3 {
+        margin-left: 54px;
+        }
+        
+        .cont4 {
+        margin-left: 58px;
+        display: flex;
+        flex-direction: column;
+        }  
+        
+        
+        
+        /*this is for the text over the icons so 
+        that ea. li can be next to each other.*/
+        .protect-content__ul{
+         display: flex;
+        }
+        
+        /*this moves the text "no one size, etc"*/
+        .cont{
+        margin-left: 52px;
+        /*
+         margin-right: 52px;*/
+        }
+        
+        .img1{
+         margin-left: 72px;
+         margin-right: 72px;
+        }
+        
+        img.img2{
+         margin-left: 76px;
+         margin-right: 72px;
+        }
+        
+        img.img3{
+         margin-left: 60px;
+         margin-right: 72px;
+        }
+        
+        img.img4.img4b{
+         margin-left: 112px !important;/*can't find the overlap*/
+        }
 }
 
 /*Iphone 16*/
@@ -3794,7 +3883,7 @@ TEAMS SECTION ON HOME PAGE
 
 
 /* Media Query for Small Mobile Screens */
-@media (max-width: 480px) {
+@media (min-width: 438px) and (max-width: 480px) {
     #protect {
          padding: 50px; /* Further reduce padding for very small screens */
      }
@@ -3921,11 +4010,11 @@ TEAMS SECTION ON HOME PAGE
  /*SMALLEST SCREEN ON LAPTOP IS 500PX AND THEN IT GOES UP*/
  @media (min-width: 481px) and (max-width: 519px) {
     div.container-protect{
-        margin-left: -128px;
+        margin-left: -108px; /*-128px*/
         }
         
         p.protect-content--para{
-        max-width: 550px;/*max-width: 550px*/
+        min-width: 550px;/*max-width: 550px*/
         width: 100%;
         margin-left: 56px;
         font-size: 2.9rem;
