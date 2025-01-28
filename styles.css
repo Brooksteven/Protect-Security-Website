@@ -10519,6 +10519,14 @@ SERVICE PAGE
 IMAGE IN HEADER
 */
 
+@media (min-width: 376px) and (max-width: 437px){
+    div.service-container{
+        height: calc(89vh - 80px);
+        margin-top: 0px;
+    }
+
+}
+
 @media (min-width: 438px) and (max-width: 480px) {
     div.service-container{
             height: calc(89vh - 80px);
@@ -10526,7 +10534,7 @@ IMAGE IN HEADER
     }
 }
 
-@media (max-width:768px){
+@media (min-width: 481px) and (max-width:768px){
 
     div.service-container{
         height: calc(89vh - 80px);
@@ -10541,6 +10549,11 @@ OUR EXPERIENCE SECTION ON SERVICE PAGE
 
 /*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
 @media (min-width: 376px) and (max-width:437px) {
+div.service-row{
+        margin-top: -4px;
+        max-width: 600px;
+    }
+
   /*our experience box*/
   div.services-values{
     margin-top: 135px;
@@ -10573,7 +10586,7 @@ p.service-value__label--para{
     }
 }
 
-@media (max-width:768px){
+@media (min-width: 438px) and (max-width:768px){
     div.service-row{
         margin-top: 89px; /*used to be 209px this is actually what eliminates the white space between our experience and the hero image what we offer*/
         max-width: 600px
