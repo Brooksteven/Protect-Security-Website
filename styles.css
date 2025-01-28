@@ -2978,7 +2978,7 @@ TEAMS SECTION ON HOME PAGE
     }
 
     .row2{
-        margin-left: 24px;
+        margin-left: -10px;
     }
 
     .container__highlight {
@@ -2993,25 +2993,32 @@ TEAMS SECTION ON HOME PAGE
     
     .section__title {
         font-size: 2.7rem;
-        max-width: 768px;
-        margin-bottom: 24px;
+        min-width: 361px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        margin-left: -3px;
+        margin-top: 24px;
     }
     
     .section__title--para{
         font-size: 1.2rem; /*18px*/
         margin-bottom: 24px;
     }
+
+    .highlight_links {
+        margin-left: 26px;
+    }
     
     .highlight__link {
         margin-right: 30px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .figure__img {
         width: 450px;
-        padding: 70px 50px;
+        padding: 50px 50px;
         filter: drop-shadow(14px 14px 7px #072a71);
-        /*border-radius: 20%;*/
+        border-radius: 0%;
     }
 }
    
