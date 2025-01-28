@@ -11082,16 +11082,18 @@ CONTACT FORM
         flex-direction: column; /* Stack elements vertically */
         justify-items: center;
         align-items: center;
-        max-width: 700px;
+        max-width: 474px;
+        margin-left: 53px;
+        margin-bottom: 54px;
         /*gap: 15px;*/ /* Moderate spacing between stacked sections */
     }
 
     .contact-from/*, 
     #control-map-contactaddress */{
-        max-width: 60%; /* Reduce width slightly for mid-range devices */
+        max-width: 58.3%; /* Reduce width slightly for mid-range devices */
         /*margin: 0 auto;*/ /* Center align content */
         /*padding: 18px;*/ /* Maintain moderate padding */
-        margin-left: 8%;
+        margin-left: 9.6%;
         margin-top: 10%;
         
     }
