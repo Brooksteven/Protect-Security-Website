@@ -1536,8 +1536,19 @@ PAGE
 
 /*text on titles in blue box*/
 .service-value__label {
-    font-size: 1.9rem;/**/
+    font-size: 1.9rem;
     font-weight: bold;
+
+   /*font-size: 3.2rem;/*40px*//*
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    font-family: Arial, Helvetica, sans-serif;*/
+
+    /*font-size: 58px;
+    margin: 72px 0 48px 0;
+    color:#ffffff;
+    letter-spacing: 0.08em;
+    position: relative;*/
 
 }
 
@@ -10508,7 +10519,7 @@ SERVICE PAGE
 IMAGE IN HEADER
 */
 
-@media (max-width: 480px) {
+@media (min-width: 438px) and (max-width: 480px) {
     div.service-container{
             height: calc(89vh - 80px);
             margin-top: -210px; /*this pulls this container up and eliminates the white space between the img and the navbar*/
@@ -10519,7 +10530,7 @@ IMAGE IN HEADER
 
     div.service-container{
         height: calc(89vh - 80px);
-        margin-top: -210px; /*this pulls this container up and eliminates the white space between the img and the navbar*/
+        margin-top: -210px; /*-210px this pulls this container up and eliminates the white space between the img and the navbar*/
 }
     
 }
@@ -10564,7 +10575,7 @@ p.service-value__label--para{
 
 @media (max-width:768px){
     div.service-row{
-        margin-top: 209px;
+        margin-top: 89px; /*used to be 209px this is actually what eliminates the white space between our experience and the hero image what we offer*/
         max-width: 600px
     }
 }
@@ -10934,6 +10945,12 @@ WE STARTED WITH A FOCUS SECTION ON SERVICE PAGE
      p.services-values-2-para{
         padding-left: 24px;
         padding-right: 24px;
+    }
+}
+
+@media (min-width: 441px) and (max-width: 2080px){
+    p.services-values-2-para{
+        margin-top: 90px;
     }
 }
 
