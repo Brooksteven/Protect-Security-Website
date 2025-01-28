@@ -6628,8 +6628,59 @@ JOIN US ON HOME PAGE
 
 /*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
 @media (min-width: 376px) and (max-width:437px) {
-    p.join-us-para{
+   /* p.join-us-para{
         text-align: center;
+    }*/
+
+    .join-us{
+        width: 100%;
+        padding: 60px;
+    }
+    
+    .join-us-title {
+        padding-bottom: 24px;
+        margin-top: 24px;
+        font-size: 3.4rem;
+        font-weight: bold;
+        text-align: center;
+        color:#072a71;
+        min-width: 400px;
+    }
+    
+    .join-us-para {
+        font-size: 1.4rem;
+        text-align: justify;
+        color: #778193;
+        line-height: 1.5;
+    }
+    
+    .join-us-img1,
+    .join-us-img2 {
+        height: 300px;
+        width: 300px;
+        background: radial-gradient(#072a71, black 75%);
+        border-radius: 100%;
+        
+        
+        
+        filter: drop-shadow(7px 7px 7px #072a71);
+    }
+
+    .join-us-img1{
+        margin-bottom: 28px;
+        margin-right: 40px;
+        shape-margin: 50px;
+        float: right;
+        shape-outside: circle(200px);
+    }
+
+    img.join-us-img2{
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 40px;
+        
+        float: left;
+        shape-outside: circle(200px);
     }
 }
 
