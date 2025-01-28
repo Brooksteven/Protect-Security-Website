@@ -3006,7 +3006,7 @@ TEAMS SECTION ON HOME PAGE
     }
 
     .highlight_links {
-        margin-left: 26px;
+        margin-left: 24px !important;
     }
     
     .highlight__link {
@@ -3748,13 +3748,18 @@ TEAMS SECTION ON HOME PAGE
     }*/
 
     div.container-protect{
-        margin-left: -108px; /*-128px*/
+        margin-left: -150px; /*-128px*//*-150px*/
+        }
+
+        .protect-content{
+            max-width: 400px;
+            margin-left: 12px;
         }
         
         p.protect-content--para{
         min-width: 550px;/*max-width: 550px*/
         width: 100%;
-        margin-left: 56px;
+        margin-left: 38px;
         font-size: 2.9rem;
         }
         
@@ -3832,8 +3837,12 @@ TEAMS SECTION ON HOME PAGE
          margin-right: 72px;
         }
         
-        img.img4.img4b{
+        img.img4{
          margin-left: 112px !important;/*can't find the overlap*/
+        }
+
+        .img4b{
+            margin-left: 92px !important;
         }
 }
 
