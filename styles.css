@@ -7780,7 +7780,7 @@ FOOTER
 /*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
 @media (min-width: 376px) and (max-width:437px) {
     div.content1{
-        margin-left: 0px;
+        margin-left: -16px;
     }
 }
 
