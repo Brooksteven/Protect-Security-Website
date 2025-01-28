@@ -6534,7 +6534,7 @@ TEAMS SECTION ON HOME PAGE
 
 
 /*between 3/4 and full screen laptop*/
-@media (max-width:1370px) {
+@media (min-width: 438px) and (max-width:1370px) {
     li.cont{
         min-width: 190px;
     }
