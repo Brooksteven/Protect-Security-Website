@@ -10971,7 +10971,7 @@ OUR SERVICES SECTION ON SERVIES PAGE
 @media(max-width:991px){
 
     .services-wrapper{
-        padding:25px 50px;
+        padding:25px 50px; /*added 50px to this do give padding on the sides of the text*/
     }
 
     .services-wrapper h1{
@@ -11017,9 +11017,13 @@ CAPABILITY STATEMENT
 /*Iphone 12pro max screen 437px (437x926; 62%; no throtting)*/
 @media (min-width: 376px) and (max-width:437px) {
 div.cs-banner{
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     margin-left: 24px;
     margin-right: 24px;
+}
+
+#button-cs{
+    margin-bottom: 64px;
 }
 }
 
