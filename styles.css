@@ -3837,13 +3837,11 @@ TEAMS SECTION ON HOME PAGE
          margin-right: 72px;
         }
         
-        img.img4{
-         margin-left: 112px !important;/*can't find the overlap*/
+        img.img4.img4b{
+         margin-left: 92px !important;/*can't find the overlap*/
         }
 
-        .img4b{
-            margin-left: 92px !important;
-        }
+       
 }
 
 /*Iphone 16*/
