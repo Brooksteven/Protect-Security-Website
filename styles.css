@@ -10141,6 +10141,10 @@ HEADER IMAGE ON ABOUT US PAGE
         margin-top: 4%;
         margin-left: 40%;
     }
+
+    /*div.line{
+        margin-top: 80px;
+    }*/
 }
 
 
@@ -10213,7 +10217,7 @@ TRADITION OF EXCELLENCE SECTION ON ABOUT US PAGE
 }
 
 /*Blue line above Tradition of Excellence*/
-@media (max-width: 763px) {
+@media (min-width: 438px) and (max-width: 763px) {
     div.line{
         margin-top: 80px;
     }
