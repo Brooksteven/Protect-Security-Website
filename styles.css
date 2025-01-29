@@ -10879,7 +10879,7 @@ IMAGE IN HEADER
 @media (min-width: 438px) and (max-width: 480px) {
     div.service-container{
             height: calc(89vh - 80px);
-            margin-top: -88px; /*-210pxthis pulls this container up and eliminates the white space between the img and the navbar*/
+            margin-top: 0px; /*-88px, -210pxthis pulls this container up and eliminates the white space between the img and the navbar*/
     }
 }
 
