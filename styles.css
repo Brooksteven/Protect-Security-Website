@@ -8168,6 +8168,10 @@ FOOTER
         line-height: 1.5; /* Keep text readable */
     }
 
+    div.content1{
+        margin-left:-50px;
+    }
+
     ul.list{
         padding-left: 40px;
     }
@@ -8280,8 +8284,8 @@ FOOTER
 /*Iphone 16*/
 @media (min-width:438px) and (max-width: 440px){
     div.container-footer{
-        margin-left: 110px;
-        margin-left: 240px;
+        /*margin-left: 110px;*/
+        margin-left: 10px;/*240px*/
 
     }
 }
