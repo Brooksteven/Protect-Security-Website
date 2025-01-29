@@ -2909,9 +2909,58 @@ TEAMS SECTION ON HOME PAGE
     }*/
 }
 
+@media (min-width: 438px) and (max-width: 440px){
+    .row{
+        flex-direction:column;
+    }
+
+    .team__wrapper {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+
+    .teams {
+        margin:24px;
+        /*padding: 84px 50px;*/
+        height: 550px; 
+    }
+
+    .growth {
+        padding-top: 120px;
+    }
+
+    .beyond {
+        padding-top: 98px;
+    }
+
+    /*.rapid {
+    
+    }*/
+
+    .team__link--para {
+        font-size: 20px;
+    }
+
+    /*from max-width: 1024px*/
+    .teams {
+        padding: 100px 40px; /* Reduce padding for smaller screens */
+        max-width: 800px;
+    }
+
+    .team__link {
+        font-size: 30px; /* Slightly smaller text for smaller screens */
+        font-weight: bold;
+    }
+
+   /* .team__link--para {
+        font-size: 18px; /* Adjust paragraph text size *//*
+    }*/
+}
+
 
 /* Small Mobile Screens (max-width: 480px) */
-@media (min-width: 438px) and (max-width: 480px) {
+@media (min-width: 441px) and (max-width: 480px) {
     .teams {
         padding: 40px 20px;
         max-width: 100%; /* Use full width */
@@ -3118,11 +3167,61 @@ TEAMS SECTION ON HOME PAGE
    
    /*Iphone 16*/
 @media (min-width:438px) and (max-width: 440px){
-    img.figure__img{
+
+
+   /* img.figure__img{
         border-radius: 0;
         width:100%;
         height: 100%;
         filter: drop-shadow(14px 14px 7px #072a71);
+    }*/
+
+    .row{
+        flex-direction:column;
+    }
+
+    .row2{
+        margin-left: -10px;
+    }
+
+    .container__highlight {
+        margin: 50px 50px 0px 50px;
+        padding: 50px;
+    }
+    
+    
+    .section {
+       width: 100%;
+    }
+    
+    .section__title {
+        font-size: 2.7rem;
+        min-width: 361px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        margin-left: -3px;
+        margin-top: 24px;
+    }
+    
+    .section__title--para{
+        font-size: 1.2rem; /*18px*/
+        margin-bottom: 24px;
+    }
+
+    ul.highlight__links {
+        margin-left: 24px !important;
+    }
+    
+    .highlight__link {
+        margin-right: 30px;
+        font-size: 1rem;
+    }
+    
+    .figure__img {
+        width: 450px;
+        padding: 50px 50px;
+        filter: drop-shadow(14px 14px 7px #072a71);
+        border-radius: 0%;
     }
 }
 
