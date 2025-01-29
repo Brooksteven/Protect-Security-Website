@@ -4070,7 +4070,7 @@ TEAMS SECTION ON HOME PAGE
 
         .protect-content{
             min-width: 380px;
-            margin-left: 16px;
+            margin-left: -12px;/*16px*/
         }
         
         p.protect-content--para{
@@ -4086,7 +4086,7 @@ TEAMS SECTION ON HOME PAGE
             font-size: 17px;
          text-align: center;
          line-height: 28px;
-         margin-top: 16px;
+         margin-top: 24px;
          margin-bottom: 0px;
         }
 
@@ -4169,9 +4169,9 @@ TEAMS SECTION ON HOME PAGE
 @media (min-width: 438px) and (max-width: 480px) {
     p.protect-content--para{
         font-size: 2.5rem;
-        margin-top: 24%;
-        margin-bottom: 6%;
-        margin-left: 10px;
+        margin-top: 24px;
+        margin-bottom: 0%;
+        margin-left: 50px;
     }
 
     p.protect-security--para{
@@ -4184,6 +4184,7 @@ TEAMS SECTION ON HOME PAGE
 
     p.protect-para{
         margin-right: 13%;
+        margin-left: 8%;
     }
 }
 
@@ -4239,14 +4240,14 @@ TEAMS SECTION ON HOME PAGE
          font-size: 17px;
       text-align: center;
       line-height: 28px;
-      margin-top: 16px;
-      margin-bottom: 0px;
+      margin-top: 24px;
+      margin-bottom: 24px;
      }
      
      p.protect-security--para{
      /*padding-right: 10px;*/
      margin-bottom: 40px;
-     margin-left: -14px;
+     margin-left: 14px;
      margin-right: 46px;
      }
      
@@ -4310,7 +4311,7 @@ TEAMS SECTION ON HOME PAGE
      }
      
      img.img4.img4b{
-      margin-left: 112px !important;/*can't find the overlap*/
+      margin-left: 122px !important;/*can't find the overlap*/
      }
  }
 
