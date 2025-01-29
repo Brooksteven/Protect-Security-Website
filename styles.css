@@ -10520,6 +10520,10 @@ HEADER IMAGE ON ABOUT US PAGE
         margin-top: 4%;
         margin-left: 40%;
     }
+
+    div.cs-line.line{
+        margin-top: 0px;
+    }
 }
 
 /*right over half the screen size of a laptop and tablet*/
@@ -10875,7 +10879,7 @@ IMAGE IN HEADER
 @media (min-width: 438px) and (max-width: 480px) {
     div.service-container{
             height: calc(89vh - 80px);
-            margin-top: -210px; /*this pulls this container up and eliminates the white space between the img and the navbar*/
+            margin-top: -88px; /*-210pxthis pulls this container up and eliminates the white space between the img and the navbar*/
     }
 }
 
@@ -10913,9 +10917,14 @@ p.service-value__label--para{
 
 /*Iphone 16*/
 @media (min-width:438px) and (max-width: 440px){
+    div.service-row{
+        margin-top: -4px;
+        max-width: 600px;
+    }
+
  /*our experience box*/
  div.services-values{
-    margin-top: 160px;
+    margin-top: 135px;
 }
 /*our experience paragraph*/
 p.service-value__label--para{
@@ -10931,7 +10940,7 @@ p.service-value__label--para{
     }
 }
 
-@media (min-width: 438px) and (max-width:768px){
+@media (min-width: 441px) and (max-width:768px){
     div.service-row{
         margin-top: 89px; /*used to be 209px this is actually what eliminates the white space between our experience and the hero image what we offer*/
         max-width: 600px
@@ -11388,9 +11397,13 @@ div.cs-banner{
 /*Iphone 16*/
 @media (min-width:438px) and (max-width: 440px){
 div.cs-banner{
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     margin-left: 24px;
     margin-right: 24px;
+}
+
+#button-cs{
+    margin-bottom: 64px;
 }
 }
 
@@ -11492,7 +11505,7 @@ CONTACT FORM
 
 /*Iphone 16*/
 @media (min-width:438px) and (max-width: 440px){
-    section#contact-body{
+    /*section#contact-body{
         max-width: 437px;
         width: 100%;
     }
@@ -11502,6 +11515,65 @@ CONTACT FORM
         margin-left: -60px;
         margin-top: 24px;
         
+    }*/
+
+    .contact-body {
+        /*padding: 15px;*/
+        height: auto; /* Allow content to dictate height */
+    }
+
+    .contact-rowcontrol {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-items: center;
+        align-items: center;
+        max-width: 474px;
+        margin-left: 59px;/*53px*/
+        margin-bottom: 54px;
+        /*gap: 15px;*/ /* Moderate spacing between stacked sections */
+    }
+
+    .contact-from/*, 
+    #control-map-contactaddress */{
+        max-width: 58.3%; /* Reduce width slightly for mid-range devices */
+        /*margin: 0 auto;*/ /* Center align content */
+        /*padding: 18px;*/ /* Maintain moderate padding */
+        margin-left: 9.6%;
+        margin-top: 10%;
+        margin-bottom: 6px;
+        
+    }
+
+    .contact-from h5 {
+        font-size: 18px; /* Slightly smaller heading size */
+    }
+
+    .contact-from h5:before {
+        width: 98px; /* Shorten the yellow line */
+        height: 4px;
+    }
+
+
+
+    .contact-from .contact-h2 {
+        font-size: 36px; /* Scale down heading */
+        /*text-align: center;*/ /* Center-align heading */
+    }
+
+    .contact-from .singel-form .contact-input, textarea {
+        font-size: 14px; /* Adjust font for inputs */
+        /*padding: 12px;*/ /* Compact padding */
+    }
+
+    .contact-from .singel-form textarea {
+        height: 80px; /* Adjust textarea height */
+    }
+
+    .main-btn {
+        width: 100%; /* Button takes up full width */
+        max-width: 280px; /* Restrict to a comfortable size */
+        /*padding: 10px;*/ /* Compact padding */
+        font-size: 18px; /* Slightly smaller button text */
     }
 }
 
