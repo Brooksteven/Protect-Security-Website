@@ -2177,7 +2177,7 @@ div.blue-box{
 
 
 /* For mobile devices (max-width: 480px) */
-@media (min-width: 438px) and (max-width: 480px) {
+@media (min-width: 441px) and (max-width: 480px) {
     div.header__container{
         height: calc(100vh - 80px);
     }
