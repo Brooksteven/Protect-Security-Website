@@ -2331,7 +2331,7 @@ div.blue-box{
 
 
 /*For tablets (max-width: 768px) */
-@media (min-width: 438px) and (max-width: 768px) {
+@media (min-width: 441px) and (max-width: 768px) {
 
     div.header__container{
         height: calc(103vh - 80px);
